@@ -4,15 +4,135 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Pagosa Forest Lodge | Luxury Mountain Cabin in Colorado">
   <!-- Hero Section -->
-  <section class="relative h-screen min-h-[700px] flex items-center justify-center hero-overlay">
-    <!-- Background Image -->
-    <div class="absolute inset-0 z-0">
+  <section class="relative h-screen min-h-[700px] flex items-center justify-center hero-overflow">
+    <!-- Background Images - Rotating -->
+    <div class="absolute inset-0 z-0 hero-slideshow">
       <img 
-        src="/images/006-0278 14317 W US Hwy 160.jpg" 
-        alt="Pagosa Forest Lodge cabin exterior" 
-        class="w-full h-full object-cover"
+        src="/images/pfl-stargazing.png" 
+        alt="Pagosa Forest Lodge under starry night sky" 
+        class="w-full h-full object-cover hero-slide active"
+        data-slide="0"
+      />
+      <img 
+        src="/images/snowy-cabin.png" 
+        alt="Pagosa Forest Lodge snowy cabin" 
+        class="w-full h-full object-cover hero-slide"
+        data-slide="1"
+      />
+      <img 
+        src="/images/attractions/hottub.jpg" 
+        alt="Hot tub with snow covered mountains" 
+        class="w-full h-full object-cover hero-slide"
+        data-slide="2"
       />
     </div>
+    
+    <!-- Overlay -->
+    <div class="absolute inset-0 z-0 bg-black/30"></div>
+    
+    <!-- Content -->
+    <div class="relative z-10 container-custom text-center text-white">
+      <p class="text-sm md:text-base uppercase tracking-[0.3em] mb-4 animate-fade-in opacity-0" style="animation-fill-mode: forwards;">
+        Forest Cabin Retreat
+      </p>
+      
+      <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-light leading-tight mb-6 animate-fade-in opacity-0 delay-200" style="animation-fill-mode: forwards;">
+        Your Mountain<br />
+        <span class="italic">Escape</span> Awaits
+      </h1>
+      
+      <p class="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 font-light animate-fade-in opacity-0 delay-400" style="animation-fill-mode: forwards;">
+        Experience the perfect blend of rustic charm and modern luxury at our 
+        secluded mountain cabin in Pagosa Springs.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in opacity-0 delay-500" style="animation-fill-mode: forwards;">
+        <a href="/book" class="btn-primary">Book Your Stay</a>
+        <a href="/the-cabin" class="btn-secondary">Explore The Cabin</a>
+      </div>
+    </div>
+    
+    <!-- Slide Indicators -->
+    <div class="absolute bottom-24 left-1/2 -translate-x-1/2 z-10 flex space-x-3">
+      <button class="hero-dot w-3 h-3 rounded-full bg-white/50 transition-all duration-300 active" data-slide="0" aria-label="Show slide 1"></button>
+      <button class="hero-dot w-3 h-3 rounded-full bg-white/50 transition-all duration-300" data-slide="1" aria-label="Show slide 2"></button>
+      <button class="hero-dot w-3 h-3 rounded-full bg-white/50 transition-all duration-300" data-slide="2" aria-label="Show slide 3"></button>
+    </div>
+    
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+      <svg class="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </div>
+  </section>
+
+  <script>
+    // Hero Slideshow
+    (function() {
+      const slides = document.querySelectorAll('.hero-slide');
+      const dots = document.querySelectorAll('.hero-dot');
+      let currentSlide = 0;
+      const totalSlides = slides.length;
+      const intervalTime = 5000; // 5 seconds
+      
+      function showSlide(index) {
+        // Remove active class from current
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('bg-white');
+        dots[currentSlide].classList.add('bg-white/50');
+        
+        // Set new slide
+        currentSlide = index;
+        
+        // Add active class to new
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+        dots[currentSlide].classList.remove('bg-white/50');
+        dots[currentSlide].classList.add('bg-white');
+      }
+      
+      function nextSlide() {
+        const next = (currentSlide + 1) % totalSlides;
+        showSlide(next);
+      }
+      
+      // Auto-advance
+      let slideInterval = setInterval(nextSlide, intervalTime);
+      
+      // Dot click handlers
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          clearInterval(slideInterval);
+          showSlide(index);
+          slideInterval = setInterval(nextSlide, intervalTime);
+        });
+      });
+      
+      // Initialize first dot
+      dots[0].classList.remove('bg-white/50');
+      dots[0].classList.add('bg-white');
+    })();
+  </script>
+
+  <style>
+    .hero-slideshow {
+      position: relative;
+    }
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+    }
+    .hero-slide.active {
+      opacity: 1;
+    }
+    .hero-dot.active {
+      transform: scale(1.2);
+    }
+  </style>
     
     <!-- Content -->
     <div class="relative z-10 container-custom text-center text-white">
