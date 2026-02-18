@@ -8,8 +8,8 @@ import Layout from '../layouts/Layout.astro';
     <!-- Background Image -->
     <div class="absolute inset-0 z-0">
       <img 
-        src="/images/snowy-cabin.png" 
-        alt="Pagosa Forest Lodge snowy cabin" 
+        src="/images/006-0278 14317 W US Hwy 160.jpg" 
+        alt="Pagosa Forest Lodge cabin exterior" 
         class="w-full h-full object-cover"
       />
     </div>
@@ -17,7 +17,7 @@ import Layout from '../layouts/Layout.astro';
     <!-- Content -->
     <div class="relative z-10 container-custom text-center text-white">
       <p class="text-sm md:text-base uppercase tracking-[0.3em] mb-4 animate-fade-in opacity-0" style="animation-fill-mode: forwards;">
-        Colorado Luxury Retreat
+        Forest Cabin Retreat
       </p>
       
       <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-light leading-tight mb-6 animate-fade-in opacity-0 delay-200" style="animation-fill-mode: forwards;">
@@ -54,9 +54,9 @@ import Layout from '../layouts/Layout.astro';
         </h2>
         <p class="text-gray-600 leading-relaxed">
           Nestled in the San Juan Mountains, Pagosa Forest Lodge offers an unparalleled 
-          mountain retreat experience. Our thoughtfully designed cabin combines rustic 
-          elegance with modern amenities, creating the perfect sanctuary for your 
-          Colorado getaway.
+          mountain retreat experience. Our secluded cabin backs directly onto the San Juan 
+          National Forest—step out your door and onto miles of pristine hiking trails. 
+          Experience rustic elegance with modern amenities in your private forest sanctuary.
         </p>
       </div>
 
@@ -112,23 +112,106 @@ import Layout from '../layouts/Layout.astro';
         <div class="card-luxury group">
           <div class="aspect-[4/3] overflow-hidden">
             <img 
-              src="/images/attractions/skiing.jpg" 
-              alt="Skiing at Wolf Creek Ski Resort" 
+              src="/images/attractions/hiking.jpg" 
+              alt="National Forest hiking trails" 
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
           </div>
           <div class="p-8">
             <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center mb-6">
               <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
               </svg>
             </div>
-            <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Prime Location</h3>
+            <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">National Forest Access</h3>
             <p class="text-gray-600 text-sm leading-relaxed">
-              Just 40 minutes from Wolf Creek Ski Resort and close to Pagosa Springs' 
-              famous hot springs, hiking trails, and downtown charm.
+              Step out your back door directly into the San Juan National Forest. 
+              Miles of secluded hiking trails, wildlife viewing, and untouched wilderness 
+              await—no driving required.
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- National Forest Section -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <!-- Image Grid -->
+        <div class="grid grid-cols-2 gap-4 order-2 lg:order-1">
+          <div class="space-y-4">
+            <img 
+              src="/images/attractions/hiking.jpg" 
+              alt="Hiking trail in National Forest" 
+              class="w-full aspect-[3/4] object-cover rounded-lg"
+            />
+            <img 
+              src="/images/attractions/wildlife.jpg" 
+              alt="Wildlife in the forest" 
+              class="w-full aspect-square object-cover rounded-lg"
+            />
+          </div>
+          <div class="space-y-4 pt-8">
+            <img 
+              src="/images/023-0350 14317 W. US Hwy 160.jpg" 
+              alt="Forest view from cabin" 
+              class="w-full aspect-square object-cover rounded-lg"
+            />
+            <img 
+              src="/images/attractions/mountains.jpg" 
+              alt="San Juan National Forest" 
+              class="w-full aspect-[3/4] object-cover rounded-lg"
+            />
+          </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="order-1 lg:order-2">
+          <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Your Backyard</p>
+          <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-6">
+            Backed By<br /><span class="italic">National Forest</span>
+          </h2>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Our 2-acre property backs directly onto thousands of acres of pristine 
+            San Juan National Forest. Step out your back door and onto miles of 
+            secluded hiking trails—no driving, no crowds, just you and nature.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            Explore untouched wilderness, spot local wildlife, and discover hidden 
+            meadows and streams. Whether you're seeking a peaceful morning walk or 
+            an all-day adventure, the forest is your playground.
+          </p>
+          
+          <div class="grid grid-cols-2 gap-6 mb-8">
+            <div class="flex items-start space-x-3">
+              <svg class="w-5 h-5 text-[#c9a227] mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-gray-700 text-sm">Direct trail access</span>
+            </div>
+            <div class="flex items-start space-x-3">
+              <svg class="w-5 h-5 text-[#c9a227] mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-gray-700 text-sm">No crowds or driving</span>
+            </div>
+            <div class="flex items-start space-x-3">
+              <svg class="w-5 h-5 text-[#c9a227] mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-gray-700 text-sm">Wildlife viewing</span>
+            </div>
+            <div class="flex items-start space-x-3">
+              <svg class="w-5 h-5 text-[#c9a227] mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-gray-700 text-sm">All skill levels</span>
+            </div>
+          </div>
+          
+          <a href="/things-to-do" class="btn-primary">Explore The Trails</a>
         </div>
       </div>
     </div>
