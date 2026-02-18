@@ -1,0 +1,407 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="The Cabin | Pagosa Forest Lodge">
+  <!-- Hero -->
+  <section class="relative py-32 hero-overlay">
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80" 
+        alt="Pagosa Forest Lodge cabin exterior" 
+        class="w-full h-full object-cover"
+      />
+    </div>
+    
+    <div class="relative z-10 container-custom text-center text-white">
+      <p class="text-sm uppercase tracking-[0.3em] mb-4">Accommodations</p>
+      <h1 class="font-serif text-5xl md:text-7xl">
+        The <span class="italic">Cabin</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="section-padding bg-[#faf9f6]">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-6">
+          Rustic Elegance Meets<br /><span class="italic">Modern Comfort</span>
+        </h2>
+        <p class="text-gray-600 leading-relaxed text-lg">
+          Our thoughtfully designed 4-bedroom cabin offers the perfect retreat for families, 
+          friends, or couples seeking a luxurious mountain escape. With soaring ceilings, 
+          expansive windows, and premium finishes throughout, every detail has been 
+          curated to create an unforgettable experience.
+        </p>
+      </div>
+
+      <!-- Key Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-[#c9a227]/10 flex items-center justify-center">
+            <svg class="w-8 h-8 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+          </div>
+          <p class="text-3xl font-serif text-[#0f1f0a]">4</p>
+          <p class="text-sm text-gray-500 uppercase tracking-wider">Bedrooms</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-[#c9a227]/10 flex items-center justify-center">
+            <svg class="w-8 h-8 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <p class="text-3xl font-serif text-[#0f1f0a]">8</p>
+          <p class="text-sm text-gray-500 uppercase tracking-wider">Guests</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-[#c9a227]/10 flex items-center justify-center">
+            <svg class="w-8 h-8 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <p class="text-3xl font-serif text-[#0f1f0a]">3.5</p>
+          <p class="text-sm text-gray-500 uppercase tracking-wider">Bathrooms</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-[#c9a227]/10 flex items-center justify-center">
+            <svg class="w-8 h-8 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <p class="text-3xl font-serif text-[#0f1f0a]">2,400</p>
+          <p class="text-sm text-gray-500 uppercase tracking-wider">Sq Ft</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bedroom Details -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Sleeping Arrangements</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-6">Four Beautiful<br /><span class="italic">Bedrooms</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Master Bedroom -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="aspect-[4/5] overflow-hidden rounded-lg">
+            <img 
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" 
+              alt="Master bedroom" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="flex flex-col justify-center">
+            <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Master Suite</h3>
+            <p class="text-[#c9a227] text-sm uppercase tracking-wider mb-4">King Bed • Sleeps 2</p>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              The luxurious master suite features a premium king bed with high-thread-count linens, 
+              an en-suite bathroom with soaking tub and walk-in shower, and breathtaking mountain 
+              views through floor-to-ceiling windows.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                En-suite bathroom
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Private deck access
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Walk-in closet
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bedroom 2 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="aspect-[4/5] overflow-hidden rounded-lg">
+            <img 
+              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&q=80" 
+              alt="Bedroom 2 with queen bed" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="flex flex-col justify-center">
+            <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Guest Room 1</h3>
+            <p class="text-[#c9a227] text-sm uppercase tracking-wider mb-4">Queen Bed • Sleeps 2</p>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              A spacious guest room featuring a comfortable queen bed, shared bathroom access, 
+              and serene forest views. Perfect for couples or single travelers.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Premium bedding
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Forest views
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Ample storage
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bedroom 3 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="aspect-[4/5] overflow-hidden rounded-lg">
+            <img 
+              src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600&q=80" 
+              alt="Bedroom 3 with two beds" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="flex flex-col justify-center">
+            <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Guest Room 2</h3>
+            <p class="text-[#c9a227] text-sm uppercase tracking-wider mb-4">2 Twin Beds • Sleeps 2</p>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              Ideal for kids or friends, this room features two comfortable twin beds 
+              and a playful yet sophisticated mountain design aesthetic.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Twin beds (can be joined)
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Mountain decor
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Reading nook
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bedroom 4 / Bunk Room -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="aspect-[4/5] overflow-hidden rounded-lg">
+            <img 
+              src="https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=600&q=80" 
+              alt="Bunk room" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="flex flex-col justify-center">
+            <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Bunk Room</h3>
+            <p class="text-[#c9a227] text-sm uppercase tracking-wider mb-4">Bunk Bed + Twin • Sleeps 4</p>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              The ultimate kids' retreat! Features a twin-over-full bunk bed plus an 
+              additional twin bed, sleeping up to 4. A favorite for families with children.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Twin-over-full bunk
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Additional twin bed
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Board games & toys
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Common Areas -->
+  <section class="section-padding bg-[#0f1f0a] text-white">
+    <div class="container-custom">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Gathering Spaces</p>
+        <h2 class="font-serif text-4xl md:text-5xl mb-6">Designed For<br /><span class="italic">Togetherness</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Great Room -->
+        <div>
+          <div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
+            <img 
+              src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=600&q=80" 
+              alt="Great room with fireplace" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h3 class="font-serif text-2xl mb-3">Great Room</h3>
+          <p class="text-white/70 text-sm leading-relaxed">
+            The heart of the cabin features soaring ceilings, a magnificent stone 
+            fireplace, comfortable seating for 10, and panoramic windows framing 
+            mountain views.
+          </p>
+        </div>
+
+        <!-- Kitchen -->
+        <div>
+          <div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
+            <img 
+              src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80" 
+              alt="Gourmet kitchen" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h3 class="font-serif text-2xl mb-3">Gourmet Kitchen</h3>
+          <p class="text-white/70 text-sm leading-relaxed">
+            Fully equipped chef's kitchen with stainless steel appliances, granite 
+            countertops, breakfast bar seating for 4, and everything you need for 
+            memorable meals.
+          </p>
+        </div>
+
+        <!-- Dining -->
+        <div>
+          <div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
+            <img 
+              src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" 
+              alt="Dining area" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h3 class="font-serif text-2xl mb-3">Dining Area</h3>
+          <p class="text-white/70 text-sm leading-relaxed">
+            Elegant dining space seating 10 with stunning views. Perfect for 
+            celebratory dinners, game nights, or casual family breakfasts.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Outdoor Spaces -->
+  <section class="section-padding bg-[#faf9f6]">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <!-- Images -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <div class="aspect-[3/4] overflow-hidden rounded-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80" 
+                alt="Hot tub with mountain view" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="aspect-square overflow-hidden rounded-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80" 
+                alt="BBQ grill" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          <div class="space-y-4 pt-8">
+            <div class="aspect-square overflow-hidden rounded-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" 
+                alt="Deck seating area" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="aspect-[3/4] overflow-hidden rounded-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1510074377623-8cf13fb86c08?w=600&q=80" 
+                alt="Fire pit" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div>
+          <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Outdoor Living</p>
+          <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-6">
+            Embrace The<br /><span class="italic">Great Outdoors</span>
+          </h2>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            The outdoor spaces at Pagosa Forest Lodge are designed to help you fully 
+            immerse yourself in Colorado's natural beauty. From your morning coffee 
+            to evening stargazing, every moment outside is pure magic.
+          </p>
+          
+          <div class="space-y-4">
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-serif text-lg text-[#0f1f0a] mb-1">Private Hot Tub</h4>
+                <p class="text-gray-600 text-sm">Relax under the stars in our premium hot tub with mountain views</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-serif text-lg text-[#0f1f0a] mb-1">Expansive Deck</h4>
+                <p class="text-gray-600 text-sm">Covered and open-air seating areas with panoramic mountain views</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-serif text-lg text-[#0f1f0a] mb-1">Fire Pit Area</h4>
+                <p class="text-gray-600 text-sm">Gather around the fire pit for s'mores and stargazing</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-serif text-lg text-[#0f1f0a] mb-1">BBQ Grill</h4>
+                <p class="text-gray-600 text-sm">Gas grill ready for your mountain cookouts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-[#c9a227]">
+    <div class="container-custom text-center">
+      <h2 class="font-serif text-3xl md:text-4xl text-[#0f1f0a] mb-4">Ready to experience the cabin?</h2>
+      <p class="text-[#0f1f0a]/80 mb-8">Book your stay today and create unforgettable memories.</p>
+      <a href="/book" class="inline-flex items-center justify-center px-8 py-4 bg-[#0f1f0a] text-white font-medium rounded-full hover:bg-[#1a3d14] transition-colors">
+        Check Availability
+      </a>
+    </div>
+  </section>
+</Layout>

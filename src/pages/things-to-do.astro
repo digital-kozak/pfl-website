@@ -1,0 +1,446 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Things To Do | Pagosa Springs Activities">
+  <!-- Hero -->
+  <section class="relative py-32 hero-overlay">
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="/images/pfl-stargazing.png" 
+        alt="Stargazing at Pagosa Forest Lodge" 
+        class="w-full h-full object-cover"
+      />
+    </div>
+    
+    <div class="relative z-10 container-custom text-center text-white">
+      <p class="text-sm uppercase tracking-[0.3em] mb-4">Adventure Awaits</p>
+      <h1 class="font-serif text-5xl md:text-7xl">
+        Things To <span class="italic">Do</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="section-padding bg-[#faf9f6]">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Your Guide</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-6">
+          Experience the Best of<br /><span class="italic">Pagosa Springs</span>
+        </h2>
+        <p class="text-gray-600 leading-relaxed text-lg">
+          Nestled in the heart of the San Juan Mountains, Pagosa Springs offers year-round 
+          adventures for every type of traveler. From legendary powder skiing to soothing 
+          natural hot springs, world-class fishing to breathtaking hiking trails—your 
+          mountain escape is just the beginning.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Winter Activities -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="flex items-center space-x-4 mb-12">
+        <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center">
+          <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+        </div>
+        <h2 class="font-serif text-3xl md:text-4xl text-[#0f1f0a]">Winter Adventures</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Wolf Creek -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img 
+              src="/images/attractions/wolf-creek.jpg" 
+              alt="Wolf Creek Ski Resort" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="flex items-center space-x-2 mb-3">
+              <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">20 Minutes</span>
+              <span class="text-gray-400">•</span>
+              <span class="text-gray-500 text-xs">Nov-Apr</span>
+            </div>
+            <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Wolf Creek Ski Resort</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              "The Most Snow in Colorado" averaging 430+ inches annually. Famous for 
+              its powder on the Alberta side, including the legendary Knife Ridge Chutes. 
+              Get there early on powder days—it fills by 9:30 AM!
+            </p>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                1,600 skiable acres
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                All skill levels welcome
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Affordable lift tickets
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Snowshoeing -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img 
+              src="/images/attractions/skiing.jpg" 
+              alt="Snowshoeing in Pagosa" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="flex items-center space-x-2 mb-3">
+              <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">5-30 Minutes</span>
+              <span class="text-gray-400">•</span>
+              <span class="text-gray-500 text-xs">Dec-Mar</span>
+            </div>
+            <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Snowshoeing & Cross-Country</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              Explore pristine winter landscapes on snowshoes or cross-country skis. 
+              The Piedra River Trail and Wolf Creek Trail offer groomed paths and 
+              backcountry adventures for all levels.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Equipment rentals available
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Guided tours offered
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Free trails in town
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hot Springs -->
+  <section class="section-padding bg-[#0f1f0a] text-white">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <span class="text-[#c9a227] text-sm uppercase tracking-wider">15 Minutes</span>
+            <span class="text-white/40">•</span>
+            <span class="text-white/60 text-sm">Year-Round</span>
+          </div>
+          <h2 class="font-serif text-4xl md:text-5xl mb-6">
+            The Springs Resort & Spa
+          </h2>
+          <p class="text-white/70 leading-relaxed mb-6">
+            Home to the world's deepest geothermal hot spring, The Springs Resort offers 
+            24 pools ranging from 83°F to 114°F. Soak in mineral-rich waters while 
+            enjoying panoramic views of the San Juan Mountains—truly magical in winter 
+            when snow falls around you.
+          </p>
+          
+          <div class="grid grid-cols-2 gap-6 mb-8">
+            <div>
+              <p class="text-3xl font-serif text-[#c9a227] mb-1">24</p>
+              <p class="text-white/60 text-sm">Therapeutic Pools</p>
+            </div>
+            <div>
+              <p class="text-3xl font-serif text-[#c9a227] mb-1">1,002'</p>
+              <p class="text-white/60 text-sm">Deep Spring</p>
+            </div>
+          </div>
+          
+          <ul class="space-y-3 text-sm text-white/70 mb-8">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Day passes and memberships available
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Full-service spa treatments
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Poolside food and beverage service
+            </li>
+          </ul>
+          
+          <a href="https://pagosahotsprings.com" target="_blank" rel="noopener" class="btn-primary">
+            Visit Website
+          </a>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <img 
+              src="/images/attractions/hot-springs.jpg" 
+              alt="Hot springs pools" 
+              class="w-full aspect-[3/4] object-cover rounded-lg"
+            />
+            <img 
+              src="/images/attractions/mountains.jpg" 
+              alt="Hot springs at night" 
+              class="w-full aspect-square object-cover rounded-lg"
+            />
+          </div>
+          <div class="space-y-4 pt-8">
+            <img 
+              src="/images/attractions/mountains.jpg" 
+              alt="Pool with mountain view" 
+              class="w-full aspect-square object-cover rounded-lg"
+            />
+            <img 
+              src="/images/attractions/mountains.jpg" 
+              alt="Relaxing in hot springs" 
+              class="w-full aspect-[3/4] object-cover rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Summer Activities -->
+  <section class="section-padding bg-[#faf9f6]">
+    <div class="container-custom">
+      <div class="flex items-center space-x-4 mb-12">
+        <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center">
+          <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+        </div>
+        <h2 class="font-serif text-3xl md:text-4xl text-[#0f1f0a]">Summer Adventures</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Hiking -->
+        <div class="card-luxury overflow-hidden">
+          <div class="aspect-[16/10] overflow-hidden">
+            <img 
+              src="/images/attractions/hiking.jpg" 
+              alt="Hiking in San Juan Mountains" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <div class="flex items-center space-x-2 mb-3">
+              <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">5-45 Minutes</span>
+              <span class="text-gray-400">•</span>
+              <span class="text-gray-500 text-xs">May-Oct</span>
+            </div>
+            <h3 class="font-serif text-xl text-[#0f1f0a] mb-2">Hiking & Trails</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              From the Continental Divide Trail to local favorites like Treasure Falls 
+              and Fourmile Falls. Wildflower meadows, alpine lakes, and breathtaking 
+              vistas await at every turn.
+            </p>
+          </div>
+        </div>
+
+        <!-- Fishing -->
+        <div class="card-luxury overflow-hidden">
+          <div class="aspect-[16/10] overflow-hidden">
+            <img 
+              src="/images/attractions/mountains.jpg" 
+              alt="Fly fishing San Juan River" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <div class="flex items-center space-x-2 mb-3">
+              <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">10-30 Minutes</span>
+              <span class="text-gray-400">•</span>
+              <span class="text-gray-500 text-xs">Year-Round</span>
+            </div>
+            <h3 class="font-serif text-xl text-[#0f1f0a] mb-2">Fishing Paradise</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              The San Juan River is legendary for trout fishing. Guided trips available 
+              for beginners and experts alike. Lake fishing at nearby Echo Lake and 
+              Williams Creek Reservoir.
+            </p>
+          </div>
+        </div>
+
+        <!-- Rafting -->
+        <div class="card-luxury overflow-hidden">
+          <div class="aspect-[16/10] overflow-hidden">
+            <img 
+              src="/images/attractions/mountains.jpg" 
+              alt="White water rafting" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <div class="flex items-center space-x-2 mb-3">
+              <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">20-60 Minutes</span>
+              <span class="text-gray-400">•</span>
+              <span class="text-gray-500 text-xs">May-Sep</span>
+            </div>
+            <h3 class="font-serif text-xl text-[#0f1f0a] mb-2">Rafting & Kayaking</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              From gentle family floats on the San Juan to adrenaline-pumping whitewater 
+              on the Piedra River. Local outfitters provide all equipment and guides.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mountain Biking -->
+        <div class="card-luxury overflow-hidden">
+          <div class="aspect-[16/10] overflow-hidden">
+            <img 
+              src="/images/attractions/mountains.jpg" 
+              alt="Mountain biking" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <div class="flex items-center space-x-2 mb-3">
+              <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">5-30 Minutes</span>
+              <span class="text-gray-400">•</span>
+              <span class="text-gray-500 text-xs">May-Oct</span>
+            </div>
+            <h3 class="font-serif text-xl text-[#0f1f0a] mb-2">Mountain Biking</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Miles of singletrack and forest roads for all skill levels. The Turkey 
+              Springs Trail System offers flowy rides with stunning views.
+            </p>
+          </div>
+        </div>
+
+        <!-- Horseback Riding -->
+        <div class="card-luxury overflow-hidden">
+          <div class="aspect-[16/10] overflow-hidden">
+            <img 
+              src="/images/attractions/mountains.jpg" 
+              alt="Horseback riding" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <div class="flex items-center space-x-2 mb-3">
+              <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">15 Minutes</span>
+              <span class="text-gray-400">•</span>
+              <span class="text-gray-500 text-xs">May-Oct</span>
+            </div>
+            <h3 class="font-serif text-xl text-[#0f1f0a] mb-2">Horseback Riding</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Experience the Old West on guided trail rides through pristine wilderness. 
+              Perfect for families and romantic sunset rides.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stargazing -->
+        <div class="card-luxury overflow-hidden">
+          <div class="aspect-[16/10] overflow-hidden">
+            <img 
+              src="/images/attractions/mountains.jpg" 
+              alt="Stargazing" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <div class="flex items-center space-x-2 mb-3">
+              <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">At the Cabin</span>
+              <span class="text-gray-400">•</span>
+              <span class="text-gray-500 text-xs">Year-Round</span>
+            </div>
+            <h3 class="font-serif text-xl text-[#0f1f0a] mb-2">Stargazing</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              With minimal light pollution, Pagosa offers incredible dark sky viewing. 
+              See the Milky Way from our deck—no telescope needed!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local Attractions -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Beyond the Outdoors</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-6">
+          Local Attractions<br /><span class="italic">& Dining</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Downtown -->
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-[#c9a227]/10 flex items-center justify-center">
+            <svg class="w-8 h-8 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Downtown Pagosa</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Charming main street with local breweries, art galleries, boutique shopping, 
+            and the historic Springs Resort. Great for a leisurely afternoon stroll.
+          </p>
+        </div>
+
+        <!-- Dining -->
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-[#c9a227]/10 flex items-center justify-center">
+            <svg class="w-8 h-8 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Local Dining</h3>
+          <p class="text-gray-600 leading-relaxed">
+            From farm-to-table cuisine at The Alley House to craft brews at Pagosa 
+            Brewing, experience the best of Colorado's culinary scene.
+          </p>
+        </div>
+
+        <!-- Chimney Rock -->
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-[#c9a227]/10 flex items-center justify-center">
+            <svg class="w-8 h-8 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Chimney Rock</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Ancient ancestral Puebloan ruins perched on a dramatic sandstone butte. 
+            Guided tours reveal the mysteries of this 1,000-year-old ceremonial site.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-[#c9a227]">
+    <div class="container-custom text-center">
+      <h2 class="font-serif text-3xl md:text-4xl text-[#0f1f0a] mb-4">Ready for your adventure?</h2>
+      <p class="text-[#0f1f0a]/80 mb-8 max-w-2xl mx-auto">
+        Book your stay at Pagosa Forest Lodge and discover why our guests return year after year 
+        to experience the best of Colorado's Four Corners region.
+      </p>
+      <a href="/book" class="inline-flex items-center justify-center px-8 py-4 bg-[#0f1f0a] text-white font-medium rounded-full hover:bg-[#1a3d14] transition-colors">
+        Check Availability
+      </a>
+    </div>
+  </section>
+</Layout>

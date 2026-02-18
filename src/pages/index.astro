@@ -1,0 +1,491 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Pagosa Forest Lodge | Luxury Mountain Cabin in Colorado">
+  <!-- Hero Section -->
+  <section class="relative h-screen min-h-[700px] flex items-center justify-center hero-overlay">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="/images/14317 W Hwy 160 Pagosa Springs-large-007-005-14317 W Hwy 160-1500x1000-72dpi.jpg" 
+        alt="Pagosa Forest Lodge mountain cabin with stunning views" 
+        class="w-full h-full object-cover"
+      />
+    </div>
+    
+    <!-- Content -->
+    <div class="relative z-10 container-custom text-center text-white">
+      <p class="text-sm md:text-base uppercase tracking-[0.3em] mb-4 animate-fade-in opacity-0" style="animation-fill-mode: forwards;">
+        Colorado Luxury Retreat
+      </p>
+      
+      <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-light leading-tight mb-6 animate-fade-in opacity-0 delay-200" style="animation-fill-mode: forwards;">
+        Your Mountain<br />
+        <span class="italic">Escape</span> Awaits
+      </h1>
+      
+      <p class="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 font-light animate-fade-in opacity-0 delay-400" style="animation-fill-mode: forwards;">
+        Experience the perfect blend of rustic charm and modern luxury at our 
+        secluded mountain cabin in Pagosa Springs.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in opacity-0 delay-500" style="animation-fill-mode: forwards;">
+        <a href="/book" class="btn-primary">Book Your Stay</a>
+        <a href="/the-cabin" class="btn-secondary">Explore The Cabin</a>
+      </div>
+    </div>
+    
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+      <svg class="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section-padding bg-[#faf9f6]">
+    <div class="container-custom">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Welcome</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-6">
+          Where Comfort Meets<br /><span class="italic">Adventure</span>
+        </h2>
+        <p class="text-gray-600 leading-relaxed">
+          Nestled in the San Juan Mountains, Pagosa Forest Lodge offers an unparalleled 
+          mountain retreat experience. Our thoughtfully designed cabin combines rustic 
+          elegance with modern amenities, creating the perfect sanctuary for your 
+          Colorado getaway.
+        </p>
+      </div>
+
+      <!-- Feature Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="card-luxury group">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="/images/006-0278 14317 W US Hwy 160.jpg" 
+              alt="Cabin exterior with mountain views" 
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-8">
+            <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Spacious Accommodations</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              4 beautifully appointed bedrooms sleeping up to 8 guests. Each room 
+              features premium bedding, mountain views, and thoughtful touches.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card-luxury group">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="/images/025-Aerial Interior.jpg" 
+              alt="Luxury hot tub" 
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-8">
+            <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+              </svg>
+            </div>
+            <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Premium Amenities</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Relax in our private hot tub, cozy up by the fireplace, or enjoy 
+              panoramic mountain views from the expansive deck.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card-luxury group">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img 
+              src="/images/018-0291 14317 W US Hwy 160.jpg" 
+              alt="Wolf Creek Ski Resort" 
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-8">
+            <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Prime Location</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Just 20 minutes from Wolf Creek Ski Resort and close to Pagosa Springs' 
+              famous hot springs, hiking trails, and downtown charm.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities Preview -->
+  <section class="section-padding bg-[#0f1f0a] text-white">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <!-- Content -->
+        <div>
+          <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Amenities</p>
+          <h2 class="font-serif text-4xl md:text-5xl mb-8">
+            Everything You Need<br /><span class="italic text-[#c9a227]">And More</span>
+          </h2>
+          
+          <div class="grid grid-cols-2 gap-6 mb-10">
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-white/90 text-sm">Private Hot Tub</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-white/90 text-sm">Stone Fireplace</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-white/90 text-sm">Gourmet Kitchen</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-white/90 text-sm">High-Speed WiFi</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-white/90 text-sm">Smart TV & Games</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-white/90 text-sm">Mountain Views</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-white/90 text-sm">BBQ & Fire Pit</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-white/90 text-sm">Washer & Dryer</span>
+            </div>
+          </div>
+          
+          <a href="/amenities" class="btn-primary">View All Amenities</a>
+        </div>
+        
+        <!-- Images Grid -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <img 
+              src="/images/007-0279 14317 W US Hwy 160.jpg" 
+              alt="Cabin interior living room" 
+              class="w-full aspect-[3/4] object-cover rounded-lg"
+            />
+            <img 
+              src="/images/008-0280 14317 W US Hwy 160.jpg" 
+              alt="Mountain sunset view" 
+              class="w-full aspect-square object-cover rounded-lg"
+            />
+          </div>
+          <div class="space-y-4 pt-8">
+            <img 
+              src="/images/014-0287 14317 W US Hwy 160.jpg" 
+              alt="Cabin deck view" 
+              class="w-full aspect-square object-cover rounded-lg"
+            />
+            <img 
+              src="/images/basement-beds.jpg" 
+              alt="Cozy bedroom interior" 
+              class="w-full aspect-[3/4] object-cover rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Preview -->
+  <section class="section-padding bg-[#faf9f6]">
+    <div class="container-custom">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Gallery</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-6">
+          A Picture-Perfect<br /><span class="italic">Mountain Retreat</span>
+        </h2>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        <div class="aspect-square overflow-hidden rounded-lg group cursor-pointer">
+          <img 
+            src="/images/023-0350 14317 W. US Hwy 160.jpg" 
+            alt="Cabin exterior" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-lg group cursor-pointer md:col-span-2 md:row-span-2">
+          <img 
+            src="/images/026-Aerial Interior_1.jpg" 
+            alt="Cabin interior great room" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-lg group cursor-pointer">
+          <img 
+            src="/images/029-Aerial Interior_2.jpg" 
+            alt="Kitchen" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-lg group cursor-pointer">
+          <img 
+            src="/images/031-Aerial Interior_3.jpg" 
+            alt="Bedroom" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-lg group cursor-pointer">
+          <img 
+            src="/images/033-Aerial Interior_5.jpg" 
+            alt="Deck view" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="/gallery" class="btn-secondary border-[#0f1f0a] text-[#0f1f0a] hover:bg-[#0f1f0a] hover:text-white">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Teaser -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Testimonials</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-6">
+          What Our Guests<br /><span class="italic">Are Saying</span>
+        </h2>
+      </div>
+
+      <!-- Reviews Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Review 1 -->
+        <div class="bg-[#faf9f6] p-8 rounded-lg">
+          <div class="flex text-[#c9a227] mb-4">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-gray-700 mb-6 leading-relaxed italic">"Absolutely magical stay! The cabin exceeded all our expectations. The hot tub under the stars was unforgettable, and the mountain views from the deck took our breath away every morning."</p>
+          <div class="flex items-center">
+            <div class="w-12 h-12 rounded-full bg-[#0f1f0a] flex items-center justify-center text-white font-serif text-lg">S</div>
+            <div class="ml-4">
+              <p class="font-medium text-[#0f1f0a]">Sarah M.</p>
+              <p class="text-sm text-gray-500">Denver, CO</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-[#faf9f6] p-8 rounded-lg">
+          <div class="flex text-[#c9a227] mb-4">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-gray-700 mb-6 leading-relaxed italic">"Perfect for our family reunion! With 4 bedrooms, everyone had their own space. The kitchen was fully equipped, and the fire pit became our nightly gathering spot. We'll be back!"</p>
+          <div class="flex items-center">
+            <div class="w-12 h-12 rounded-full bg-[#0f1f0a] flex items-center justify-center text-white font-serif text-lg">J</div>
+            <div class="ml-4">
+              <p class="font-medium text-[#0f1f0a]">James K.</p>
+              <p class="text-sm text-gray-500">Austin, TX</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-[#faf9f6] p-8 rounded-lg">
+          <div class="flex text-[#c9a227] mb-4">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-gray-700 mb-6 leading-relaxed italic">"A skier's paradise! Only 20 minutes to Wolf Creek and the cabin was the perfect place to warm up after a day on the slopes. The fireplace and hot tub were exactly what we needed."</p>
+          <div class="flex items-center">
+            <div class="w-12 h-12 rounded-full bg-[#0f1f0a] flex items-center justify-center text-white font-serif text-lg">M</div>
+            <div class="ml-4">
+              <p class="font-medium text-[#0f1f0a]">Michael R.</p>
+              <p class="text-sm text-gray-500">Phoenix, AZ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="/reviews" class="btn-secondary border-[#0f1f0a] text-[#0f1f0a] hover:bg-[#0f1f0a] hover:text-white">Read All Reviews</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adventures Section -->
+  <section class="section-padding bg-[#0f1f0a] text-white">
+    <div class="container-custom">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Explore</p>
+        <h2 class="font-serif text-4xl md:text-5xl mb-6">
+          Endless Adventures<br /><span class="italic">Await</span>
+        </h2>
+        <p class="text-white/70 leading-relaxed">
+          From world-class skiing to natural hot springs, discover why Pagosa Springs 
+          is Colorado's best-kept secret for outdoor enthusiasts.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <!-- Activity 1 -->
+        <div class="group">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
+            <img 
+              src="/images/036-Aerial Interior_7.jpg" 
+              alt="Wolf Creek Ski Resort" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+          </div>
+          <div class="flex items-center space-x-2 mb-3">
+            <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+            <span class="text-[#c9a227] text-xs uppercase tracking-wider">20 Minutes</span>
+          </div>
+          <h3 class="font-serif text-2xl mb-2">Wolf Creek Ski Resort</h3>
+          <p class="text-white/70 text-sm leading-relaxed mb-4">
+            "The Most Snow in Colorado" with legendary powder on the Alberta side. 
+            Perfect for all skill levels with challenging chutes and gentle groomers.
+          </p>
+          <a href="/things-to-do" class="text-[#c9a227] text-sm hover:underline inline-flex items-center">
+            Learn More 
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Activity 2 -->
+        <div class="group">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
+            <img 
+              src="/images/037-Aerial Interior_8.jpg" 
+              alt="Hot Springs" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+          </div>
+          <div class="flex items-center space-x-2 mb-3">
+            <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+            </svg>
+            <span class="text-[#c9a227] text-xs uppercase tracking-wider">15 Minutes</span>
+          </div>
+          <h3 class="font-serif text-2xl mb-2">The Springs Resort</h3>
+          <p class="text-white/70 text-sm leading-relaxed mb-4">
+            Soak in the world's deepest geothermal hot spring. 24 pools ranging 
+            from 83°F to 114°F with stunning San Juan Mountain views.
+          </p>
+          <a href="/things-to-do" class="text-[#c9a227] text-sm hover:underline inline-flex items-center">
+            Learn More 
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Activity 3 -->
+        <div class="group">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
+            <img 
+              src="/images/042-102419263.jpg" 
+              alt="Hiking trails" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+          </div>
+          <div class="flex items-center space-x-2 mb-3">
+            <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+            </svg>
+            <span class="text-[#c9a227] text-xs uppercase tracking-wider">5-30 Minutes</span>
+          </div>
+          <h3 class="font-serif text-2xl mb-2">Hiking & Trails</h3>
+          <p class="text-white/70 text-sm leading-relaxed mb-4">
+            From leisurely nature walks to challenging alpine hikes. Explore 
+            the Continental Divide Trail, Treasure Falls, and hidden local gems.
+          </p>
+          <a href="/things-to-do" class="text-[#c9a227] text-sm hover:underline inline-flex items-center">
+            Learn More 
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="/things-to-do" class="btn-secondary">View All Activities</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="relative py-24 hero-overlay">
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="/images/14317 W Hwy 160 Pagosa Springs-large-076-073-14317 W Hwy 160-1500x844-72dpi.jpg" 
+        alt="Mountain sunset at Pagosa Forest Lodge" 
+        class="w-full h-full object-cover"
+      />
+    </div>
+    
+    <div class="relative z-10 container-custom text-center text-white">
+      <h2 class="font-serif text-4xl md:text-6xl mb-6">
+        Ready For Your<br /><span class="italic">Mountain Escape?</span>
+      </h2>
+      <p class="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10">
+        Book your stay today and experience the perfect blend of luxury and nature 
+        at Pagosa Forest Lodge.
+      </p>
+      <a href="/book" class="btn-primary text-lg px-10">Book Now</a>
+    </div>
+  </section>
+</Layout>

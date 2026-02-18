@@ -1,0 +1,183 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const reviews = [
+  {
+    name: "Sarah Mitchell",
+    location: "Denver, CO",
+    rating: 5,
+    date: "January 2025",
+    text: "Absolutely magical stay! The cabin exceeded all our expectations. The hot tub under the stars was unforgettable, and the mountain views from the deck took our breath away every morning. The kitchen was fully equipped for our holiday feast, and the bedrooms were so comfortable. Can't wait to return!",
+    avatar: "S"
+  },
+  {
+    name: "James & Karen Peterson",
+    location: "Austin, TX",
+    rating: 5,
+    date: "December 2024",
+    text: "Perfect for our family reunion! With 4 bedrooms, everyone had their own space. The kids absolutely loved the bunk room, and the fire pit became our nightly gathering spot for s'mores and stories. The cabin is beautifully decorated and immaculate. We'll definitely be back!",
+    avatar: "J"
+  },
+  {
+    name: "Michael Rodriguez",
+    location: "Phoenix, AZ",
+    rating: 5,
+    date: "March 2024",
+    text: "A skier's paradise! Only 20 minutes to Wolf Creek and the cabin was the perfect place to warm up after a day on the slopes. The fireplace and hot tub were exactly what we needed. The location is secluded yet convenient. Highly recommend for anyone looking for a true Colorado mountain experience.",
+    avatar: "M"
+  },
+  {
+    name: "Emily Thompson",
+    location: "Chicago, IL",
+    rating: 5,
+    date: "February 2024",
+    text: "We came for a girls' weekend and it was everything we hoped for! The cabin is even more beautiful in person. We spent hours in the hot tub watching the sunset over the mountains. The kitchen had everything we needed for cooking big family-style meals. Already planning our next trip!",
+    avatar: "E"
+  },
+  {
+    name: "David & Lisa Chen",
+    location: "San Francisco, CA",
+    rating: 5,
+    date: "August 2023",
+    text: "Our summer escape was absolutely perfect. The hiking trails nearby are incredible, and coming back to the cabin's comfort each evening was pure bliss. The air conditioning kept us cool during the day, and we loved dining on the deck with mountain views. This place is truly special.",
+    avatar: "D"
+  },
+  {
+    name: "Robert Williams",
+    location: "Dallas, TX",
+    rating: 5,
+    date: "July 2023",
+    text: "Best family vacation we've had in years! The kids didn't want to leave the bunk room, and my wife and I loved the master suite. The location is perfect - close enough to town but feels completely secluded. We saw deer from the deck every morning!",
+    avatar: "R"
+  },
+  {
+    name: "Jennifer Adams",
+    location: "Miami, FL",
+    rating: 5,
+    date: "June 2023",
+    text: "What a gem! We were looking for a peaceful mountain retreat and found exactly that. The attention to detail in the cabin is remarkable - from the plush towels to the gourmet kitchen. The hot springs nearby are a must-visit. We'll cherish these memories forever.",
+    avatar: "J"
+  },
+  {
+    name: "Mark & Susan Taylor",
+    location: "Seattle, WA",
+    rating: 5,
+    date: "September 2022",
+    text: "Our anniversary trip couldn't have been better. The cabin is romantic yet family-friendly. We loved the reading nook by the fireplace and the incredible stargazing from the hot tub. The hosts thought of everything. Already looking at dates for next year!",
+    avatar: "M"
+  }
+];
+
+const stats = [
+  { value: "5.0", label: "Average Rating" },
+  { value: "50+", label: "Reviews" },
+  { value: "100%", label: "Would Recommend" }
+];
+---
+
+<Layout title="Reviews | Pagosa Forest Lodge">
+  <!-- Hero -->
+  <section class="relative py-32 hero-overlay">
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80" 
+        alt="Reviews" 
+        class="w-full h-full object-cover"
+      />
+    </div>
+    
+    <div class="relative z-10 container-custom text-center text-white">
+      <p class="text-sm uppercase tracking-[0.3em] mb-4">Guest Experiences</p>
+      <h1 class="font-serif text-5xl md:text-7xl">
+        <span class="italic">Reviews</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="py-16 bg-[#0f1f0a] text-white">
+    <div class="container-custom">
+      <div class="grid grid-cols-3 gap-8 text-center">
+        {stats.map((stat) => (
+          <div>
+            <p class="text-4xl md:text-5xl font-serif text-[#c9a227] mb-2">{stat.value}</p>
+            <p class="text-sm uppercase tracking-wider text-white/70">{stat.label}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Grid -->
+  <section class="section-padding bg-[#faf9f6]">
+    <div class="container-custom">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Testimonials</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a]">What Guests <span class="italic">Are Saying</span></h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {reviews.map((review) => (
+          <div class="bg-white p-8 rounded-lg shadow-sm">
+            <!-- Stars -->
+            <div class="flex text-[#c9a227] mb-4">
+              {[...Array(5)].map(() => (
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+              ))}
+            </div>
+            
+            <!-- Review Text -->
+            <p class="text-gray-700 mb-6 leading-relaxed italic">"{review.text}"</p>
+            
+            <!-- Author -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-[#0f1f0a] flex items-center justify-center text-white font-serif text-lg">
+                  {review.avatar}
+                </div>
+                <div class="ml-4">
+                  <p class="font-medium text-[#0f1f0a]">{review.name}</p>
+                  <p class="text-sm text-gray-500">{review.location}</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-400">{review.date}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Review CTA -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="font-serif text-3xl md:text-4xl text-[#0f1f0a] mb-6">Share Your Experience</h2>
+        <p class="text-gray-600 mb-8">
+          Have you stayed at Pagosa Forest Lodge? We'd love to hear about your experience! 
+          Your feedback helps us improve and helps future guests discover their perfect mountain getaway.
+        </p>
+        
+        <a 
+          href="/contact" 
+          class="inline-flex items-center justify-center px-8 py-4 bg-[#0f1f0a] text-white font-medium rounded-full hover:bg-[#1a3d14] transition-colors"
+        >
+          Leave a Review
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-[#c9a227]">
+    <div class="container-custom text-center">
+      <h2 class="font-serif text-3xl md:text-4xl text-[#0f1f0a] mb-4">Ready to create your own memories?</h2>
+      <p class="text-[#0f1f0a]/80 mb-8">Join our happy guests and book your stay today.</p>
+      <a href="/book" class="inline-flex items-center justify-center px-8 py-4 bg-[#0f1f0a] text-white font-medium rounded-full hover:bg-[#1a3d14] transition-colors">
+        Check Availability
+      </a>
+    </div>
+  </section>
+</Layout>
