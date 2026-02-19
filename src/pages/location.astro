@@ -60,7 +60,11 @@ const activities = [
 ];
 ---
 
-<Layout title="Location | Pagosa Forest Lodge" description="Pagosa Forest Lodge: 40 minutes from Wolf Creek Ski, 15 min to hot springs. Perfect basecamp for your Colorado mountain vacation.">
+<Layout 
+  title="Location | Pagosa Forest Lodge" 
+  description="Pagosa Forest Lodge: 40 minutes from Wolf Creek Ski, 15 min to hot springs. Perfect basecamp for your Colorado mountain vacation."
+  breadcrumbs={[{ name: "Location", url: "/location" }]}
+>
   <!-- Hero -->
   <section class="relative py-32 hero-overlay">
     <div class="absolute inset-0 z-0">

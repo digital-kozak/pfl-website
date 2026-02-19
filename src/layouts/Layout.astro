@@ -5,15 +5,37 @@ export interface Props {
   title: string;
   description?: string;
   ogImage?: string;
+  breadcrumbs?: { name: string; url: string }[];
 }
 
 const { 
   title = "Pagosa Forest Lodge | Luxury Mountain Cabin in Colorado",
   description = "Experience luxury mountain living at Pagosa Forest Lodge. 4 bedrooms, hot tub, stunning views, 40 min to Wolf Creek Ski. Book your Colorado getaway today!",
-  ogImage = "/images/og-image.jpg"
+  ogImage = "/images/og-image.jpg",
+  breadcrumbs = []
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://pagosaforestlodge.com');
+
+// Generate breadcrumb schema if breadcrumbs provided
+const breadcrumbSchema = breadcrumbs.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://pagosaforestlodge.com"
+    },
+    ...breadcrumbs.map((crumb, index) => ({
+      "@type": "ListItem",
+      "position": index + 2,
+      "name": crumb.name,
+      "item": `https://pagosaforestlodge.com${crumb.url}`
+    }))
+  ]
+} : null;
 ---
 
 <!DOCTYPE html>
@@ -144,6 +166,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://pagosafo
       "image": "https://pagosaforestlodge.com/images/lodge-hero.jpg"
     }
   </script>
+  
+  {breadcrumbSchema && (
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  )}
   
   <title>{title}</title>
   

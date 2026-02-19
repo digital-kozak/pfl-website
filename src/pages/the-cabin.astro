@@ -2,7 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="The Cabin | Pagosa Forest Lodge" description="Explore our 4-bedroom luxury cabin in Pagosa Springs. 2,400 sq ft, sleeps 8, hot tub, mountain views. Perfect for family ski trips.">
+<Layout 
+  title="The Cabin | Pagosa Forest Lodge" 
+  description="Explore our 4-bedroom luxury cabin in Pagosa Springs. 2,400 sq ft, sleeps 8, hot tub, mountain views. Perfect for family ski trips."
+  breadcrumbs={[{ name: "The Cabin", url: "/the-cabin" }]}
+>
   <!-- Hero -->
   <section class="relative py-32 hero-overlay">
     <div class="absolute inset-0 z-0">

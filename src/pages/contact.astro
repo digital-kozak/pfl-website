@@ -2,7 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Contact | Pagosa Forest Lodge" description="Contact Pagosa Forest Lodge. Questions about booking? Call (970) 444-2290 or email info@pagosaforestlodge.com.">
+<Layout 
+  title="Contact | Pagosa Forest Lodge" 
+  description="Contact Pagosa Forest Lodge. Questions about booking? Call (970) 444-2290 or email info@pagosaforestlodge.com."
+  breadcrumbs={[{ name: "Contact", url: "/contact" }]}
+>
   
   <script>
     // Check for form submission success
@@ -68,6 +72,9 @@ import Layout from '../layouts/Layout.astro';
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_autoresponse" value="Thank you for contacting Pagosa Forest Lodge. We have received your message and will respond within 24 hours.">
             <input type="hidden" name="_next" value="https://dev.pagosaforestlodge.com/contact?submitted=true">
+            
+            <!-- Honeypot field to prevent spam -->
+            <input type="text" name="_honey" style="display:none">
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>

@@ -2,7 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Things To Do | Pagosa Springs Activities" description="Discover year-round adventures near Pagosa Forest Lodge - skiing, hot springs, hiking, rafting, and more in the San Juan Mountains.">
+<Layout 
+  title="Things To Do | Pagosa Springs Activities" 
+  description="Discover year-round adventures near Pagosa Forest Lodge - skiing, hot springs, hiking, rafting, and more in the San Juan Mountains."
+  breadcrumbs={[{ name: "Things To Do", url: "/things-to-do" }]}
+>
   <!-- Hero -->
   <section class="relative py-32 hero-overlay">
     <div class="absolute inset-0 z-0">

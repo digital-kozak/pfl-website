@@ -1,0 +1,37 @@
+---
+// OptimizedImage Component - Uses Astro 5 built-in image optimization
+import { Image } from 'astro:assets';
+
+interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  class?: string;
+  loading?: 'lazy' | 'eager';
+  decoding?: 'async' | 'sync' | 'auto';
+}
+
+const { 
+  src, 
+  alt, 
+  width = 800, 
+  height,
+  class: className = '',
+  loading = 'lazy',
+  decoding = 'async'
+} = Astro.props;
+
+// For external images or images in public folder, use standard img with loading="lazy"
+// The Image component from astro:assets is best for src/ assets
+---
+
+<img 
+  src={src} 
+  alt={alt}
+  width={width}
+  height={height}
+  loading={loading}
+  decoding={decoding}
+  class={className}
+/>

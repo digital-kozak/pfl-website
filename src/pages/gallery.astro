@@ -67,8 +67,11 @@ const galleryImages = [
 const categories = ["All", "Exterior", "Interior", "Bedrooms", "Kitchen", "Amenities", "Views"];
 ---
 
-<Layout title="Gallery | Pagosa Forest Lodge" description="View photos of Pagosa Forest Lodge - luxury mountain cabin with hot tub, stunning views, 4 bedrooms. See your Colorado getaway!">
-  <!-- Hero -->
+<Layout 
+  title="Gallery | Pagosa Forest Lodge" 
+  description="View photos of Pagosa Forest Lodge - luxury mountain cabin with hot tub, stunning views, 4 bedrooms. See your Colorado getaway!"
+  breadcrumbs={[{ name: "Gallery", url: "/gallery" }]}
+>  <!-- Hero -->
   <section class="relative py-32 hero-overlay">
     <div class="absolute inset-0 z-0">
       <img
