@@ -1,0 +1,783 @@
+
+<!doctype html>
+<html lang="en">
+
+    <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+    {'gtm.start': new Date().getTime(),event:'gtm.js'}
+    );var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WHDVSBF');</script>
+    <!-- End Google Tag Manager -->
+
+
+	<meta charset="utf-8">
+<script type="text/javascript">
+/* <![CDATA[ */
+ var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}}); 
+/* ]]> */
+</script>
+
+
+	
+    
+    
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="https://www.pagosahotsprings.com/content/themes/base/assets/img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://www.pagosahotsprings.com/content/themes/base/assets/img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://www.pagosahotsprings.com/content/themes/base/assets/img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://www.pagosahotsprings.com/content/themes/base/assets/img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://www.pagosahotsprings.com/content/themes/base/assets/img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://www.pagosahotsprings.com/content/themes/base/assets/img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://www.pagosahotsprings.com/content/themes/base/assets/img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://www.pagosahotsprings.com/content/themes/base/assets/img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://www.pagosahotsprings.com/content/themes/base/assets/img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="https://www.pagosahotsprings.com/content/themes/base/assets/img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://www.pagosahotsprings.com/content/themes/base/assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://www.pagosahotsprings.com/content/themes/base/assets/img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://www.pagosahotsprings.com/content/themes/base/assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://www.pagosahotsprings.com/content/themes/base/assets/img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="https://www.pagosahotsprings.com/content/themes/base/assets/img/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+    <!-- Sofia Pro Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/nsb2rku.css">
+
+		<!-- Google Search Console DNS Verification -->
+		<meta name="google-site-verification" content="I3qq2usAgSqpXDRVFrstQalfYUvZNIx3cCnQuSv-hc8" />
+
+	
+		<!-- All in One SEO Pro 4.5.3.1 - aioseo.com -->
+		<link media="all" href="https://www.pagosahotsprings.com/content/cache/autoptimize/css/autoptimize_77bc3dabd2fb09fadc54a3ff2dd8b08d.css" rel="stylesheet"><title>Page not found | </title>
+		<meta name="robots" content="noindex" />
+		<meta name="generator" content="All in One SEO Pro (AIOSEO) 4.5.3.1" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/www.pagosahotsprings.com\/content\/uploads\/2021\/02\/Rafting-690x440.jpg\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/www.pagosahotsprings.com\/#listItem","position":1,"name":"Home","item":"https:\/\/www.pagosahotsprings.com\/","nextItem":"https:\/\/www.pagosahotsprings.com\/content\/uploads\/2021\/02\/Rafting-690x440.jpg\/#listItem"},{"@type":"ListItem","@id":"https:\/\/www.pagosahotsprings.com\/content\/uploads\/2021\/02\/Rafting-690x440.jpg\/#listItem","position":2,"name":"Not Found","previousItem":"https:\/\/www.pagosahotsprings.com\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/www.pagosahotsprings.com\/#organization","name":"The Springs Resort","url":"https:\/\/www.pagosahotsprings.com\/","logo":{"@type":"ImageObject","url":"https:\/\/www.pagosahotsprings.com\/content\/themes\/base\/assets\/img\/logos\/logo.svg","@id":"https:\/\/www.pagosahotsprings.com\/content\/uploads\/2021\/02\/Rafting-690x440.jpg\/#organizationLogo"},"image":{"@id":"https:\/\/www.pagosahotsprings.com\/#organizationLogo"},"sameAs":["https:\/\/www.facebook.com\/SpringsResort","https:\/\/twitter.com\/Springs_Resort","https:\/\/www.instagram.com\/pagosahotsprings\/","https:\/\/www.pinterest.com\/springsresort","https:\/\/www.youtube.com\/channel\/UCVUDhQI8gb4PtIEE1VrOzGA","https:\/\/www.linkedin.com\/company\/the-springs-resort"],"contactPoint":{"@type":"ContactPoint","telephone":"+18002250934","contactType":"Reservations"}},{"@type":"WebPage","@id":"https:\/\/www.pagosahotsprings.com\/content\/uploads\/2021\/02\/Rafting-690x440.jpg\/#webpage","url":"https:\/\/www.pagosahotsprings.com\/content\/uploads\/2021\/02\/Rafting-690x440.jpg\/","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/www.pagosahotsprings.com\/#website"},"breadcrumb":{"@id":"https:\/\/www.pagosahotsprings.com\/content\/uploads\/2021\/02\/Rafting-690x440.jpg\/#breadcrumblist"}},{"@type":"WebSite","@id":"https:\/\/www.pagosahotsprings.com\/#website","url":"https:\/\/www.pagosahotsprings.com\/","name":"The Springs Resort","inLanguage":"en-US","publisher":{"@id":"https:\/\/www.pagosahotsprings.com\/#organization"}}]}
+		</script>
+		<!-- All in One SEO Pro -->
+
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="gform_gravityforms-js-extra">
+/* <![CDATA[ */
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https:\/\/www.pagosahotsprings.com\/content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.pagosahotsprings.com\/content\/plugins\/gravityforms\/images\/spinner.svg","version_hash":"8346a88410bb2de6ba7e1bf7afd620e0","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https:\/\/www.pagosahotsprings.com\/content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.pagosahotsprings.com\/content\/plugins\/gravityforms\/images\/spinner.svg","version_hash":"8346a88410bb2de6ba7e1bf7afd620e0","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https:\/\/www.pagosahotsprings.com\/content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.pagosahotsprings.com\/content\/plugins\/gravityforms\/images\/spinner.svg","version_hash":"8346a88410bb2de6ba7e1bf7afd620e0","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":1,"iconText":"Select date"}};
+var gf_legacy_multi = {"1":"1","2":"1","25":""};
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled"},"vars":{"images_url":"https:\/\/www.pagosahotsprings.com\/content\/plugins\/gravityforms\/images"}};
+/* ]]> */
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="https://api.w.org/" href="https://www.pagosahotsprings.com/wp-json/" />		<script type="text/javascript">
+				(function(c,l,a,r,i,t,y){
+					c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;
+					t.src="https://www.clarity.ms/tag/"+i+"?ref=wordpress";y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+				})(window, document, "clarity", "script", "8gkbcfwqer");
+		</script>
+				<style type="text/css" id="wp-custom-css">
+			#hero .link__btn--green{
+	z-index: 999;
+}		</style>
+		</head>
+<body class="error404">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHDVSBF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="site-wrap" style="background-image: url('https://www.pagosahotsprings.com/content/themes/base/assets/img/backgrounds/sitewrap-simple.jpg'); background-repeat: no-repeat; background-position: top;">
+
+
+<header class="header">
+    
+<section class="alert-banner wysiwyg notification" id="alert-11991">
+    <button class="alert-banner__close-btn js-alert-banner-close" data-alert="11991"><svg class="v-icon__svg v-icon__svg--close" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/close.svg#close"></use></svg> Close</button>
+    <div style="padding: 10px; text-align: center; font-family: sans-serif; color: #632922;">NEW: <a href="https://www.pagosahotsprings.com/retreats/">Wellness Retreats</a> featuring curated 2- or 3-day geothermal experiences designed just for you.</div>
+</section>
+    
+<section class="search-bar js-search-bar">
+    <div class="search-bar__inner js-search-bar-height">
+        <form role="search" method="get" class="search-bar__form search-form search-form--header" action="https://www.pagosahotsprings.com/search/">
+	<label for="header-search" class="sr-only">Search for:</label>
+    <i class="header-search__input-icon"><svg class="v-icon__svg v-icon__svg--search" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/search.svg#search"></use></svg></i>
+  	<input id="header-search" type="search" class="search-form__input search-form__text query" autocomplete="off" name="search" placeholder="Search" value=""/>
+
+	<button type="submit" class="search-form__btn link link__btn link__btn--green">
+		Search    </button>
+</form>        <button class="search-bar__close js-search-bar-toggle" aria-label="Close Search"><svg class="v-icon__svg v-icon__svg--close" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/close.svg#close"></use></svg> Close</button>
+    </div>
+</section>
+
+    <div class="header__inner">
+                <div class="header-logo">
+            <div class="header-logo__inner">
+                <a class="footer-logo__a" href="/" title="Return to Homepage">                <img class="header-logo__img lazyload"
+                     data-src="https://www.pagosahotsprings.com/content/themes/base/assets/img/logos/logo.svg"
+                     alt="The Springs Resort Logo"/>
+                <img class="header-logo__img-color lazyload"
+                     data-src="https://www.pagosahotsprings.com/content/themes/base/assets/img/logos/logo-color.svg"
+                     alt="The Springs Resort Logo with Color"/>
+                </a>            </div>
+        </div>
+
+                <div class="header-navigation">
+
+            <div class="header__utility">
+                <a class="header__utility-link header__shop" href="https://pagosahotsprings.store/" title="Shop" target="_blank"><svg class="v-icon__svg v-icon__svg--shop" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/shop.svg#shop"></use></svg>Shop</a>                                <button class="header__toggle header__toggle--search js-search-bar-toggle"
+                        aria-label="Toggle Search Bar">
+                    <span class="header__toggle-icon"><svg class="v-icon__svg v-icon__svg--search" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/search.svg#search"></use></svg></span>
+                    <span class="header__toggle-text">Search</span>
+                </button>
+                                    <a class="header__utility-link header__call" href="tel:+1800-225-0934"
+                       title="Call Us by Phone">
+                        <svg class="v-icon__svg v-icon__svg--telephone-link" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/telephone-link.svg#telephone-link"></use></svg>800-225-0934                    </a>
+                            </div>
+
+
+            <div class="header__menu">
+                <div class="megamenu"><ul class="megamenu__menu"><li class="megamenu__item"><button class="megamenu__btn" title="Hot Springs" aria-expanded="false" aria-controls="megamenu-panel-1">Hot Springs<svg class="v-icon__svg v-icon__svg--chevron" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/chevron.svg#chevron"></use></svg></button><div id="megamenu-panel-1" class="megamenu__submenu-panel" data-mmindex="1">	<div class="megamenu__submenu-panel__inner">		<div class="megamenu__top">          <h5 class="megamenu__title">Hot Springs</h5>          <a class="megamenu__overview-link" href="https://www.pagosahotsprings.com/hot-springs/" title="View All">View All<svg class="v-icon__svg v-icon__svg--arrow" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/arrow.svg#arrow"></use></svg>          </a>		</div>		<div class="megamenu__close"><button class="megamenu__close-btn">Close <svg class="v-icon__svg v-icon__svg--close" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/close.svg#close"></use></svg>      </button></div>		<ul class="megamenu__submenu col5"><li class="megamenu__card"><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/hot-springs/" title="Hot Springs"><picture class="megamenu__card-picture">	<img class="megamenu__card-img" src="https://www.pagosahotsprings.com/content/uploads/2020/12/DSC03730-3-200x150.jpg" alt="" /></picture><span class="megamenu__card-label">Hot Springs</span></a></li><li class="megamenu__card"><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/day-pass/" title="Buy A Day Pass"><picture class="megamenu__card-picture">	<img class="megamenu__card-img" src="https://www.pagosahotsprings.com/content/uploads/2020/12/DSC01815-Enhanced-NR-200x150.jpg" alt="" /></picture><span class="megamenu__card-label">Buy A Day Pass</span></a></li><li class="megamenu__card"><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/hot-springs/pool-map/" title="Pool Details & Map"><picture class="megamenu__card-picture">	<img class="megamenu__card-img" src="https://www.pagosahotsprings.com/content/uploads/2020/12/DJI_20250628200353_0752_D-200x150.jpg" alt="" /></picture><span class="megamenu__card-label">Pool Details & Map</span></a></li><li class="megamenu__card"><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/hot-springs/our-healing-waters/" title="Our Healing Waters"><picture class="megamenu__card-picture">	<img class="megamenu__card-img" src="https://www.pagosahotsprings.com/content/uploads/2020/12/DSC02622-200x150.jpg" alt="" /></picture><span class="megamenu__card-label">Our Healing Waters</span></a></li><li class="megamenu__card"><ul class="megamenu__list"><li><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/hot-springs/memberships/" title="Memberships">Memberships</a></li><li><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/soak-like-a-local/" title="Soak Like a Local">Soak Like a Local</a></li><li><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/spa-wellness/pagosa-wellness/" title="Water-based Wellness">Water-based Wellness</a></li><li><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/hot-springs/faqs-hotsprings/" title="Hot Springs FAQs">Hot Springs FAQs</a></li><li><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/hot-springs/history-of-the-hot-springs/" title="Hot Springs History">Hot Springs History</a></li><li><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/hot-springs/live-webcam/" title="Live Webcam">Live Webcam</a></li></ul></li>		</ul>	</div></div></li><li class="megamenu__item"><button class="megamenu__btn" title="Resort" aria-expanded="false" aria-controls="megamenu-panel-2">Resort<svg class="v-icon__svg v-icon__svg--chevron" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/chevron.svg#chevron"></use></svg></button><div id="megamenu-panel-2" class="megamenu__submenu-panel" data-mmindex="2">	<div class="megamenu__submenu-panel__inner">		<div class="megamenu__top">          <h5 class="megamenu__title">Resort</h5>          <a class="megamenu__overview-link" href="https://www.pagosahotsprings.com/resort/" title="View All">View All<svg class="v-icon__svg v-icon__svg--arrow" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/arrow.svg#arrow"></use></svg>          </a>		</div>		<div class="megamenu__close"><button class="megamenu__close-btn">Close <svg class="v-icon__svg v-icon__svg--close" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/close.svg#close"></use></svg>      </button></div>		<ul class="megamenu__submenu col5"><li class="megamenu__card"><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/resort/" title="Resort"><picture class="megamenu__card-picture">	<img class="megamenu__card-img" src="https://www.pagosahotsprings.com/content/uploads/2020/12/DJI_20250628200353_0752_D-200x150.jpg" alt="" /></picture><span class="megamenu__card-label">Resort</span></a></li><li class="megamenu__card"><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/packages/" title="Packages"><picture class="megamenu__card-picture">	<img class="megamenu__card-img" src="https://www.pagosahotsprings.com/content/uploads/2022/01/Embrace-Package_web-1-200x150.jpg" alt="" /></picture><span class="megamenu__card-label">Packages</span></a></li><li class="megamenu__card"><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/resort/rooms-suites/" title="Rooms & Suites"><picture class="megamenu__card-picture">	<img class="megamenu__card-img" src="https://www.pagosahotsprings.com/content/uploads/2021/03/DeluxeQQ2-1-200x150.jpg" alt="Twin beds in the Deluxe QQ room" /></picture><span class="megamenu__card-label">Rooms & Suites</span></a></li><li class="megamenu__card"><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/resort/food-drink/" title="Dining"><picture class="megamenu__card-picture">	<img class="megamenu__card-img" src="https://www.pagosahotsprings.com/content/uploads/2020/12/DSC01621-1-200x150.jpg" alt="" /></picture><span class="megamenu__card-label">Dining</span></a></li><li class="megamenu__card"><ul class="megamenu__list"><li><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/spa-wellness/pagosa-wellness/" title="Water-Based Wellness">Water-Based Wellness</a></li><li><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/press-media/" title="Press & Media">Press & Media</a></li><li><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/resort/our-story/" title="Our Story">Our Story</a></li><li><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/resort/gift-cards/" title="Gift Cards">Gift Cards</a></li><li><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/resort/groups-rfp/" title="Groups">Groups</a></li><li><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/resort/getting-here/" title="Getting Here">Getting Here</a></li></ul></li>		</ul>	</div></div></li><li class="megamenu__item"><button class="megamenu__btn" title="Spa &#038; Wellness" aria-expanded="false" aria-controls="megamenu-panel-3">Spa &#038; Wellness<svg class="v-icon__svg v-icon__svg--chevron" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/chevron.svg#chevron"></use></svg></button><div id="megamenu-panel-3" class="megamenu__submenu-panel" data-mmindex="3">	<div class="megamenu__submenu-panel__inner">		<div class="megamenu__top">          <h5 class="megamenu__title">Spa &#038; Wellness</h5>          <a class="megamenu__overview-link" href="https://www.pagosahotsprings.com/spa-wellness/" title="View All">View All<svg class="v-icon__svg v-icon__svg--arrow" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/arrow.svg#arrow"></use></svg>          </a>		</div>		<div class="megamenu__close"><button class="megamenu__close-btn">Close <svg class="v-icon__svg v-icon__svg--close" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/close.svg#close"></use></svg>      </button></div>		<ul class="megamenu__submenu col5"><li class="megamenu__card"><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/spa-wellness/" title="Spa & Wellness "><picture class="megamenu__card-picture">	<img class="megamenu__card-img" src="https://www.pagosahotsprings.com/content/uploads/2020/12/DSC07658-2-200x150.jpg" alt="" /></picture><span class="megamenu__card-label">Spa & Wellness </span></a></li><li class="megamenu__card"><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/spa-wellness/wellness-classes-activities/" title="Wellness Studio, Classes & Activities"><picture class="megamenu__card-picture">	<img class="megamenu__card-img" src="https://www.pagosahotsprings.com/content/uploads/2020/12/DSC08576-200x150.jpg" alt="" /></picture><span class="megamenu__card-label">Wellness Studio, Classes & Activities</span></a></li><li class="megamenu__card"><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/spa-wellness/spa-treatments-and-services/" title="Treatments & Services"><picture class="megamenu__card-picture">	<img class="megamenu__card-img" src="https://www.pagosahotsprings.com/content/uploads/2020/12/DSC08798-2-2-200x150.jpg" alt="" /></picture><span class="megamenu__card-label">Treatments & Services</span></a></li><li class="megamenu__card"><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/spa-wellness/dr-marcus-coplin-medical-director/" title="Dr. Marcus Coplin, Medical Director"><picture class="megamenu__card-picture">	<img class="megamenu__card-img" src="https://www.pagosahotsprings.com/content/uploads/2020/12/Coplin-Headshot-Bri-MHSR-Wizardry-200x150.jpg" alt="" /></picture><span class="megamenu__card-label">Dr. Marcus Coplin, Medical Director</span></a></li><li class="megamenu__card"><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/resort/things-to-do/events/" title="Activities & Events"><picture class="megamenu__card-picture">	<img class="megamenu__card-img" src="https://www.pagosahotsprings.com/content/uploads/2020/12/DSC07684-200x150.jpg" alt="" /></picture><span class="megamenu__card-label">Activities & Events</span></a></li>		</ul>	</div></div></li><li class="megamenu__item"><a href="https://www.pagosahotsprings.com/resort/things-to-do/" title="Experiences">Experiences</a></li><li class="megamenu__item"><button class="megamenu__btn" title="Day Pass" aria-expanded="false" aria-controls="megamenu-panel-4">Day Pass<svg class="v-icon__svg v-icon__svg--chevron" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/chevron.svg#chevron"></use></svg></button><div id="megamenu-panel-4" class="megamenu__submenu-panel" data-mmindex="4">	<div class="megamenu__submenu-panel__inner">		<div class="megamenu__top">          <h5 class="megamenu__title">Day Pass</h5>          <a class="megamenu__overview-link" href="https://www.pagosahotsprings.com/day-pass/" title="View All">View All<svg class="v-icon__svg v-icon__svg--arrow" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/arrow.svg#arrow"></use></svg>          </a>		</div>		<div class="megamenu__close"><button class="megamenu__close-btn">Close <svg class="v-icon__svg v-icon__svg--close" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/close.svg#close"></use></svg>      </button></div>		<ul class="megamenu__submenu col4"><li class="megamenu__card"><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/day-pass/" title="Buy A Day Pass"><picture class="megamenu__card-picture">	<img class="megamenu__card-img" src="https://www.pagosahotsprings.com/content/uploads/2020/12/DSC03730-3-200x150.jpg" alt="" /></picture><span class="megamenu__card-label">Buy A Day Pass</span></a></li><li class="megamenu__card"><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/hot-springs/pool-map/" title="Pool Details Map"><picture class="megamenu__card-picture">	<img class="megamenu__card-img" src="https://www.pagosahotsprings.com/content/uploads/2020/12/DJI_20250628200353_0752_D-200x150.jpg" alt="" /></picture><span class="megamenu__card-label">Pool Details Map</span></a></li><li class="megamenu__card"><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/hot-springs/our-healing-waters/" title="Our Healing Waters"><picture class="megamenu__card-picture">	<img class="megamenu__card-img" src="https://www.pagosahotsprings.com/content/uploads/2020/12/DSC02622-200x150.jpg" alt="" /></picture><span class="megamenu__card-label">Our Healing Waters</span></a></li><li class="megamenu__card"><ul class="megamenu__list"><li><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/hot-springs/memberships/" title="Memberships">Memberships</a></li><li><a class="megamenu__card-a" href="https://www.pagosahotsprings.com/general-faqs/" title="FAQs">FAQs</a></li></ul></li>		</ul>	</div></div></li></ul></div>            </div>
+        </div>
+        <div class="header__booking-wrapper">
+            <button class="header__booking link link__btn link__btn--green js-toggle-booking-overlay"
+                    aria-label="Reservations" aria-expanded="false">Book
+            </button>
+            <button class="header__toggle header__toggle--menu js-toggleMobileMenu" aria-label="Toggle Menu">
+                <span class="header__toggle-icon"><svg class="v-icon__svg v-icon__svg--menu" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/menu.svg#menu"></use></svg></span>
+                <span class="header__toggle-icon header__toggle-icon--close"><svg class="v-icon__svg v-icon__svg--close" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/close.svg#close"></use></svg></span>
+                <span class="header__toggle-text">Menu</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="mobilemenu js-mobilemenu">  <div class="mobilemenu__panel mobilemenu__panel--main">      <nav class="mobilemenu__nav"><button class="mobilemenu__btn" title="Hot Springs" aria-expanded="false" aria-controls="mobilemenu-panel-1" aria-labelledby="mobilemenu-panel-1">Hot Springs<svg class="v-icon__svg v-icon__svg--chevron-light" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/chevron--light.svg#chevron--light"></use></svg></button><button class="mobilemenu__btn" title="Resort" aria-expanded="false" aria-controls="mobilemenu-panel-2" aria-labelledby="mobilemenu-panel-2">Resort<svg class="v-icon__svg v-icon__svg--chevron-light" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/chevron--light.svg#chevron--light"></use></svg></button><button class="mobilemenu__btn" title="Spa &#038; Wellness" aria-expanded="false" aria-controls="mobilemenu-panel-3" aria-labelledby="mobilemenu-panel-3">Spa &#038; Wellness<svg class="v-icon__svg v-icon__svg--chevron-light" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/chevron--light.svg#chevron--light"></use></svg></button><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/resort/things-to-do/" title="Experiences">Experiences</a><button class="mobilemenu__btn" title="Day Pass" aria-expanded="false" aria-controls="mobilemenu-panel-4" aria-labelledby="mobilemenu-panel-4">Day Pass<svg class="v-icon__svg v-icon__svg--chevron-light" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/chevron--light.svg#chevron--light"></use></svg></button>			</nav><div class="mobilemenu__utility">  <button class="link link__btn link__btn--green" aria-label="Open Booking Request Form" data-remodal-target="booking-widget--modal" data-buildingcode="" data-roomtype="" data-ratecode="">Resort Reservations</button>  <div class="mobilemenu__utility-links"><a class="mobilemenu__utility-link mobilemenu__shop" href="https://pagosahotsprings.store/" title="Shop" target="_blank"><svg class="v-icon__svg v-icon__svg--shop" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/shop.svg#shop"></use></svg>Shop</a>            <a class="mobilemenu__utility-link mobilemenu__call" href="tel:+1800-225-0934" title="Call Us by Phone" >
+                <svg class="v-icon__svg v-icon__svg--telephone-link" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/telephone-link.svg#telephone-link"></use></svg>                Call
+            </a>
+                <button class="mobilemenu__toggle mobilemenu__toggle--search js-search-bar-toggle" aria-label="Toggle Search Bar">
+            <svg class="v-icon__svg v-icon__svg--search" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/search.svg#search"></use></svg>            Search
+        </button>
+          </div></div></div><div class="mobilemenu__panel" id="mobilemenu-panel-1" data-mobilemenu-index="1">	<nav class="mobilemenu__nav">		<button class="mobilemenu__panel-close" title="Hot Springs"><svg class="v-icon__svg v-icon__svg--chevron-light" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/chevron--light.svg#chevron--light"></use></svg>Hot Springs		</button>		<a class="mobilemenu__a" href="https://www.pagosahotsprings.com/hot-springs/" title="View All">View All</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/hot-springs/" title="Hot Springs">Hot Springs</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/day-pass/" title="Buy A Day Pass">Buy A Day Pass</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/hot-springs/pool-map/" title="Pool Details & Map">Pool Details & Map</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/hot-springs/our-healing-waters/" title="Our Healing Waters">Our Healing Waters</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/hot-springs/memberships/" title="Memberships">Memberships</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/soak-like-a-local/" title="Soak Like a Local">Soak Like a Local</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/spa-wellness/pagosa-wellness/" title="Water-based Wellness">Water-based Wellness</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/hot-springs/faqs-hotsprings/" title="Hot Springs FAQs">Hot Springs FAQs</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/hot-springs/history-of-the-hot-springs/" title="Hot Springs History">Hot Springs History</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/hot-springs/live-webcam/" title="Live Webcam">Live Webcam</a>	</nav><div class="mobilemenu__utility">  <button class="link link__btn link__btn--green" aria-label="Open Booking Request Form" data-remodal-target="booking-widget--modal" data-buildingcode="" data-roomtype="" data-ratecode="">Resort Reservations</button>  <div class="mobilemenu__utility-links"><a class="mobilemenu__utility-link mobilemenu__shop" href="https://pagosahotsprings.store/" title="Shop" target="_blank"><svg class="v-icon__svg v-icon__svg--shop" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/shop.svg#shop"></use></svg>Shop</a>            <a class="mobilemenu__utility-link mobilemenu__call" href="tel:+1800-225-0934" title="Call Us by Phone" >
+                <svg class="v-icon__svg v-icon__svg--telephone-link" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/telephone-link.svg#telephone-link"></use></svg>                Call
+            </a>
+                <button class="mobilemenu__toggle mobilemenu__toggle--search js-search-bar-toggle" aria-label="Toggle Search Bar">
+            <svg class="v-icon__svg v-icon__svg--search" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/search.svg#search"></use></svg>            Search
+        </button>
+          </div></div></div><div class="mobilemenu__panel" id="mobilemenu-panel-2" data-mobilemenu-index="2">	<nav class="mobilemenu__nav">		<button class="mobilemenu__panel-close" title="Resort"><svg class="v-icon__svg v-icon__svg--chevron-light" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/chevron--light.svg#chevron--light"></use></svg>Resort		</button>		<a class="mobilemenu__a" href="https://www.pagosahotsprings.com/resort/" title="View All">View All</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/resort/" title="Resort">Resort</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/packages/" title="Packages">Packages</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/resort/rooms-suites/" title="Rooms & Suites">Rooms & Suites</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/resort/food-drink/" title="Dining">Dining</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/spa-wellness/pagosa-wellness/" title="Water-Based Wellness">Water-Based Wellness</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/press-media/" title="Press & Media">Press & Media</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/resort/our-story/" title="Our Story">Our Story</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/resort/gift-cards/" title="Gift Cards">Gift Cards</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/resort/groups-rfp/" title="Groups">Groups</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/resort/getting-here/" title="Getting Here">Getting Here</a>	</nav><div class="mobilemenu__utility">  <button class="link link__btn link__btn--green" aria-label="Open Booking Request Form" data-remodal-target="booking-widget--modal" data-buildingcode="" data-roomtype="" data-ratecode="">Resort Reservations</button>  <div class="mobilemenu__utility-links"><a class="mobilemenu__utility-link mobilemenu__shop" href="https://pagosahotsprings.store/" title="Shop" target="_blank"><svg class="v-icon__svg v-icon__svg--shop" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/shop.svg#shop"></use></svg>Shop</a>            <a class="mobilemenu__utility-link mobilemenu__call" href="tel:+1800-225-0934" title="Call Us by Phone" >
+                <svg class="v-icon__svg v-icon__svg--telephone-link" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/telephone-link.svg#telephone-link"></use></svg>                Call
+            </a>
+                <button class="mobilemenu__toggle mobilemenu__toggle--search js-search-bar-toggle" aria-label="Toggle Search Bar">
+            <svg class="v-icon__svg v-icon__svg--search" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/search.svg#search"></use></svg>            Search
+        </button>
+          </div></div></div><div class="mobilemenu__panel" id="mobilemenu-panel-3" data-mobilemenu-index="3">	<nav class="mobilemenu__nav">		<button class="mobilemenu__panel-close" title="Spa &#038; Wellness"><svg class="v-icon__svg v-icon__svg--chevron-light" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/chevron--light.svg#chevron--light"></use></svg>Spa &#038; Wellness		</button>		<a class="mobilemenu__a" href="https://www.pagosahotsprings.com/spa-wellness/" title="View All">View All</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/spa-wellness/" title="Spa & Wellness ">Spa & Wellness </a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/spa-wellness/wellness-classes-activities/" title="Wellness Studio, Classes & Activities">Wellness Studio, Classes & Activities</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/spa-wellness/spa-treatments-and-services/" title="Treatments & Services">Treatments & Services</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/spa-wellness/dr-marcus-coplin-medical-director/" title="Dr. Marcus Coplin, Medical Director">Dr. Marcus Coplin, Medical Director</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/resort/things-to-do/events/" title="Activities & Events">Activities & Events</a>	</nav><div class="mobilemenu__utility">  <button class="link link__btn link__btn--green" aria-label="Open Booking Request Form" data-remodal-target="booking-widget--modal" data-buildingcode="" data-roomtype="" data-ratecode="">Resort Reservations</button>  <div class="mobilemenu__utility-links"><a class="mobilemenu__utility-link mobilemenu__shop" href="https://pagosahotsprings.store/" title="Shop" target="_blank"><svg class="v-icon__svg v-icon__svg--shop" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/shop.svg#shop"></use></svg>Shop</a>            <a class="mobilemenu__utility-link mobilemenu__call" href="tel:+1800-225-0934" title="Call Us by Phone" >
+                <svg class="v-icon__svg v-icon__svg--telephone-link" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/telephone-link.svg#telephone-link"></use></svg>                Call
+            </a>
+                <button class="mobilemenu__toggle mobilemenu__toggle--search js-search-bar-toggle" aria-label="Toggle Search Bar">
+            <svg class="v-icon__svg v-icon__svg--search" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/search.svg#search"></use></svg>            Search
+        </button>
+          </div></div></div><div class="mobilemenu__panel" id="mobilemenu-panel-4" data-mobilemenu-index="4">	<nav class="mobilemenu__nav">		<button class="mobilemenu__panel-close" title="Day Pass"><svg class="v-icon__svg v-icon__svg--chevron-light" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/chevron--light.svg#chevron--light"></use></svg>Day Pass		</button>		<a class="mobilemenu__a" href="https://www.pagosahotsprings.com/day-pass/" title="View All">View All</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/day-pass/" title="Buy A Day Pass">Buy A Day Pass</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/hot-springs/pool-map/" title="Pool Details Map">Pool Details Map</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/hot-springs/our-healing-waters/" title="Our Healing Waters">Our Healing Waters</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/hot-springs/memberships/" title="Memberships">Memberships</a><a class="mobilemenu__a" href="https://www.pagosahotsprings.com/general-faqs/" title="FAQs">FAQs</a>	</nav><div class="mobilemenu__utility">  <button class="link link__btn link__btn--green" aria-label="Open Booking Request Form" data-remodal-target="booking-widget--modal" data-buildingcode="" data-roomtype="" data-ratecode="">Resort Reservations</button>  <div class="mobilemenu__utility-links"><a class="mobilemenu__utility-link mobilemenu__shop" href="https://pagosahotsprings.store/" title="Shop" target="_blank"><svg class="v-icon__svg v-icon__svg--shop" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/shop.svg#shop"></use></svg>Shop</a>            <a class="mobilemenu__utility-link mobilemenu__call" href="tel:+1800-225-0934" title="Call Us by Phone" >
+                <svg class="v-icon__svg v-icon__svg--telephone-link" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/telephone-link.svg#telephone-link"></use></svg>                Call
+            </a>
+                <button class="mobilemenu__toggle mobilemenu__toggle--search js-search-bar-toggle" aria-label="Toggle Search Bar">
+            <svg class="v-icon__svg v-icon__svg--search" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/search.svg#search"></use></svg>            Search
+        </button>
+          </div></div></div></div>
+
+
+</header>
+
+	<section id="hero" class="hero-medium">
+
+
+    <div class="hero-glide">
+		  <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+			    
+            <!-- Slider item -->
+            <li class="glide__slide item image-active item-image item-0 middle-center">
+              <div class="gradient-top"></div>
+              <div class="gradient-bottom"></div>
+
+              <picture class="basic-picture">
+<source data-srcset="https://www.pagosahotsprings.com/content/uploads/2020/12/homepage-1920x702.jpeg" media="(min-width: 1440px)">
+<source data-srcset="https://www.pagosahotsprings.com/content/uploads/2020/12/homepage-1440x630.jpeg" media="(min-width: 1280px)">
+<source data-srcset="https://www.pagosahotsprings.com/content/uploads/2020/12/homepage-1280x608.jpeg" media="(min-width: 1024px)">
+<source data-srcset="https://www.pagosahotsprings.com/content/uploads/2020/12/homepage-1024x772.jpeg" media="(min-width: 768px)">
+<source data-srcset="https://www.pagosahotsprings.com/content/uploads/2020/12/homepage-768x618.jpeg" media="(min-width: 360px)">
+<img class="lazyload" data-src="https://www.pagosahotsprings.com/content/uploads/2020/12/homepage-1920x702.jpeg" alt="Homepage" />
+</picture>
+
+              
+              <!-- Inner, hero content -->
+              <div class="hero-content">
+                              </div>
+
+            </li>
+
+                  </ul>
+		  </div>
+          </div>
+
+
+	</section>
+
+	<nav class="breadcrumbs" aria-label="Breadcrumbs">
+		<div class="breadcrumbs__wrapper container-fluid">
+						<ol class="breadcrumbs__list">
+				<li class="breadcrumbs__item">
+										<a class="breadcrumbs__link body-3" href="https://www.pagosahotsprings.com" title="Return to Homepage">Home</a>
+				</li>
+				
+				<li class="breadcrumbs__item">
+					<a href="https://www.pagosahotsprings.com/celebrating-world-bathing-day-at-the-springs-resort-a-journey-into-the-history-of-relaxation/" class="breadcrumbs__link breadcrumbs__link--current body-3" aria-current="page">Celebrating World Bathing Day at The Springs Resort: A Journey into the History of Relaxation</a>
+				</li>
+			</ol>
+		</div>
+	</nav>
+    <div class="mail-signup__form">
+        <button class="mail-signup__close" ><svg class="v-icon__svg v-icon__svg--close" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/close.svg#close"></use></svg> Close</button>
+        <div class="mail-signup__header">
+            <h4 class="heading-4 title">Don't Miss Out!</h4>
+            <div class="sub-title">Sign up for deals, news & more.</div>
+        </div>
+        <div class="g-form">
+            <script type="text/javascript"></script>
+                <div class='gf_browser_unknown gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework' data-form-theme='legacy' data-form-index='0' id='gform_wrapper_1' ><div id='gf_1' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_1' id='gform_1'  action='/content/uploads/2021/02/Rafting-690x440.jpg#gf_1' data-formid='1' >
+                        <div class='gform-body gform_body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id="field_1_1"  class="gfield gfield--type-text gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_1_1"><label class='gfield_label gform-field-label' for='input_1_1' >First Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_1' id='input_1_1' type='text' value='' class='medium'    placeholder='First Name' aria-required="true" aria-invalid="false"   /> </div></li><li id="field_1_6"  class="gfield gfield--type-text gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_1_6"><label class='gfield_label gform-field-label' for='input_1_6' >Last Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_6' id='input_1_6' type='text' value='' class='medium'    placeholder='Last Name' aria-required="true" aria-invalid="false"   /> </div></li><li id="field_1_3"  class="gfield gfield--type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_1_3"><label class='gfield_label gform-field-label' for='input_1_3' >Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_3' id='input_1_3' type='text' value='' class='medium'   placeholder='Email Address' aria-required="true" aria-invalid="false"  />
+                        </div></li><li id="field_1_7"  class="gfield gfield--type-phone gfield--width-full field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_1_7"><label class='gfield_label gform-field-label' for='input_1_7' >Cellphone Number</label><div class='ginput_container ginput_container_phone'><input name='input_7' id='input_1_7' type='text' value='' class='large'  placeholder='Cellphone Number'  aria-invalid="false"   /></div></li><li id="field_1_4"  class="gfield gfield--type-select field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_1_4"><label class='gfield_label gform-field-label' for='input_1_4' >State</label><div class='ginput_container ginput_container_select'><select name='input_4' id='input_1_4' class='medium gfield_select'     aria-invalid="false" ><option value='State' selected='selected'>State</option><option value='Alabama' >Alabama</option><option value='Alaska' >Alaska</option><option value='Arizona' >Arizona</option><option value='Arkansas' >Arkansas</option><option value='California' >California</option><option value='Colorado' >Colorado</option><option value='Connecticut' >Connecticut</option><option value='Delaware' >Delaware</option><option value='Florida' >Florida</option><option value='Georgia' >Georgia</option><option value='Hawaii' >Hawaii</option><option value='Idaho' >Idaho</option><option value='Illinois' >Illinois</option><option value='Indiana' >Indiana</option><option value='Iowa' >Iowa</option><option value='Kansas' >Kansas</option><option value='Kentucky' >Kentucky</option><option value='Louisiana' >Louisiana</option><option value='Maine' >Maine</option><option value='Maryland' >Maryland</option><option value='Massachusetts' >Massachusetts</option><option value='Michigan' >Michigan</option><option value='Minnesota' >Minnesota</option><option value='Mississippi' >Mississippi</option><option value='Missouri' >Missouri</option><option value='Montana' >Montana</option><option value='Nebraska' >Nebraska</option><option value='Nevada' >Nevada</option><option value='New Hampshire' >New Hampshire</option><option value='New Jersey' >New Jersey</option><option value='New Mexico' >New Mexico</option><option value='New York' >New York</option><option value='North Carolina' >North Carolina</option><option value='North Dakota' >North Dakota</option><option value='Ohio' >Ohio</option><option value='Oklahoma' >Oklahoma</option><option value='Oregon' >Oregon</option><option value='Pennsylvania' >Pennsylvania</option><option value='Rhode Island' >Rhode Island</option><option value='South Carolina' >South Carolina</option><option value='South Dakota' >South Dakota</option><option value='Tennessee' >Tennessee</option><option value='Texas' >Texas</option><option value='Utah' >Utah</option><option value='Vermont' >Vermont</option><option value='Virginia' >Virginia</option><option value='Washington' >Washington</option><option value='West Virginia' >West Virginia</option><option value='Wisconsin' >Wisconsin</option><option value='Wyoming' >Wyoming</option></select></div></li><li id="field_1_5"  class="gfield gfield--type-checkbox gfield--type-choice gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_1_5"><label class='gfield_label gform-field-label gfield_label_before_complex'  >Agreement<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_checkbox'><ul class='gfield_checkbox' id='input_1_5'><li class='gchoice gchoice_1_5_1'>
+								<input class='gfield-choice-input' name='input_5.1' type='checkbox'  value='I agree to receive emails and/or texts from The Springs Resort &amp; Spa.'  id='choice_1_5_1'   />
+								<label for='choice_1_5_1' id='label_1_5_1' class='gform-field-label gform-field-label--type-inline'>I agree to receive emails and/or texts from The Springs Resort & Spa.</label>
+							</li></ul></div></li><li id="field_1_8"  class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below gfield_visibility_visible"  data-js-reload="field_1_8"><label class='gfield_label gform-field-label' for='input_1_8' >Phone</label><div class='ginput_container'><input name='input_8' id='input_1_8' type='text' value='' /></div><div class='gfield_description' id='gfield_description_1_8'>This field is for validation purposes and should be left unchanged.</div></li></ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Submit'  onclick='if(window["gf_submitting_1"]){return false;}  window["gf_submitting_1"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_1"]){return false;} window["gf_submitting_1"]=true;  jQuery("#gform_1").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=1&amp;title=&amp;description=&amp;tabindex=0&amp;theme=data-form-theme=&#039;legacy&#039;' />
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsImM5NmQyMGZkZjI5MDBhOTMwZjZkMTk3Y2U4YWQ0YTZkIl0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+		                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_1' id='gform_ajax_frame_1' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
+		                <script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {gformInitSpinner( 1, 'https://www.pagosahotsprings.com/content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_1').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_1');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_1').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_1').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_1').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_1').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_1').val();gformInitSpinner( 1, 'https://www.pagosahotsprings.com/content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [1, current_page]);window['gf_submitting_1'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_1').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_1').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [1]);window['gf_submitting_1'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_1').text());}, 50);}else{jQuery('#gform_1').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [1, current_page]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 1, currentPage: current_page } });} );} ); 
+/* ]]> */
+</script>
+        </div>
+    </div>
+
+    <button class="mail-signup__button">
+Get Offers!<svg class="v-icon__svg v-icon__svg--glide-arrow" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/glide-arrow.svg#glide-arrow"></use></svg>    </button>
+
+<section class="not-found">
+    <div class="not-found__inner section-spacer wysiwyg">
+        <h2 class="title" style="text-align: center;">Oops! We can’t find the page you requested.</h2>
+<p style="text-align: center;"><a class="btn btn--large btn--blue link link--purple" href="https://www.pagosahotsprings.com/">Return to the homepage</a></p>
+    </div>
+</section>
+
+
+<footer class="footer">
+    
+    <picture class="footer-bg cover-picture">
+        <source media="(min-width:1440px)"  data-srcset="https://www.pagosahotsprings.com/content/themes/base/assets/img/backgrounds/footer-1440.png">
+        <source media="(min-width:1280px)"  data-srcset="https://www.pagosahotsprings.com/content/themes/base/assets/img/backgrounds/footer-1280.png">
+        <source media="(min-width:1024px)"  data-srcset="https://www.pagosahotsprings.com/content/themes/base/assets/img/backgrounds/footer-1024.png">
+        <source media="(min-width:768px)"   data-srcset="https://www.pagosahotsprings.com/content/themes/base/assets/img/backgrounds/footer-768.png">
+        <source media="(min-width:0)"       data-srcset="https://www.pagosahotsprings.com/content/themes/base/assets/img/backgrounds/footer-0.png">
+        <img class="footer-bg__img lazyload" data-src="https://www.pagosahotsprings.com/content/themes/base/assets/img/backgrounds/footer-1440.png" alt="Ariel View of The Springs">
+    </picture>
+
+    <div class="footer-email">
+        <div class="footer-email__container ">
+            <h3 class="heading-3">Sign up for special offers</h3>
+        <div class="g-form">
+            
+                <div class='gf_browser_unknown gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework footer-form_wrapper' data-form-theme='legacy' data-form-index='0' id='gform_wrapper_2' ><div id='gf_2' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_2' id='gform_2' class='footer-form' action='/content/uploads/2021/02/Rafting-690x440.jpg#gf_2' data-formid='2' >
+                        <div class='gform-body gform_body'><ul id='gform_fields_2' class='gform_fields top_label form_sublabel_below description_below'><li id="field_2_1"  class="gfield gfield--type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_2_1"><label class='gfield_label gform-field-label' for='input_2_1' >Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_1' id='input_2_1' type='text' value='' class='medium'   placeholder='Email Address' aria-required="true" aria-invalid="false"  />
+                        </div></li><li id="field_2_2"  class="gfield gfield--type-checkbox gfield--type-choice gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_2_2"><label class='gfield_label gform-field-label gfield_label_before_complex'  >Agreement<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_checkbox'><ul class='gfield_checkbox' id='input_2_2'><li class='gchoice gchoice_2_2_1'>
+								<input class='gfield-choice-input' name='input_2.1' type='checkbox'  value='I agree to receive emails from The Springs Resort &amp; Spa.'  id='choice_2_2_1'   />
+								<label for='choice_2_2_1' id='label_2_2_1' class='gform-field-label gform-field-label--type-inline'>I agree to receive emails from The Springs Resort & Spa.</label>
+							</li></ul></div></li><li id="field_2_3"  class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below gfield_visibility_visible"  data-js-reload="field_2_3"><label class='gfield_label gform-field-label' for='input_2_3' >Comments</label><div class='ginput_container'><input name='input_3' id='input_2_3' type='text' value='' /></div><div class='gfield_description' id='gfield_description_2_3'>This field is for validation purposes and should be left unchanged.</div></li></ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_2' class='gform_button button' value='Subscribe'  onclick='if(window["gf_submitting_2"]){return false;}  window["gf_submitting_2"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_2"]){return false;} window["gf_submitting_2"]=true;  jQuery("#gform_2").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=2&amp;title=&amp;description=&amp;tabindex=0&amp;theme=data-form-theme=&#039;legacy&#039;' />
+            <input type='hidden' class='gform_hidden' name='is_submit_2' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='2' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_2' value='WyJbXSIsImM5NmQyMGZkZjI5MDBhOTMwZjZkMTk3Y2U4YWQ0YTZkIl0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_2' id='gform_target_page_number_2' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_2' id='gform_source_page_number_2' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+		                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_2' id='gform_ajax_frame_2' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
+		                <script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {gformInitSpinner( 2, 'https://www.pagosahotsprings.com/content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_2').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_2');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_2').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_2').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_2').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_2').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_2').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_2').val();gformInitSpinner( 2, 'https://www.pagosahotsprings.com/content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [2, current_page]);window['gf_submitting_2'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_2').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_2').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [2]);window['gf_submitting_2'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_2').text());}, 50);}else{jQuery('#gform_2').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [2, current_page]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 2, currentPage: current_page } });} );} ); 
+/* ]]> */
+</script>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer-main">
+        <a class="footer-logo__a" href="/" title="Return to Homepage">        <img class="footer-logo lazyload" data-src="https://www.pagosahotsprings.com/content/themes/base/assets/img/logos/logo.svg" alt="The Springs Resort Logo" />
+		</a>
+                    <ul class="footer-contacts">
+                                <li class="footer-contacts__li"><address>323 Hot Springs Blvd, Pagosa Springs, CO 81147</address></li>
+                                                <li class="footer-contacts__li">Call us at <a href="tel:+1800-225-0934" title="Contact Us by Phone">800-225-0934</a></li>
+                                                <li class="footer-contacts__li"><a href="/cdn-cgi/l/email-protection#fa93949c95ba8a9b9d95899b92958e898a8893949d89d4999597" title="Contact Us by Email"><span class="__cf_email__" data-cfemail="9af3f4fcf5daeafbfdf5e9fbf2f5eee9eae8f3f4fde9b4f9f5f7">[email&#160;protected]</span></a></li>
+                            </ul>
+        
+        <ul id="menu-footer-primary" class="footer-menu"><li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71"><a href="https://www.pagosahotsprings.com/resort/getting-here/">Getting Here</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://www.pagosahotsprings.com/resort/gift-cards/">Gift Cards</a></li>
+<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="https://www.pagosahotsprings.com/accessibility/">Accessibility</a></li>
+<li id="menu-item-1956" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1956"><a href="https://www.pagosahotsprings.com/press-media/">Press &#038; Media</a></li>
+<li id="menu-item-1957" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1957"><a href="https://www.pagosahotsprings.com/careers/">Careers</a></li>
+<li id="menu-item-1958" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1958"><a href="https://www.pagosahotsprings.com/resort-policies/">Resort Policies</a></li>
+<li id="menu-item-1959" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1959"><a href="https://www.pagosahotsprings.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-9489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9489"><a href="https://www.pagosahotsprings.com/invite/">Refer a Friend</a></li>
+</ul>
+                    <span class="footer-copyright">&copy; 2026 The Springs Resort & Spa. All Rights Reserved.        
+    </div>
+
+</footer>
+
+<section data-exit-intent="1" data-expiry="30" class="pop-up pop-up-exit-intent" id="site-pop-up">
+	<div class="pop-up__wrapper">
+		<button type="button" class="pop-up__close js-pop-up-close"><svg class="v-icon__svg v-icon__svg--close" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/close.svg#close"></use></svg>Close</button>
+		<div class="pop-up__inner pop-up__background pop-up__background--ocean">
+			
+
+<picture class="pop-up__modal-image">
+			<source media="(min-width: 1280px)" data-srcset="https://www.pagosahotsprings.com/content/uploads/2025/09/Tufa-Turnout-Drone-375x650.png" srcset="">
+			<source media="(min-width: 1024px)" data-srcset="https://www.pagosahotsprings.com/content/uploads/2025/09/Tufa-Turnout-Drone-375x600.png" srcset="">
+			<source media="(min-width: 768px)" data-srcset="https://www.pagosahotsprings.com/content/uploads/2025/09/Tufa-Turnout-Drone-250x750.png" srcset="">
+			<source media="(min-width: 0px)" data-srcset="https://www.pagosahotsprings.com/content/uploads/2025/09/Tufa-Turnout-Drone-670x275.png" srcset="">
+		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+	     data-src="https://www.pagosahotsprings.com/content/uploads/2025/09/Tufa-Turnout-Drone-375x650.png"
+	     alt=""
+	     class="lazyload"
+	     draggable="false"
+	     style="object-position: 50%">
+</picture>		<div class="pop-up__content">
+				<h2 class="pop-up__heading">Get first dibs on special rates, event passes & more.</h2>
+		
+					<div class="pop-up__wysiwyg wysiwyg">
+				<p>Seasonal promotions, spa specials, and dining invites. Tell us what you love, and we’ll send you offers and updates made just for you.</p>
+			</div>
+		
+						<div class="pop-up__form">
+					
+                <div class='gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework' data-form-theme='gravity-theme' data-form-index='0' id='gform_wrapper_25' ><div id='gf_25' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_25' id='gform_25'  action='/content/uploads/2021/02/Rafting-690x440.jpg#gf_25' data-formid='25' >
+                        <div class='gform-body gform_body'><div id='gform_fields_25' class='gform_fields top_label form_sublabel_below description_below'><div id="field_25_5"  class="gfield gfield--type-email gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_25_5"><label class='gfield_label gform-field-label' for='input_25_5' >Email Address<span class="gfield_required"><span class="gfield_required gfield_required_text">(Required)</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_5' id='input_25_5' type='text' value='' class='large'    aria-required="true" aria-invalid="false"  />
+                        </div></div><fieldset id="field_25_3"  class="gfield gfield--type-checkbox gfield--type-choice gfield--width-full field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_25_3"><legend class='gfield_label gform-field-label gfield_label_before_complex'  >Interest</legend><div class='ginput_container ginput_container_checkbox'><div class='gfield_checkbox' id='input_25_3'><div class='gchoice gchoice_25_3_1'>
+								<input class='gfield-choice-input' name='input_3.1' type='checkbox'  value='Day Experiences'  id='choice_25_3_1'   />
+								<label for='choice_25_3_1' id='label_25_3_1' class='gform-field-label gform-field-label--type-inline'>Day Experiences</label>
+							</div><div class='gchoice gchoice_25_3_2'>
+								<input class='gfield-choice-input' name='input_3.2' type='checkbox'  value='Overnight Stays'  id='choice_25_3_2'   />
+								<label for='choice_25_3_2' id='label_25_3_2' class='gform-field-label gform-field-label--type-inline'>Overnight Stays</label>
+							</div><div class='gchoice gchoice_25_3_3'>
+								<input class='gfield-choice-input' name='input_3.3' type='checkbox'  value='Thermal Spa'  id='choice_25_3_3'   />
+								<label for='choice_25_3_3' id='label_25_3_3' class='gform-field-label gform-field-label--type-inline'>Thermal Spa</label>
+							</div><div class='gchoice gchoice_25_3_4'>
+								<input class='gfield-choice-input' name='input_3.4' type='checkbox'  value='Wild Finch'  id='choice_25_3_4'   />
+								<label for='choice_25_3_4' id='label_25_3_4' class='gform-field-label gform-field-label--type-inline'>Wild Finch</label>
+							</div><div class='gchoice gchoice_25_3_5'>
+								<input class='gfield-choice-input' name='input_3.5' type='checkbox'  value='All of the Above'  id='choice_25_3_5'   />
+								<label for='choice_25_3_5' id='label_25_3_5' class='gform-field-label gform-field-label--type-inline'>All of the Above</label>
+							</div></div></div></fieldset><fieldset id="field_25_6"  class="gfield gfield--type-consent gfield--type-choice gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible"  data-js-reload="field_25_6"><legend class='gfield_label gform-field-label gfield_label_before_complex'  >Consent<span class="gfield_required"><span class="gfield_required gfield_required_text">(Required)</span></span></legend><div class='ginput_container ginput_container_consent'><input name='input_6.1' id='input_25_6_1' type='checkbox' value='1'   aria-required="true" aria-invalid="false"   /> <label class="gform-field-label gform-field-label--type-inline gfield_consent_label" for='input_25_6_1' >I agree to receive emails from The Springs Resort.<span class="gfield_required gfield_required_text">(Required)</span></label><input type='hidden' name='input_6.2' value='I agree to receive emails from The Springs Resort.' class='gform_hidden' /><input type='hidden' name='input_6.3' value='1' class='gform_hidden' /></div></fieldset></div></div>
+        <div class='gform_footer before'> <input type='submit' id='gform_submit_button_25' class='gform_button button' value='Stay Connected'  onclick='if(window["gf_submitting_25"]){return false;}  window["gf_submitting_25"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_25"]){return false;} window["gf_submitting_25"]=true;  jQuery("#gform_25").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=25&amp;title=&amp;description=&amp;tabindex=0&amp;theme=data-form-theme=&#039;gravity-theme&#039;' />
+            <input type='hidden' class='gform_hidden' name='is_submit_25' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='25' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_25' value='WyJ7XCIzLjFcIjpcIjg4NTc1MGM0ZjJmYzM2NjY5NmE5YTczMmUyNzVmMDAxXCIsXCIzLjJcIjpcIjM3N2FkYWQ0ZjE0MThhOTY2YmE5MTZhYzAwYTMzZTVlXCIsXCIzLjNcIjpcIjE0ZThjNDhhYWY4YzAwZTNjMWIxYWNkMmNiMTEyMjJkXCIsXCIzLjRcIjpcImFiMGNjYWZhMjE2YjU2MGI0MzI3ZWQyNTRjZDU5NmRiXCIsXCIzLjVcIjpcIjhkMmEzYzY0OWQxYjY3NDM2ZmZkZmI0MTRkMmE1ZDFjXCIsXCI2LjFcIjpcImE3MDRiMWU2Y2U1OGE2N2MwMDYwNTVhMjgwOGVlNTZjXCIsXCI2LjJcIjpcIjU1ZDFiODM0NTlhMmIxMzBmMWQzZTlmYWZhNzdlODEyXCIsXCI2LjNcIjpcImE3MDRiMWU2Y2U1OGE2N2MwMDYwNTVhMjgwOGVlNTZjXCJ9IiwiM2I0MmU0YWFkYTJiYzJhZDAyZmZiYmU3ZDY3ZjgyZTMiXQ==' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_25' id='gform_target_page_number_25' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_25' id='gform_source_page_number_25' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+		                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_25' id='gform_ajax_frame_25' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
+		                <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {gformInitSpinner( 25, 'https://www.pagosahotsprings.com/content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_25').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_25');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_25').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_25').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_25').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_25').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_25').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_25').val();gformInitSpinner( 25, 'https://www.pagosahotsprings.com/content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [25, current_page]);window['gf_submitting_25'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_25').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_25').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [25]);window['gf_submitting_25'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_25').text());}, 50);}else{jQuery('#gform_25').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [25, current_page]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 25, currentPage: current_page } });} );} ); 
+/* ]]> */
+</script>
+				</div>
+				</div>
+		</div>
+	</div>
+</section>
+
+	
+	<div class="booking-overlay js-booking-overlay">
+		<div class="booking-overlay__inner">
+						<div class="booking-overlay__header">
+				<h3 class="booking-overlay__heading js-booking-heading-text">Book A Room</h3>
+				<button class="booking-overlay__close js-booking-close">Close<svg class="v-icon__svg v-icon__svg--close" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/close.svg#close"></use></svg></button>
+			</div>
+
+						<div class="booking-overlay__tab-buttons">
+				<button id="booking-btn-rooms" class="booking-overlay__tab-button js-booking-tab-btn active"
+				        role="tab" aria-selected="true" aria-controls="booking-tab-rooms">Rooms</button>
+				<button id="booking-btn-spa" class="booking-overlay__tab-button js-booking-tab-btn"
+				        role="tab" aria-selected="false" aria-controls="booking-tab-spa">Spa</button>
+				<button id="booking-btn-activities" class="booking-overlay__tab-button js-booking-tab-btn"
+				        role="tab" aria-selected="false" aria-controls="booking-tab-activities">Activities</button>
+				<button id="booking-btn-day-pass" class="booking-overlay__tab-button js-booking-tab-btn"
+				        role="tab" aria-selected="false" aria-controls="booking-tab-day-pass">Day Pass</button>
+			</div>
+
+						<div class="booking-overlay__tabs js-booking-overlay-tabs">
+								<div id="booking-tab-rooms" class="booking-overlay__tab booking-overlay__tab--rooms js-booking-tab active"
+				     role="tabpanel" aria-labelledby="booking-btn-rooms">
+					<form action="https://www.reseze.net/servlet/WebresShowAvailable" method="get" target="_blank"
+					      class="booking-overlay__form js-booking-overlay-form js-booking-overlay-form--rooms">
+												<input type="hidden" class="" name="hotelid" value="1747" />
+						<input type="hidden" class="js-booking-input-buildingCode" name="buildingCode" value="any" />
+						<input type="hidden" class="" name="numberRooms" value="1" />
+						<input type="hidden" class="" name="facType" value="relax" />
+						<input type="hidden" class="js-booking-input-arrivalDate"   name="arrivalDate"  value="20260219" />
+						<input type="hidden" class="js-booking-input-nightsStay"    name="nightsStay"   value="1" />
+						<input type="hidden" class="js-booking-input-adults"        name="adults"       value="2" min="1" max="8" />
+						<input type="hidden" class="js-booking-input-children"      name="children"     value="0" min="0" max="7" />
+						<input type="hidden" class="js-booking-input-rateCode"      name="rateCode"     value="" />
+						<input type="hidden" class="js-booking-input-roomType"      name="roomType"     value="any" />
+
+												<div class="booking-overlay__block js-booking-toggle" data-input="js-booking-input-roomType">
+							<button class="booking-overlay__field booking-overlay__field--dropdown js-booking-toggle-button" type="button">All Rooms</button>
+
+							<div class=" booking-overlay__toggle-block booking-overlay__toggle-block--dropdown js-booking-toggle-block">
+								<button class="dropdown__button js-booking-dropdown-button" type="button" data-value="any">All Rooms</button>
+																	<button class="dropdown__button js-booking-dropdown-button" type="button"
+									        data-value="b1">
+										Main Rooms &amp; Suites (NEW 2025)									</button>
+																	<button class="dropdown__button js-booking-dropdown-button" type="button"
+									        data-value="b2">
+										Classic Rooms									</button>
+																	<button class="dropdown__button js-booking-dropdown-button" type="button"
+									        data-value="b3">
+										Deluxe Rooms									</button>
+																	<button class="dropdown__button js-booking-dropdown-button" type="button"
+									        data-value="b4">
+										Lodge Rooms &amp; Suites									</button>
+															</div>
+						</div>
+
+												<div class="booking-overlay__block">
+							<button class="booking-overlay__field booking-overlay__field--date js-booking-litepicker" type="button" aria-label="check in and check out dates" data-date-type="range"
+							        data-input-arrival="js-booking-input-arrivalDate" data-input-departure="js-booking-input-departureDate" data-input-nights="js-booking-input-nightsStay">
+								Check in/Check out
+							</button>
+						</div>
+
+												<div class="booking-overlay__block js-booking-toggle">
+							<button class="booking-overlay__field booking-overlay__field--guest js-booking-toggle-button js-booking-num-guests" type="button">
+								2 Adults, 0 Children
+							</button>
+
+							<div class="booking-overlay__toggle-block booking-overlay__toggle-block--guests js-booking-toggle-block">
+								<div class="guests__wrapper js-booking-guest-wrapper" data-input="js-booking-input-adults">
+									<span class="guests__text">Adults</span>
+									<button class="guests__button js-booking-guest-button" type="button" data-increment="plus"><svg class="v-icon__svg v-icon__svg--booking-icon-plus" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/booking-icon--plus.svg#booking-icon--plus"></use></svg></button>
+									<span class="guests__value js-booking-guest-value">2</span>
+									<button class="guests__button js-booking-guest-button" type="button" data-increment="minus"><svg class="v-icon__svg v-icon__svg--booking-icon-minus" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/booking-icon--minus.svg#booking-icon--minus"></use></svg></button>
+								</div>
+
+								<div class="guests__wrapper js-booking-guest-wrapper" data-input="js-booking-input-children">
+									<span class="guests__text">Children</span>
+									<button class="guests__button js-booking-guest-button" type="button" data-increment="plus"><svg class="v-icon__svg v-icon__svg--booking-icon-plus" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/booking-icon--plus.svg#booking-icon--plus"></use></svg></button>
+									<span class="guests__value js-booking-guest-value">0</span>
+									<button class="guests__button js-booking-guest-button" type="button" data-increment="minus"><svg class="v-icon__svg v-icon__svg--booking-icon-minus" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/booking-icon--minus.svg#booking-icon--minus"></use></svg></button>
+								</div>
+							</div>
+						</div>
+
+												<div class="booking-overlay__block">
+							<input class="booking-overlay__field booking-overlay__field--promo js-booking-input-field" type="text" value placeholder="Promo Code" data-input="js-booking-input-rateCode" />
+						</div>
+
+                                                    <div class="wysiwyg booking-overlay__description-text booking-overlay__description-text--booking">
+                                <p><strong data-start="536" data-end="561">Book Now &amp; Save Later<br />
+</strong>Save 20% with advance purchase when you book 14+ days ahead using promo code BOOKNOW. Non-refundable. Limited availability.</p>
+<p data-start="1295" data-end="1496" data-is-last-node="" data-is-only-node="">
+<p data-start="459" data-end="534">
+                            </div>
+                        
+						<button class="link link__btn link__btn--green booking-overlay__submit" type="submit">Check Rates</button>
+					</form>
+				</div>
+
+
+								<div id="booking-tab-spa" class="booking-overlay__tab js-booking-tab"
+				     role="tabpanel" aria-labelledby="booking-btn-spa">
+					<div class="booking-overlay__tab-inner">
+													<div class="wysiwyg booking-overlay__description-text booking-overlay__description-text--spa">
+								<p><strong>Hotel Guests:</strong> enjoy $40 off the online pricing. <em>Discount can be applied at check-in.</em></p>
+<p><strong>Spa Guests:</strong> online bookings includes 2 hours of Spa &amp; Wellness Pool access, plus all day access to the Original Pools.</p>
+<p><strong>Local Residents:</strong> enjoy $20 off the online pricing. <em>Discount can be applied at check-in.</em></p>
+<p><strong>#1 Spa Resort</strong> &#8211; USA TODAY 10BEST 2025<br />
+<strong>#1 Hot Springs</strong> &#8211; USA TODAY 10BES<strong data-renderer-mark="true"><span class="subtitle callout" style="font-weight: 300;">T 2025</span></strong></p>
+							</div>
+						
+												<div class="booking-overlay__block  js-booking-toggle">
+							<button class="booking-overlay__field booking-overlay__field--dropdown js-booking-toggle-button" type="button">Visit Type</button>
+
+							<div class="booking-overlay__toggle-block booking-overlay__toggle-block--dropdown js-booking-toggle-block">
+								<button class="dropdown__button js-booking-dropdown-button" type="button" data-panel="js-booking-toggle-panel--hotel-guest">Hotel Guest</button>
+								<button class="dropdown__button js-booking-dropdown-button" type="button" data-panel="js-booking-toggle-panel--day-guest">Day Guest</button>
+							</div>
+						</div>
+
+												<div class="booking-overlay__toggle-panel js-booking-toggle-panel js-booking-toggle-panel--hotel-guest">
+							<form action="https://www.reseze.net/spa2/start" method="get" target="_blank"
+							      class="booking-overlay__form js-booking-overlay-form js-booking-has-required">
+																<input type="hidden" class="" name="hotelid" value="1747" />
+								<input type="hidden" class="js-booking-input-lastName" name="lastName" value="" />
+								<input type="hidden" class="js-booking-input-resNum" name="rmConf" value="" />
+
+								<div class="booking-overlay__block">
+									<input class="booking-overlay__field js-booking-input-field js-booking-is-required" type="text" value
+									       placeholder="Last Name on Reservation" data-input="js-booking-input-lastName" />
+								</div>
+
+								<div class="booking-overlay__block">
+									<input class="booking-overlay__field js-booking-input-field js-booking-is-required" type="text" value
+									       placeholder="Reservation Number" data-input="js-booking-input-resNum" />
+								</div>
+
+								<button class="link link__btn link__btn--green booking-overlay__submit" type="submit">Explore Spa Services</button>
+							</form>
+						</div>
+
+												<div class="booking-overlay__toggle-panel js-booking-toggle-panel js-booking-toggle-panel--day-guest">
+							<form action="https://www.reseze.net/spa2/start" method="get" target="_blank"
+							      class="booking-overlay__form js-booking-overlay-form">
+																<input type="hidden" class="" name="hotelid" value="1747" />
+								<input type="hidden" class="js-booking-input-serviceDate" name="serviceDate"  value="20260219" />
+								<input type="hidden" class="js-booking-input-guests" name="numberGuests" value="1" min="1" max="6" />
+
+								<div class="booking-overlay__block">
+									<button class="booking-overlay__field booking-overlay__field--date js-booking-litepicker" type="button" aria-label="date of visit"
+									        data-date-type="single" data-input="js-booking-input-serviceDate">
+										Date of Visit
+									</button>
+								</div>
+
+								<div class="booking-overlay__block guests--single">
+									<div class="guests__wrapper js-booking-guest-wrapper" data-input="js-booking-input-guests">
+										<span class="guests__text">Number of Guests</span>
+										<button class="guests__button js-booking-guest-button" type="button" data-increment="plus"><svg class="v-icon__svg v-icon__svg--booking-icon-plus" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/booking-icon--plus.svg#booking-icon--plus"></use></svg></button>
+										<span class="guests__value js-booking-guest-value">1</span>
+										<button class="guests__button js-booking-guest-button" type="button" data-increment="minus"><svg class="v-icon__svg v-icon__svg--booking-icon-minus" role="presentation"><use xlink:href="/content/themes/base/assets/img/icons/booking-icon--minus.svg#booking-icon--minus"></use></svg></button>
+									</div>
+								</div>
+
+								<button class="link link__btn link__btn--green booking-overlay__submit" type="submit">Explore Spa Services</button>
+							</form>
+						</div>
+					</div>
+				</div>
+
+
+								<div id="booking-tab-activities" class="booking-overlay__tab js-booking-tab"
+				     role="tabpanel" aria-labelledby="booking-btn-activities">
+					<div class="booking-overlay__tab-inner">
+													<div class="wysiwyg booking-overlay__description-text booking-overlay__description-text--activities">
+								<p>Wellness Activities are available to overnight Resort Guests, Wellness Day Pass guests, and Ambassador Members.</p>
+<p><strong>Walk-ins are welcomed.</strong></p>
+							</div>
+						
+												<div class="booking-overlay__block js-booking-toggle">
+							<button class="booking-overlay__field booking-overlay__field--dropdown js-booking-toggle-button" type="button">Wellness Activities</button>
+
+							<div class="booking-overlay__toggle-block booking-overlay__toggle-block--dropdown js-booking-toggle-block">
+								<button class="dropdown__button js-booking-dropdown-button" type="button" data-panel="js-booking-toggle-panel--add-to-reservation">Add to Reservation</button>
+								<button class="dropdown__button js-booking-dropdown-button" type="button" data-panel="js-booking-toggle-panel--available-activities">Available Activities</button>
+							</div>
+						</div>
+
+												<div class="booking-overlay__toggle-panel js-booking-toggle-panel js-booking-toggle-panel--add-to-reservation">
+							<form action="https://www.reseze.net/servlet/FacilityQuery" method="get" target="_blank"
+							      class="booking-overlay__form js-booking-overlay-form js-booking-has-required">
+																<input type="hidden" class="" name="hotelid" value="1747" />
+								<input type="hidden" class="js-booking-input-lastName" name="lastName" value="" />
+								<input type="hidden" class="js-booking-input-resNum" name="rmConf" value="" />
+
+								<div class="booking-overlay__block">
+									<input class="booking-overlay__field js-booking-input-field js-booking-is-required" type="text" value
+									       placeholder="Last Name on Reservation" data-input="js-booking-input-lastName" />
+								</div>
+
+								<div class="booking-overlay__block">
+									<input class="booking-overlay__field js-booking-input-field js-booking-is-required" type="text" value
+									       placeholder="Reservation Number" data-input="js-booking-input-resNum" />
+								</div>
+
+								<button class="link link__btn link__btn--green booking-overlay__submit" type="submit">Search</button>
+							</form>
+						</div>
+
+												<div class="booking-overlay__toggle-panel js-booking-toggle-panel js-booking-toggle-panel--available-activities">
+							<form action="https://www.reseze.net/servlet/FacilityQuery" method="get" target="_blank"
+							      class="booking-overlay__form js-booking-overlay-form">
+																<input type="hidden" class="" name="hotelid" value="1747" />
+								<input type="hidden" class="js-booking-input-arrivalDate" name="arrivalDate" value="20260219" />
+
+								<div class="booking-overlay__block js-booking-toggle">
+									<button class="booking-overlay__field booking-overlay__field--date js-booking-litepicker" type="button" aria-label="date of visit"
+									        data-date-type="single" data-input="js-booking-input-arrivalDate">
+										Date of Visit
+									</button>
+								</div>
+
+								<button class="link link__btn link__btn--green booking-overlay__submit" type="submit">Search</button>
+							</form>
+						</div>
+					</div>
+				</div>
+
+
+								<div id="booking-tab-day-pass" class="booking-overlay__tab js-booking-tab"
+				     role="tabpanel" aria-labelledby="booking-btn-day-pass">
+					<div class="booking-overlay__tab-inner">
+													<div class="wysiwyg booking-overlay__description-text">
+								<p><strong>Day soaking is available 7 days a week, from 9:00 AM – 9:30 PM.</strong></p>
+<p>&nbsp;</p>
+<p><strong>#1 Spa Resort</strong> &#8211; USA TODAY 10BEST 2025<br />
+<strong>#1 Hot Springs</strong> &#8211; USA TODAY 10BES<strong data-renderer-mark="true"><span class="subtitle callout" style="font-weight: 300;">T 2025</span></strong></p>
+							</div>
+						
+						<a href="/day-pass/" title="Book day Pass" target="_blank" rel="noopener"
+						   class="link link__btn link__btn--green booking-overlay__submit">Book Day Pass</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script type="text/javascript" src="https://www.pagosahotsprings.com/wp/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script type="text/javascript" src="https://www.pagosahotsprings.com/wp/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="https://www.pagosahotsprings.com/wp/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/javascript" src="https://www.pagosahotsprings.com/wp/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script type="text/javascript" src="https://www.pagosahotsprings.com/wp/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://www.pagosahotsprings.com/wp/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.pagosahotsprings.com/wp/wp-includes/js/dist/a11y.min.js?ver=d90eebea464f6c09bfd5" id="wp-a11y-js"></script>
+
+
+
+<script type="text/javascript" id="gform_gravityforms_theme-js-extra">
+/* <![CDATA[ */
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"8346a88410bb2de6ba7e1bf7afd620e0"}}},"hmr_dev":"","public_path":"https:\/\/www.pagosahotsprings.com\/content\/plugins\/gravityforms\/assets\/js\/dist\/"};
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }jQuery('#input_1_7').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } ); 
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {jQuery(document).trigger('gform_post_render', [1, 1]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 1, currentPage: 1 } });} ); 
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 2) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } ); 
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {jQuery(document).trigger('gform_post_render', [2, 1]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 2, currentPage: 1 } });} ); 
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 25) {} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } ); 
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {jQuery(document).trigger('gform_post_render', [25, 1]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 25, currentPage: 1 } });} ); 
+/* ]]> */
+</script>
+</div> <!-- FareHarbor Lightframe API - do not remove - see: https://fareharbor.com/help/website/resources/lightframe-api/ -->
+<script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"></script>
+<script defer src="https://www.pagosahotsprings.com/content/cache/autoptimize/js/autoptimize_bcc1c60a354a50ae51df6fe1c862ed71.js"></script></body>
+</html>

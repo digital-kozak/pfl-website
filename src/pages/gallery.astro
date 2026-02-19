@@ -2,82 +2,82 @@
 import Layout from '../layouts/Layout.astro';
 
 const galleryImages = [
-  {
-    src: "/images/006-0278 14317 W US Hwy 160.jpg",
-    alt: "Cabin exterior with mountain backdrop",
-    category: "Exterior"
-  },
-  {
-    src: "/images/026-Aerial Interior_1.jpg",
-    alt: "Great room with stone fireplace",
-    category: "Interior"
-  },
-  {
-    src: "/images/036-Aerial Interior_7.jpg",
-    alt: "Luxury living space",
-    category: "Interior"
-  },
-  {
-    src: "/images/025-Aerial Interior.jpg",
-    alt: "Master bedroom suite",
-    category: "Bedrooms"
-  },
-  {
-    src: "/images/029-Aerial Interior_2.jpg",
-    alt: "Gourmet kitchen",
-    category: "Kitchen"
-  },
-  {
-    src: "/images/037-Aerial Interior_8.jpg",
-    alt: "Dining area with mountain views",
-    category: "Interior"
-  },
-  {
-    src: "/images/007-0279 14317 W US Hwy 160.jpg",
-    alt: "Private hot tub",
-    category: "Outdoor"
-  },
-  {
-    src: "/images/014-0287 14317 W US Hwy 160.jpg",
-    alt: "Cabin deck at sunset",
-    category: "Outdoor"
-  },
-  {
-    src: "/images/031-Aerial Interior_3.jpg",
-    alt: "Guest bedroom",
-    category: "Bedrooms"
-  },
-  {
-    src: "/images/033-Aerial Interior_5.jpg",
-    alt: "Living room seating area",
-    category: "Interior"
-  },
-  {
-    src: "/images/023-0350 14317 W. US Hwy 160.jpg",
-    alt: "Mountain landscape",
-    category: "Views"
-  },
-  {
-    src: "/images/008-0280 14317 W US Hwy 160.jpg",
-    alt: "Winter mountain view",
-    category: "Views"
-  }
+  // Hero Images
+  { src: "/images/pfl-stargazing.png", alt: "Stargazing at Pagosa Forest Lodge", category: "Exterior" },
+  { src: "/images/snowy-cabin.png", alt: "Snowy cabin at sunset", category: "Exterior" },
+  { src: "/images/hottub-snow.png", alt: "Hot tub with snow covered mountains", category: "Amenities" },
+  { src: "/images/snowy-cabin2.png", alt: "Winter cabin view", category: "Exterior" },
+
+  // Drone/Outside Images
+  { src: "/images/006-0278 14317 W US Hwy 160.jpg", alt: "Aerial view of cabin", category: "Exterior" },
+  { src: "/images/007-0279 14317 W US Hwy 160.jpg", alt: "Cabin exterior with mountain backdrop", category: "Exterior" },
+  { src: "/images/008-0280 14317 W US Hwy 160.jpg", alt: "Mountain sunset view", category: "Views" },
+  { src: "/images/014-0287 14317 W US Hwy 160.jpg", alt: "Cabin landscape", category: "Exterior" },
+  { src: "/images/018-0291 14317 W US Hwy 160.jpg", alt: "Aerial property view", category: "Exterior" },
+  { src: "/images/023-0350 14317 W. US Hwy 160.jpg", alt: "Cabin exterior detail", category: "Exterior" },
+  { src: "/images/128-0377 14317 W. US Hwy 160.jpg", alt: "Front deck view", category: "Exterior" },
+
+  // Living Room
+  { src: "/images/025-Aerial Interior.jpg", alt: "Great room fireplace", category: "Interior" },
+  { src: "/images/026-Aerial Interior_1.jpg", alt: "Living room seating area", category: "Interior" },
+  { src: "/images/029-Aerial Interior_2.jpg", alt: "Living space with views", category: "Interior" },
+  { src: "/images/031-Aerial Interior_3.jpg", alt: "Cozy seating area", category: "Interior" },
+  { src: "/images/033-Aerial Interior_5.jpg", alt: "Great room detail", category: "Interior" },
+  { src: "/images/036-Aerial Interior_7.jpg", alt: "Dining area", category: "Interior" },
+  { src: "/images/037-Aerial Interior_8.jpg", alt: "Living room corner", category: "Interior" },
+  { src: "/images/077-0001 14317 W. US Hwy 160.jpg", alt: "Interior living space", category: "Interior" },
+
+  // Kitchen
+  { src: "/images/042-102419263.jpg", alt: "Gourmet kitchen", category: "Kitchen" },
+  { src: "/images/043-102419320.jpg", alt: "Kitchen appliances", category: "Kitchen" },
+
+  // Master Bedroom
+  { src: "/images/054-102419308.jpg", alt: "Master bedroom king bed", category: "Bedrooms" },
+  { src: "/images/057-102419305.jpg", alt: "Master bedroom detail", category: "Bedrooms" },
+  { src: "/images/058-102419304.jpg", alt: "Master bedroom view", category: "Bedrooms" },
+  { src: "/images/060-0006 14317 W. US Hwy 160.jpg", alt: "Master bedroom sitting area", category: "Bedrooms" },
+
+  // Downstairs Queen
+  { src: "/images/078-102419273.jpg", alt: "Downstairs queen bedroom", category: "Bedrooms" },
+  { src: "/images/081-0009 14317 W. US Hwy 160.jpg", alt: "Queen bedroom detail", category: "Bedrooms" },
+  { src: "/images/082-102419269.jpg", alt: "Queen bedroom sitting area", category: "Bedrooms" },
+
+  // Upstairs Bunk
+  { src: "/images/092-102419253.jpg", alt: "Upstairs bunk room", category: "Bedrooms" },
+
+  // 4th Bedroom
+  { src: "/images/047-102419313.jpg", alt: "4th bedroom", category: "Bedrooms" },
+
+  // Game Room
+  { src: "/images/067-102419291.jpg", alt: "Game room view 1", category: "Interior" },
+  { src: "/images/069-102419289.jpg", alt: "Game room view 2", category: "Interior" },
+  { src: "/images/096-0007 14317 W. US Hwy 160.jpg", alt: "Game room view 3", category: "Interior" },
+  { src: "/images/basement-beds.jpg", alt: "Bunk beds in game room", category: "Bedrooms" },
+
+  // Laundry
+  { src: "/images/053-102419309.jpg", alt: "Laundry room", category: "Amenities" },
+
+  // Exterior/Web-optimized
+  { src: "/images/14317 W Hwy 160 Pagosa Springs-large-007-005-14317 W Hwy 160-1500x1000-72dpi.jpg", alt: "Cabin exterior web", category: "Exterior" },
+  { src: "/images/14317 W Hwy 160 Pagosa Springs-large-015-007-14317 W Hwy 160-1500x1000-72dpi.jpg", alt: "Deck web view", category: "Exterior" },
+  { src: "/images/14317 W Hwy 160 Pagosa Springs-large-070-072-14317 W Hwy 160-1500x844-72dpi.jpg", alt: "Property web view", category: "Exterior" },
+  { src: "/images/14317 W Hwy 160 Pagosa Springs-large-076-073-14317 W Hwy 160-1500x844-72dpi.jpg", alt: "Mountain sunset", category: "Views" },
 ];
 
-const categories = ["All", "Exterior", "Interior", "Bedrooms", "Kitchen", "Outdoor", "Views"];
+const categories = ["All", "Exterior", "Interior", "Bedrooms", "Kitchen", "Amenities", "Views"];
 ---
 
-<Layout title="Gallery | Pagosa Forest Lodge">
+<Layout title="Gallery | Pagosa Forest Lodge" description="View photos of Pagosa Forest Lodge - luxury mountain cabin with hot tub, stunning views, 4 bedrooms. See your Colorado getaway!">
   <!-- Hero -->
   <section class="relative py-32 hero-overlay">
     <div class="absolute inset-0 z-0">
-      <img 
-        src="/images/006-0278 14317 W US Hwy 160.jpg" 
-        alt="Gallery hero" 
+      <img
+        src="/images/gallery-hero-winter.jpg"
+        alt="Winter landscape with Chimney Rock"
         class="w-full h-full object-cover"
       />
     </div>
-    
+
     <div class="relative z-10 container-custom text-center text-white">
       <p class="text-sm uppercase tracking-[0.3em] mb-4">Visual Tour</p>
       <h1 class="font-serif text-5xl md:text-7xl">
@@ -97,9 +97,9 @@ const categories = ["All", "Exterior", "Interior", "Bedrooms", "Kitchen", "Outdo
       <!-- Filter Buttons -->
       <div class="flex flex-wrap justify-center gap-3 mb-12">
         {categories.map((category, index) => (
-          <button 
-            class={`filter-btn px-6 py-2 rounded-full text-sm font-medium transition-all ${index === 0 ? 'bg-[#0f1f0a] text-white' : 'bg-white text-[#0f1f0a] hover:bg-[#0f1f0a] hover:text-white'}`}
-            data-category={category}
+          <button
+            class={`filter-btn px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${index === 0 ? 'bg-[#0f1f0a] text-white' : 'bg-white text-[#0f1f0a] hover:bg-[#0f1f0a] hover:text-white'}`}
+            data-filter={category}
           >
             {category}
           </button>
@@ -107,27 +107,20 @@ const categories = ["All", "Exterior", "Interior", "Bedrooms", "Kitchen", "Outdo
       </div>
 
       <!-- Gallery Grid -->
-      <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="gallery-grid">
         {galleryImages.map((image, index) => (
-          <div 
-            class="gallery-item aspect-[4/3] overflow-hidden rounded-lg cursor-pointer group"
+          <div
+            class="gallery-item aspect-square overflow-hidden rounded-lg cursor-pointer group relative"
             data-category={image.category}
             data-index={index}
           >
-            <img 
-              src={image.src} 
+            <img
+              src={image.src}
               alt={image.alt}
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               loading="lazy"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div class="absolute inset-0 bg-[#0f1f0a]/0 group-hover:bg-[#0f1f0a]/40 transition-colors duration-300 flex items-center justify-center">
-              <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center">
-                <svg class="w-10 h-10 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
-                </svg>
-                <p class="text-sm font-medium">{image.category}</p>
-              </div>
-            </div>
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
           </div>
         ))}
       </div>
@@ -135,141 +128,128 @@ const categories = ["All", "Exterior", "Interior", "Bedrooms", "Kitchen", "Outdo
   </section>
 
   <!-- Lightbox -->
-  <div id="lightbox" class="fixed inset-0 z-50 hidden">
-    <div class="absolute inset-0 bg-black/95"></div>
-    
-    <!-- Close Button -->
-    <button id="lightbox-close" class="absolute top-4 right-4 z-10 w-12 h-12 flex items-center justify-center text-white/70 hover:text-white transition-colors">
+  <div id="lightbox" class="fixed inset-0 z-50 hidden bg-black/95 flex items-center justify-center">
+    <button id="lightbox-close" class="absolute top-4 right-4 text-white/80 hover:text-white z-10 p-2">
       <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
       </svg>
     </button>
-    
-    <!-- Navigation -->
-    <button id="lightbox-prev" class="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center text-white/70 hover:text-white transition-colors bg-black/30 rounded-full">
-      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+    <button id="lightbox-prev" class="absolute left-4 text-white/80 hover:text-white z-10 p-2">
+      <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
       </svg>
     </button>
-    
-    <button id="lightbox-next" class="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center text-white/70 hover:text-white transition-colors bg-black/30 rounded-full">
-      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+    <button id="lightbox-next" class="absolute right-4 text-white/80 hover:text-white z-10 p-2">
+      <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
       </svg>
     </button>
-    
-    <!-- Image Container -->
-    <div class="relative h-full flex items-center justify-center p-4 md:p-16">
-      <img id="lightbox-image" src="" alt="" class="max-w-full max-h-full object-contain">
-    </div>
-    
-    <!-- Caption -->
-    <div class="absolute bottom-4 left-0 right-0 text-center">
-      <p id="lightbox-caption" class="text-white/90 text-lg"></p>
-      <p id="lightbox-counter" class="text-white/50 text-sm mt-2"></p>
-    </div>
+
+    <img id="lightbox-img" src="" alt="" class="max-w-[90vw] max-h-[85vh] object-contain" />
+
+    <p id="lightbox-caption" class="absolute bottom-4 left-0 right-0 text-center text-white/80 text-sm px-4"></p>
   </div>
 
-  <script>
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImage = document.getElementById('lightbox-image');
-    const lightboxCaption = document.getElementById('lightbox-caption');
-    const lightboxCounter = document.getElementById('lightbox-counter');
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    
-    let currentIndex = 0;
-    let filteredItems = Array.from(galleryItems);
-    
-    // Filter functionality
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const category = btn.dataset.category;
-        
-        // Update button styles
-        filterBtns.forEach(b => {
-          b.classList.remove('bg-[#0f1f0a]', 'text-white');
-          b.classList.add('bg-white', 'text-[#0f1f0a]');
-        });
-        btn.classList.remove('bg-white', 'text-[#0f1f0a]');
-        btn.classList.add('bg-[#0f1f0a]', 'text-white');
-        
-        // Filter items
-        galleryItems.forEach(item => {
-          if (category === 'All' || item.dataset.category === category) {
-            item.style.display = 'block';
-          } else {
-            item.style.display = 'none';
-          }
-        });
-        
-        // Update filtered items array
-        filteredItems = category === 'All' 
-          ? Array.from(galleryItems)
-          : Array.from(galleryItems).filter(item => item.dataset.category === category && item.style.display !== 'none');
-      });
-    });
-    
-    // Open lightbox
-    galleryItems.forEach((item, index) => {
-      item.addEventListener('click', () => {
-        currentIndex = Array.from(galleryItems).indexOf(item);
-        openLightbox(currentIndex);
-      });
-    });
-    
-    function openLightbox(index) {
-      const item = galleryItems[index];
-      const img = item.querySelector('img');
-      const category = item.dataset.category;
+  <script is:inline define:vars={{ galleryImages }}>
+    (function() {
+      let currentIndex = 0;
       
-      lightboxImage.src = img.src;
-      lightboxCaption.textContent = img.alt;
-      lightboxCounter.textContent = `${index + 1} / ${galleryItems.length}`;
-      lightbox.classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
-    }
-    
-    function closeLightbox() {
-      lightbox.classList.add('hidden');
-      document.body.style.overflow = '';
-    }
-    
-    function showNext() {
-      currentIndex = (currentIndex + 1) % galleryItems.length;
-      openLightbox(currentIndex);
-    }
-    
-    function showPrev() {
-      currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
-      openLightbox(currentIndex);
-    }
-    
-    // Event listeners
-    document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
-    document.getElementById('lightbox-next').addEventListener('click', showNext);
-    document.getElementById('lightbox-prev').addEventListener('click', showPrev);
-    
-    // Close on backdrop click
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox || e.target.classList.contains('bg-black/95')) {
-        closeLightbox();
+      function openLightbox(index) {
+        currentIndex = index;
+        updateLightbox();
+        document.getElementById('lightbox').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
       }
-    });
-    
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-      if (lightbox.classList.contains('hidden')) return;
       
-      if (e.key === 'Escape') closeLightbox();
-      if (e.key === 'ArrowRight') showNext();
-      if (e.key === 'ArrowLeft') showPrev();
-    });
-  </script>
+      function closeLightbox() {
+        document.getElementById('lightbox').classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+      
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % galleryImages.length;
+        updateLightbox();
+      }
 
-  <style>
-    .gallery-item {
-      position: relative;
-    }
-  </style>
+      function prevImage() {
+        currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+        updateLightbox();
+      }
+      
+      function updateLightbox() {
+        const img = document.getElementById('lightbox-img');
+        const caption = document.getElementById('lightbox-caption');
+        img.src = galleryImages[currentIndex].src;
+        img.alt = galleryImages[currentIndex].alt;
+        caption.textContent = galleryImages[currentIndex].alt;
+      }
+      
+      // Wait for DOM to be fully loaded
+      document.addEventListener('DOMContentLoaded', () => {
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterButtons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const filter = btn.dataset.filter;
+            
+            // Update active button styling
+            filterButtons.forEach(b => {
+              b.classList.remove('bg-[#0f1f0a]', 'text-white');
+              b.classList.add('bg-white', 'text-[#0f1f0a]');
+            });
+            btn.classList.remove('bg-white', 'text-[#0f1f0a]');
+            btn.classList.add('bg-[#0f1f0a]', 'text-white');
+            
+            // Filter items
+            galleryItems.forEach((item) => {
+              const index = parseInt(item.dataset.index);
+              const category = galleryImages[index].category;
+              if (filter === 'All' || category === filter) {
+                item.style.display = 'block';
+              } else {
+                item.style.display = 'none';
+              }
+            });
+          });
+        });
+        
+        // Gallery item click - event delegation
+        const galleryGrid = document.getElementById('gallery-grid');
+        if (galleryGrid) {
+          galleryGrid.addEventListener('click', (e) => {
+            const item = e.target.closest('.gallery-item');
+            if (item) {
+              const index = parseInt(item.dataset.index);
+              openLightbox(index);
+            }
+          });
+        }
+        
+        // Lightbox controls
+        document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+        document.getElementById('lightbox-next').addEventListener('click', nextImage);
+        document.getElementById('lightbox-prev').addEventListener('click', prevImage);
+        
+        // Click outside to close
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox) {
+          lightbox.addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox') closeLightbox();
+          });
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+          if (lightbox.classList.contains('hidden')) return;
+          if (e.key === 'Escape') closeLightbox();
+          if (e.key === 'ArrowRight') nextImage();
+          if (e.key === 'ArrowLeft') prevImage();
+        });
+      });
+    })();
+  </script>
 </Layout>

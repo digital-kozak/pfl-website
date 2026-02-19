@@ -2,13 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 
 const indoorAmenities = [
-  { icon: 'flame', title: 'Stone Fireplace', description: 'Cozy up by the wood-burning fireplace on chilly mountain evenings' },
+  { icon: 'flame', title: 'Pellet Stove', description: 'Cozy up by the pellet stove on chilly mountain evenings' },
   { icon: 'bath', title: 'Private Hot Tub', description: 'Relax in the outdoor hot tub with stunning mountain views' },
-  { icon: 'chef-hat', title: 'Gourmet Kitchen', description: 'Fully equipped chef\'s kitchen with premium appliances' },
-  { icon: 'wifi', title: 'High-Speed WiFi', description: 'Stay connected with fast, reliable internet throughout the cabin' },
-  { icon: 'tv', title: 'Smart TVs', description: '65" smart TV in the great room plus TVs in each bedroom' },
+  { icon: 'wifi', title: 'Starlink WiFi', description: 'Stay connected with high-speed Starlink satellite internet throughout the cabin' },
+  { icon: 'tv', title: 'Smart TV', description: '42" smart TV in the game room for movie nights and streaming' },
   { icon: 'thermometer', title: 'Central Heating', description: 'Stay warm with efficient heating throughout the cabin' },
-  { icon: 'droplets', title: 'Washer & Dryer', description: 'Full-size washer and dryer for your convenience' },
+  { icon: 'droplets', title: 'Washer & Dryer', description: 'Washer and dryer for your convenience' },
   { icon: 'bed', title: 'Premium Bedding', description: 'High-thread-count linens and luxury mattresses in all rooms' },
   { icon: 'coffee', title: 'Coffee Station', description: 'Keurig coffee maker with complimentary pods' },
   { icon: 'utensils', title: 'Fully Stocked', description: 'Cookware, dishes, and utensils for every culinary need' },
@@ -20,34 +19,32 @@ const outdoorAmenities = [
   { icon: 'flame-kindling', title: 'Fire Pit', description: 'Outdoor fire pit with seating for memorable evenings' },
   { icon: 'grill', title: 'BBQ Grill', description: 'Gas grill perfect for mountain cookouts' },
   { icon: 'car', title: 'Parking', description: 'Ample parking for up to 4 vehicles including trailer space' },
-  { icon: 'trees', title: 'Secluded Setting', description: 'Private 2-acre property surrounded by forest' },
+  { icon: 'trees', title: '5-Acre Property', description: 'Private 5-acre property surrounded by forest' },
 ];
 
 const entertainmentAmenities = [
   { icon: 'gamepad-2', title: 'Board Games', description: 'Collection of board games and puzzles for family fun' },
   { icon: 'dices', title: 'Game Room', description: 'Dedicated game area with ping pong and more' },
-  { icon: 'book-open', title: 'Reading Library', description: 'Curated selection of books and magazines' },
-  { icon: 'music', title: 'Bluetooth Speaker', description: 'Portable speaker for indoor/outdoor entertainment' },
+  { icon: 'joystick', title: 'Retro Gaming', description: '40,000 built-in classic video games on retro gaming console' },
   { icon: 'binoculars', title: 'Wildlife Viewing', description: 'Binoculars for spotting local wildlife' },
 ];
 
 const comfortAmenities = [
   { icon: 'air-vent', title: 'Air Conditioning', description: 'Central AC for those warm summer days' },
   { icon: 'fan', title: 'Ceiling Fans', description: 'Fans throughout for optimal air circulation' },
-  { icon: 'shower-head', title: 'Rainfall Showers', description: 'Luxury rainfall showerheads in all bathrooms' },
   { icon: 'towel', title: 'Plush Towels', description: 'Hotel-quality bath and pool towels provided' },
   { icon: 'toilet-paper', title: 'Essentials Included', description: 'Toiletries, paper goods, and cleaning supplies' },
   { icon: 'key', title: 'Keyless Entry', description: 'Convenient keyless entry for easy check-in' },
 ];
 ---
 
-<Layout title="Amenities | Pagosa Forest Lodge">
+<Layout title="Amenities | Pagosa Forest Lodge" description="Premium amenities at Pagosa Forest Lodge: private hot tub, pellet stove, gourmet kitchen, National Forest access. Luxury mountain living.">
   <!-- Hero -->
   <section class="relative py-32 hero-overlay">
     <div class="absolute inset-0 z-0">
       <img 
-        src="/images/026-Aerial Interior_1.jpg" 
-        alt="Cabin amenities" 
+        src="/images/amenities-hero-interior.jpg" 
+        alt="Cabin interior with pellet stove and mountain views" 
         class="w-full h-full object-cover"
       />
     </div>
@@ -76,8 +73,171 @@ const comfortAmenities = [
     </div>
   </section>
 
-  <!-- Indoor Amenities -->
+  <!-- Hot Tub Feature -->
   <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="aspect-[4/3] overflow-hidden rounded-lg">
+          <img 
+            src="/images/hottub-snow.png" 
+            alt="Private hot tub with mountain views" 
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+        
+        <div>
+          <p class="text-[#c9a227] text-sm uppercase tracking-wider mb-2">Signature Amenity</p>
+          <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-4">Private Hot Tub</h2>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Soak away the day in your private hot tub with stunning mountain views. 
+            Whether you're unwinding after a day of skiing or stargazing on a clear night, 
+            the hot tub is the perfect place to relax and rejuvenate.
+          </p>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Private outdoor hot tub
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Mountain views
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Year-round enjoyment
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kitchen Feature -->
+  <section class="section-padding bg-[#faf9f6]">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="order-2 lg:order-1">
+          <p class="text-[#c9a227] text-sm uppercase tracking-wider mb-2">Chef's Delight</p>
+          <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-4">Gourmet Kitchen</h2>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Create memorable meals in our fully equipped gourmet kitchen. Featuring 
+            premium appliances, granite countertops, and everything you need to prepare 
+            everything from quick breakfasts to elaborate dinners.
+          </p>
+          
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Stainless steel appliances
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Granite countertops
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Fully stocked cookware
+            </li>
+          </ul>
+        </div>
+        
+        <div class="order-1 lg:order-2 grid grid-cols-2 gap-4">
+          <div class="aspect-[4/5] overflow-hidden rounded-lg">
+            <img 
+              src="/images/042-102419263.jpg" 
+              alt="Kitchen view 1" 
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div class="aspect-[4/5] overflow-hidden rounded-lg mt-8">
+            <img 
+              src="/images/043-102419320.jpg" 
+              alt="Kitchen view 2" 
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Game Room Feature -->
+  <section class="section-padding bg-[#0f1f0a] text-white">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="aspect-square overflow-hidden rounded-lg">
+            <img 
+              src="/images/067-102419291.jpg" 
+              alt="Game room" 
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div class="aspect-square overflow-hidden rounded-lg mt-8">
+            <img 
+              src="/images/069-102419289.jpg" 
+              alt="Game area" 
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        </div>
+        
+        <div>
+          <p class="text-[#c9a227] text-sm uppercase tracking-wider mb-2">Entertainment</p>
+          <h2 class="font-serif text-4xl md:text-5xl mb-4">Game Room</h2>
+          <p class="text-white/80 leading-relaxed mb-6">
+            The lower-level game room is the perfect hangout spot for kids and adults alike. 
+            With a bunk bed setup and plenty of space for games and activities, it's a 
+            favorite gathering place during your stay.
+          </p>
+          
+          <ul class="space-y-3 text-white/80">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Bunk beds + twin bed (sleeps 4)
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Game and activity space
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Board games included
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Laundry Feature -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="order-2 lg:order-1">
+          <p class="text-[#c9a227] text-sm uppercase tracking-wider mb-2">Convenience</p>
+          <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-4">Laundry Room</h2>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Washer and dryer for your convenience. Perfect for extended stays 
+            or refreshing your gear after outdoor adventures.
+          </p>
+        </div>
+        
+        <div class="order-1 lg:order-2">
+          <div class="aspect-[16/9] overflow-hidden rounded-lg">
+            <img 
+              src="/images/053-102419309.jpg" 
+              alt="Laundry room" 
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Indoor Amenities Grid -->
+  <section class="section-padding bg-[#faf9f6]">
     <div class="container-custom">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Inside The Cabin</p>
@@ -86,12 +246,11 @@ const comfortAmenities = [
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {indoorAmenities.map((amenity) => (
-          <div class="p-6 bg-[#faf9f6] rounded-lg group hover:bg-[#0f1f0a] transition-colors duration-300">
+          <div class="p-6 bg-white rounded-lg group hover:bg-[#0f1f0a] transition-colors duration-300">
             <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center mb-4 group-hover:bg-[#c9a227]/20">
               <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {amenity.icon === 'flame' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/>}
                 {amenity.icon === 'bath' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 10h16a1 1 0 011 1v0a5 5 0 01-5 5H8a5 5 0 01-5-5v0a1 1 0 011-1zm5-6l-2 6m10-6l2 6M9 4v2m6-2v2"/>}
-                {amenity.icon === 'chef-hat' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 13.87A4 4 0 017.41 6a5.11 5.11 0 019.18 0A4 4 0 0117.87 13.87L19 21H5l1.13-7.13zM12 6v8"/>}
                 {amenity.icon === 'wifi' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 12.55a11 11 0 0114.08 0M1.42 9a16 16 0 0121.16 0M8.53 16.11a6 16 0 016.95 0M12 20h.01"/>}
                 {amenity.icon === 'tv' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2 7a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V7zm4 12h12M10 3l2 2 2-2"/>}
                 {amenity.icon === 'thermometer' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z"/>}
@@ -109,7 +268,7 @@ const comfortAmenities = [
     </div>
   </section>
 
-  <!-- Outdoor Amenities -->
+  <!-- Outdoor Amenities Grid -->
   <section class="section-padding bg-[#0f1f0a] text-white">
     <div class="container-custom">
       <div class="text-center max-w-3xl mx-auto mb-16">
@@ -139,7 +298,7 @@ const comfortAmenities = [
   </section>
 
   <!-- Entertainment & Comfort -->
-  <section class="section-padding bg-[#faf9f6]">
+  <section class="section-padding bg-white">
     <div class="container-custom">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
         <!-- Entertainment -->
@@ -151,13 +310,12 @@ const comfortAmenities = [
 
           <div class="space-y-4">
             {entertainmentAmenities.map((amenity) => (
-              <div class="flex items-start space-x-4 p-4 bg-white rounded-lg">
+              <div class="flex items-start space-x-4 p-4 bg-[#faf9f6] rounded-lg">
                 <div class="w-10 h-10 rounded-full bg-[#c9a227]/10 flex items-center justify-center flex-shrink-0">
                   <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {amenity.icon === 'gamepad-2' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 11h4M8 9v4m7-4h.01M18 9h.01M6 15h12a4 4 0 004-4v-2a6 6 0 00-12 0v2a4 4 0 01-4 4v-4H4v4a4 4 0 004 4z"/>}
                     {amenity.icon === 'dices' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2zM9 10h.01M15 10h.01M9 14h.01M15 14h.01"/>}
-                    {amenity.icon === 'book-open' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>}
-                    {amenity.icon === 'music' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 18V5l12-2v13M9 18a3 3 0 11-6 0 3 3 0 016 0zm12-2a3 3 0 11-6 0 3 3 0 016 0z"/>}
+                    {amenity.icon === 'joystick' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>}
                     {amenity.icon === 'binoculars' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 12h4M12 10v4M4 16l2.5-2.5M20 16l-2.5-2.5M6 16a4 4 0 118 0 4 4 0 118 0"/>}
                   </svg>
                 </div>
@@ -179,12 +337,11 @@ const comfortAmenities = [
 
           <div class="space-y-4">
             {comfortAmenities.map((amenity) => (
-              <div class="flex items-start space-x-4 p-4 bg-white rounded-lg">
+              <div class="flex items-start space-x-4 p-4 bg-[#faf9f6] rounded-lg">
                 <div class="w-10 h-10 rounded-full bg-[#c9a227]/10 flex items-center justify-center flex-shrink-0">
                   <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {amenity.icon === 'air-vent' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 3v18M18 3v18M3 9h18M3 15h18"/>}
                     {amenity.icon === 'fan' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 12m-9 0a9 9 0 119 0 9 9 0 11-9 0M12 3v3m0 15v3m9-9h-3M6 12H3m14.12-5.12l-2.12 2.12M8 16l-2.12 2.12m0-12.24L8 8m8 8l2.12 2.12"/>}
-                    {amenity.icon === 'shower-head' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4h16M8 4v5a4 4 0 008 0V4M8 14h8M12 14v6M9 20h6"/>}
                     {amenity.icon === 'towel' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 8v12a2 2 0 002 2h12a2 2 0 002-2V8M4 8h16M9 8v14"/>}
                     {amenity.icon === 'toilet-paper' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 4h12a4 4 0 014 4v10a2 2 0 01-2 2H8a2 2 0 01-2-2V8a4 4 0 010-4zM6 8h.01M6 12h.01M6 16h.01"/>}
                     {amenity.icon === 'key' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/>}

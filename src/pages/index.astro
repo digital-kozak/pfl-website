@@ -2,9 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Pagosa Forest Lodge | Luxury Mountain Cabin in Colorado">
+<Layout title="Pagosa Forest Lodge | Luxury Mountain Cabin in Colorado" description="Luxury 4-bedroom mountain cabin in Pagosa Springs, CO. Hot tub, fireplace, 40 min to Wolf Creek Ski. Sleeps 8. Book your Colorado getaway!">
   <!-- Hero Section -->
-  <section class="relative h-screen min-h-[700px] flex items-center justify-center hero-overflow">
+  <section class="relative h-screen min-h-[700px] flex items-center justify-center hero-overlay">
     <!-- Background Images - Rotating -->
     <div class="absolute inset-0 z-0 hero-slideshow">
       <img 
@@ -20,7 +20,7 @@ import Layout from '../layouts/Layout.astro';
         data-slide="1"
       />
       <img 
-        src="/images/attractions/hottub.jpg" 
+        src="/images/hottub-snow.png" 
         alt="Hot tub with snow covered mountains" 
         class="w-full h-full object-cover hero-slide"
         data-slide="2"
@@ -33,17 +33,18 @@ import Layout from '../layouts/Layout.astro';
     <!-- Content -->
     <div class="relative z-10 container-custom text-center text-white">
       <p class="text-sm md:text-base uppercase tracking-[0.3em] mb-4 animate-fade-in opacity-0" style="animation-fill-mode: forwards;">
-        Forest Cabin Retreat
+        Hot Tub Under the Stars • Fire Pit for S'mores • Pet-Friendly Paradise
       </p>
-      
+
       <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-light leading-tight mb-6 animate-fade-in opacity-0 delay-200" style="animation-fill-mode: forwards;">
         Your Mountain<br />
         <span class="italic">Escape</span> Awaits
       </h1>
-      
+
       <p class="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 font-light animate-fade-in opacity-0 delay-400" style="animation-fill-mode: forwards;">
-        Experience the perfect blend of rustic charm and modern luxury at our 
-        secluded mountain cabin in Pagosa Springs.
+        Nestled on 5 private acres with direct San Juan National Forest access. 
+        Unwind in the hot tub, gather around the fire pit, and let your dogs explore 
+        the wildlife-rich surroundings.
       </p>
       
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in opacity-0 delay-500" style="animation-fill-mode: forwards;">
@@ -118,51 +119,29 @@ import Layout from '../layouts/Layout.astro';
 
   <style>
     .hero-slideshow {
-      position: relative;
+      position: absolute;
+      inset: 0;
+      z-index: 0;
     }
     .hero-slide {
       position: absolute;
       inset: 0;
       opacity: 0;
       transition: opacity 1.5s ease-in-out;
+      z-index: 1;
     }
     .hero-slide.active {
       opacity: 1;
+      z-index: 2;
     }
     .hero-dot.active {
       transform: scale(1.2);
     }
+    /* Ensure overlay doesn't block slideshow */
+    .hero-overlay::before {
+      z-index: 3 !important;
+    }
   </style>
-    
-    <!-- Content -->
-    <div class="relative z-10 container-custom text-center text-white">
-      <p class="text-sm md:text-base uppercase tracking-[0.3em] mb-4 animate-fade-in opacity-0" style="animation-fill-mode: forwards;">
-        Forest Cabin Retreat
-      </p>
-      
-      <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-light leading-tight mb-6 animate-fade-in opacity-0 delay-200" style="animation-fill-mode: forwards;">
-        Your Mountain<br />
-        <span class="italic">Escape</span> Awaits
-      </h1>
-      
-      <p class="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 font-light animate-fade-in opacity-0 delay-400" style="animation-fill-mode: forwards;">
-        Experience the perfect blend of rustic charm and modern luxury at our 
-        secluded mountain cabin in Pagosa Springs.
-      </p>
-      
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in opacity-0 delay-500" style="animation-fill-mode: forwards;">
-        <a href="/book" class="btn-primary">Book Your Stay</a>
-        <a href="/the-cabin" class="btn-secondary">Explore The Cabin</a>
-      </div>
-    </div>
-    
-    <!-- Scroll indicator -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-      <svg class="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-      </svg>
-    </div>
-  </section>
 
   <!-- Features Section -->
   <section class="section-padding bg-[#faf9f6]">
@@ -173,10 +152,16 @@ import Layout from '../layouts/Layout.astro';
           Where Comfort Meets<br /><span class="italic">Adventure</span>
         </h2>
         <p class="text-gray-600 leading-relaxed">
-          Nestled in the San Juan Mountains, Pagosa Forest Lodge offers an unparalleled 
-          mountain retreat experience. Our secluded cabin backs directly onto the San Juan 
-          National Forest—step out your door and onto miles of pristine hiking trails. 
-          Experience rustic elegance with modern amenities in your private forest sanctuary.
+          Nestled in the San Juan Mountains on 5 private acres, Pagosa Forest Lodge 
+          offers an unparalleled mountain retreat experience. Our secluded cabin backs 
+          directly onto the San Juan National Forest—step out your door and onto miles 
+          of pristine hiking trails.
+        </p>
+        <p class="text-gray-600 leading-relaxed mt-4">
+          <strong>Great place to unplug, but with all the modern conveniences.</strong> 
+          Whether you're gathering around the fire pit for s'mores, soaking in the hot tub 
+          under starry skies, or letting your dogs explore the wildlife-rich surroundings, 
+          this is your private forest sanctuary.
         </p>
       </div>
 
@@ -186,7 +171,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="card-luxury group">
           <div class="aspect-[4/3] overflow-hidden">
             <img 
-              src="/images/attractions/cabin.jpg" 
+              src="/images/snowy-cabin2.png" 
               alt="Cabin exterior with snow-covered mountains" 
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
@@ -209,7 +194,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="card-luxury group">
           <div class="aspect-[4/3] overflow-hidden">
             <img 
-              src="/images/attractions/hottub.jpg" 
+              src="/images/hottub-snow.png" 
               alt="Hot tub with mountain views" 
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
@@ -232,7 +217,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="card-luxury group">
           <div class="aspect-[4/3] overflow-hidden">
             <img 
-              src="/images/attractions/hiking.jpg" 
+              src="/images/14317 W Hwy 160 Pagosa Springs-large-070-072-14317 W Hwy 160-1500x844-72dpi.jpg" 
               alt="National Forest hiking trails" 
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
@@ -255,36 +240,88 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Guest Favorites Section -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Guest Favorites</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-6">
+          What Guests <span class="italic">Love Most</span>
+        </h2>
+        <p class="text-gray-600 leading-relaxed">
+          Based on 109+ glowing reviews, these are the experiences that make 
+          Pagosa Forest Lodge unforgettable.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Hot Tub -->
+        <div class="text-center group">
+          <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-[#c9a227]/10 flex items-center justify-center group-hover:bg-[#c9a227]/20 transition-colors">
+            <svg class="w-10 h-10 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl text-[#0f1f0a] mb-3">Hot Tub Under Stars</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            "Perfect for adults after a day of adventure" — unwind with mountain views and stargazing.
+          </p>
+        </div>
+
+        <!-- Fire Pit -->
+        <div class="text-center group">
+          <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-[#c9a227]/10 flex items-center justify-center group-hover:bg-[#c9a227]/20 transition-colors">
+            <svg class="w-10 h-10 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl text-[#0f1f0a] mb-3">Fire Pit & S'mores</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            "Our nightly gathering spot" — make memories around the fire with family and friends.
+          </p>
+        </div>
+
+        <!-- Pet Friendly -->
+        <div class="text-center group">
+          <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-[#c9a227]/10 flex items-center justify-center group-hover:bg-[#c9a227]/20 transition-colors">
+            <svg class="w-10 h-10 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl text-[#0f1f0a] mb-3">Pet-Friendly Paradise</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            "Our dogs had a blast" — 5 acres to explore, wildlife to discover, room to roam.
+          </p>
+        </div>
+
+        <!-- Forest Access -->
+        <div class="text-center group">
+          <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-[#c9a227]/10 flex items-center justify-center group-hover:bg-[#c9a227]/20 transition-colors">
+            <svg class="w-10 h-10 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl text-[#0f1f0a] mb-3">Forest Access</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            "Trail access from your backyard" — step into San Juan National Forest, no driving required.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- National Forest Section -->
   <section class="section-padding bg-white">
     <div class="container-custom">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <!-- Image Grid -->
-        <div class="grid grid-cols-2 gap-4 order-2 lg:order-1">
-          <div class="space-y-4">
-            <img 
-              src="/images/attractions/hiking.jpg" 
-              alt="Hiking trail in National Forest" 
-              class="w-full aspect-[3/4] object-cover rounded-lg"
-            />
-            <img 
-              src="/images/attractions/wildlife.jpg" 
-              alt="Wildlife in the forest" 
-              class="w-full aspect-square object-cover rounded-lg"
-            />
-          </div>
-          <div class="space-y-4 pt-8">
-            <img 
-              src="/images/023-0350 14317 W. US Hwy 160.jpg" 
-              alt="Forest view from cabin" 
-              class="w-full aspect-square object-cover rounded-lg"
-            />
-            <img 
-              src="/images/attractions/mountains.jpg" 
-              alt="San Juan National Forest" 
-              class="w-full aspect-[3/4] object-cover rounded-lg"
-            />
-          </div>
+        <!-- Single Image -->
+        <div class="order-2 lg:order-1">
+          <img 
+            src="/images/14317 W Hwy 160 Pagosa Springs-large-070-072-14317 W Hwy 160-1500x844-72dpi.jpg" 
+            alt="San Juan National Forest" 
+            class="w-full aspect-[4/3] object-cover rounded-lg"
+          />
         </div>
         
         <!-- Content -->
@@ -294,7 +331,7 @@ import Layout from '../layouts/Layout.astro';
             Backed By<br /><span class="italic">National Forest</span>
           </h2>
           <p class="text-gray-600 leading-relaxed mb-6">
-            Our 2-acre property backs directly onto thousands of acres of pristine 
+            Our 5-acre property backs directly onto thousands of acres of pristine 
             San Juan National Forest. Step out your back door and onto miles of 
             secluded hiking trails—no driving, no crowds, just you and nature.
           </p>
@@ -359,7 +396,19 @@ import Layout from '../layouts/Layout.astro';
               <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-white/90 text-sm">Stone Fireplace</span>
+              <span class="text-white/90 text-sm">Fire Pit & S'mores</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-white/90 text-sm">Pet-Friendly</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-white/90 text-sm">Pellet Stove</span>
             </div>
             <div class="flex items-center space-x-3">
               <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -371,13 +420,13 @@ import Layout from '../layouts/Layout.astro';
               <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-white/90 text-sm">High-Speed WiFi</span>
+              <span class="text-white/90 text-sm">Starlink WiFi</span>
             </div>
             <div class="flex items-center space-x-3">
               <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span class="text-white/90 text-sm">Smart TV & Games</span>
+              <span class="text-white/90 text-sm">Smart TV</span>
             </div>
             <div class="flex items-center space-x-3">
               <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -385,49 +434,18 @@ import Layout from '../layouts/Layout.astro';
               </svg>
               <span class="text-white/90 text-sm">Mountain Views</span>
             </div>
-            <div class="flex items-center space-x-3">
-              <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span class="text-white/90 text-sm">BBQ & Fire Pit</span>
-            </div>
-            <div class="flex items-center space-x-3">
-              <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span class="text-white/90 text-sm">Washer & Dryer</span>
-            </div>
           </div>
           
           <a href="/amenities" class="btn-primary">View All Amenities</a>
         </div>
         
-        <!-- Images Grid -->
-        <div class="grid grid-cols-2 gap-4">
-          <div class="space-y-4">
-            <img 
-              src="/images/007-0279 14317 W US Hwy 160.jpg" 
-              alt="Cabin interior living room" 
-              class="w-full aspect-[3/4] object-cover rounded-lg"
-            />
-            <img 
-              src="/images/008-0280 14317 W US Hwy 160.jpg" 
-              alt="Mountain sunset view" 
-              class="w-full aspect-square object-cover rounded-lg"
-            />
-          </div>
-          <div class="space-y-4 pt-8">
-            <img 
-              src="/images/014-0287 14317 W US Hwy 160.jpg" 
-              alt="Cabin deck view" 
-              class="w-full aspect-square object-cover rounded-lg"
-            />
-            <img 
-              src="/images/basement-beds.jpg" 
-              alt="Cozy bedroom interior" 
-              class="w-full aspect-[3/4] object-cover rounded-lg"
-            />
-          </div>
+        <!-- Image -->
+        <div class="order-1 lg:order-2">
+          <img 
+            src="/images/hottub-snow.png" 
+            alt="Private hot tub with mountain views" 
+            class="w-full aspect-[4/3] object-cover rounded-lg"
+          />
         </div>
       </div>
     </div>
@@ -447,15 +465,15 @@ import Layout from '../layouts/Layout.astro';
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
         <div class="aspect-square overflow-hidden rounded-lg group cursor-pointer">
           <img 
-            src="/images/023-0350 14317 W. US Hwy 160.jpg" 
-            alt="Cabin exterior" 
+            src="/images/026-Aerial Interior_1.jpg" 
+            alt="Cabin interior great room" 
             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
         </div>
         <div class="aspect-square overflow-hidden rounded-lg group cursor-pointer md:col-span-2 md:row-span-2">
           <img 
-            src="/images/026-Aerial Interior_1.jpg" 
-            alt="Cabin interior great room" 
+            src="/images/snowy-cabin2.png" 
+            alt="Snowy cabin at sunset" 
             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
         </div>
@@ -583,7 +601,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="group">
           <div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
             <img 
-              src="/images/036-Aerial Interior_7.jpg" 
+              src="/images/attractions/skiing.jpg" 
               alt="Wolf Creek Ski Resort" 
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -592,7 +610,7 @@ import Layout from '../layouts/Layout.astro';
             <svg class="w-5 h-5 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
             </svg>
-            <span class="text-[#c9a227] text-xs uppercase tracking-wider">20 Minutes</span>
+            <span class="text-[#c9a227] text-xs uppercase tracking-wider">40 Minutes</span>
           </div>
           <h3 class="font-serif text-2xl mb-2">Wolf Creek Ski Resort</h3>
           <p class="text-white/70 text-sm leading-relaxed mb-4">
@@ -611,8 +629,8 @@ import Layout from '../layouts/Layout.astro';
         <div class="group">
           <div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
             <img 
-              src="/images/037-Aerial Interior_8.jpg" 
-              alt="Hot Springs" 
+              src="/images/springs-resort-homepage.jpg" 
+              alt="The Springs Resort & Spa" 
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
           </div>
@@ -639,7 +657,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="group">
           <div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
             <img 
-              src="/images/042-102419263.jpg" 
+              src="/images/attractions/hiking.jpg" 
               alt="Hiking trails" 
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -674,8 +692,8 @@ import Layout from '../layouts/Layout.astro';
   <section class="relative py-24 hero-overlay">
     <div class="absolute inset-0 z-0">
       <img 
-        src="/images/14317 W Hwy 160 Pagosa Springs-large-076-073-14317 W Hwy 160-1500x844-72dpi.jpg" 
-        alt="Mountain sunset at Pagosa Forest Lodge" 
+        src="/images/attractions/mountains.jpg" 
+        alt="San Juan Mountains" 
         class="w-full h-full object-cover"
       />
     </div>

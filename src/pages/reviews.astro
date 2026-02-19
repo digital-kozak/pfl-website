@@ -3,6 +3,86 @@ import Layout from '../layouts/Layout.astro';
 
 const reviews = [
   {
+    name: "Christopher",
+    location: "Waxahachie, Texas",
+    rating: 5,
+    date: "May 2025",
+    text: "The place, the cabin, the surroundings, the forest right behind was perfect for our experience. Our dogs had a blast around the property. And my wife loved Pagosa! Will be back. If you're thinking about booking this cabin don't hesitate just do it five out of five stars perfect.",
+    avatar: "C"
+  },
+  {
+    name: "Nathaniel",
+    location: "11 months on Airbnb",
+    rating: 5,
+    date: "April 2025",
+    text: "5 adults, 2 dogs. We all had a blast! The cabin has a great cabin feel to it. Very secluded with so much wildlife everywhere you look. The views were amazing, and so was the hot tub and fire pit. We are very pleased with the experience, so are our dogs!",
+    avatar: "N"
+  },
+  {
+    name: "Samantha",
+    location: "Albuquerque, New Mexico",
+    rating: 5,
+    date: "June 2025",
+    text: "Our two families with a bunch of kiddos had an amazing time here! There was tons of things for the kids to do and a nice little hot tub for the adults and a fire pit to make s'mores in. Would definitely stay again.",
+    avatar: "S"
+  },
+  {
+    name: "Ian",
+    location: "Martinez Family",
+    rating: 5,
+    date: "June 2025",
+    text: "Wow! What an amazing stay with my kids. We had the most memorable moments enjoying the fresh air from the deck. Great get away or stay in all week! Can't wait to visit again. Thanks Michael.",
+    avatar: "I"
+  },
+  {
+    name: "Allie",
+    location: "6 years on Airbnb",
+    rating: 5,
+    date: "June 2025",
+    text: "We enjoyed our stay at the Pagosa cabin so much! It was wonderful and had everything we needed! We loved that it was not in town. The hot tub and fire pit were great to have on the property for something to do in the evening! We plan to be back! It was great!",
+    avatar: "A"
+  },
+  {
+    name: "Jessica",
+    location: "Norwood, Colorado",
+    rating: 5,
+    date: "April 2025",
+    text: "The place was perfect for connecting with friends. Comfortable beds with super soft linens. Private, quiet location, with beautiful views from the porch. Great place to unplug, but has all the modern conveniences.",
+    avatar: "J"
+  },
+  {
+    name: "Adrionna",
+    location: "Flora Vista, New Mexico",
+    rating: 5,
+    date: "October 2025",
+    text: "This was the perfect stay for myself and my husband to unwind and get away after our wedding. It was a peaceful getaway, still within driving distance to town. Would recommend and stay at again!",
+    avatar: "A"
+  },
+  {
+    name: "Martin",
+    location: "Santa Fe, New Mexico",
+    rating: 5,
+    date: "December 2024",
+    text: "The cabin was the perfect spot for all of my family from out of town to relax after a day of skiing and hot springs, plenty of space for everyone. Thanks for having us!",
+    avatar: "M"
+  },
+  {
+    name: "Prateek",
+    location: "McKinney, Texas",
+    rating: 5,
+    date: "October 2025",
+    text: "House is amazing and kids enjoyed a lot. Location is so scenic and amazing. Everything was well maintained making stay comfortable. Stargazing can be done from the property. Highly recommend this place to anyone looking for a beautiful, well equipped stay surrounded by nature. We could see deer family too.",
+    avatar: "P"
+  },
+  {
+    name: "Leslie",
+    location: "Wolfforth, Texas",
+    rating: 5,
+    date: "September 2025",
+    text: "This was an absolutely gorgeous cabin! It was nice and private but still close to town. It was very easy to find. Michael was very kind and answered all questions I had prior to booking. Instructions for checking in and out as well as during our stay were very clear! The bed was very comfortable and there were plenty of amenities available to us. Would definitely stay here again!",
+    avatar: "L"
+  },
+  {
     name: "Sarah Mitchell",
     location: "Denver, CO",
     rating: 5,
@@ -69,19 +149,19 @@ const reviews = [
 ];
 
 const stats = [
-  { value: "5.0", label: "Average Rating" },
-  { value: "50+", label: "Reviews" },
+  { value: "4.91", label: "Average Rating" },
+  { value: "109", label: "Reviews" },
   { value: "100%", label: "Would Recommend" }
 ];
 ---
 
-<Layout title="Reviews | Pagosa Forest Lodge">
+<Layout title="Reviews | Pagosa Forest Lodge" description="Read guest reviews of Pagosa Forest Lodge. 5-star ratings for our luxury mountain cabin near Wolf Creek Ski Resort in Colorado.">
   <!-- Hero -->
   <section class="relative py-32 hero-overlay">
     <div class="absolute inset-0 z-0">
       <img 
-        src="/images/14317 W Hwy 160 Pagosa Springs-large-076-073-14317 W Hwy 160-1500x844-72dpi.jpg" 
-        alt="Reviews" 
+        src="/images/reviews-hero.jpg" 
+        alt="Mountain valley view from Wolf Creek Pass" 
         class="w-full h-full object-cover"
       />
     </div>
@@ -95,13 +175,35 @@ const stats = [
   </section>
 
   <!-- Stats -->
-  <section class="py-16 bg-[#0f1f0a] text-white">
+  <section class="py-16 bg-white">
     <div class="container-custom">
-      <div class="grid grid-cols-3 gap-8 text-center">
+      <!-- Badges -->
+      <div class="flex flex-wrap justify-center gap-6 mb-12">
+        <!-- Guest Favorite Badge -->
+        <div class="flex items-center justify-center">
+          <img 
+            src="/images/airbnb-guest-favorite.jpg" 
+            alt="Airbnb Guest Favorite - One of the most loved homes on Airbnb" 
+            class="h-28 md:h-32 object-contain rounded-lg shadow-md"
+          />
+        </div>
+        
+        <!-- Superhost Badge -->
+        <div class="flex items-center justify-center">
+          <img 
+            src="/images/airbnb-superhost.jpg" 
+            alt="Airbnb Superhost" 
+            class="h-28 md:h-32 object-contain rounded-lg shadow-md"
+          />
+        </div>
+      </div>
+      
+      <!-- Stats Grid -->
+      <div class="grid grid-cols-3 gap-8 text-center max-w-3xl mx-auto pt-8 border-t border-gray-200">
         {stats.map((stat) => (
           <div>
             <p class="text-4xl md:text-5xl font-serif text-[#c9a227] mb-2">{stat.value}</p>
-            <p class="text-sm uppercase tracking-wider text-white/70">{stat.label}</p>
+            <p class="text-sm uppercase tracking-wider text-gray-600">{stat.label}</p>
           </div>
         ))}
       </div>

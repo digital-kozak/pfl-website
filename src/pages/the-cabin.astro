@@ -2,13 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="The Cabin | Pagosa Forest Lodge">
+<Layout title="The Cabin | Pagosa Forest Lodge" description="Explore our 4-bedroom luxury cabin in Pagosa Springs. 2,400 sq ft, sleeps 8, hot tub, mountain views. Perfect for family ski trips.">
   <!-- Hero -->
   <section class="relative py-32 hero-overlay">
     <div class="absolute inset-0 z-0">
       <img 
-        src="/images/006-0278 14317 W US Hwy 160.jpg" 
-        alt="Pagosa Forest Lodge cabin exterior" 
+        src="/images/cabin-hero-winter.jpg" 
+        alt="Pagosa Forest Lodge winter mountain view" 
         class="w-full h-full object-cover"
       />
     </div>
@@ -62,7 +62,7 @@ import Layout from '../layouts/Layout.astro';
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
             </svg>
           </div>
-          <p class="text-3xl font-serif text-[#0f1f0a]">3.5</p>
+          <p class="text-3xl font-serif text-[#0f1f0a]">2.5</p>
           <p class="text-sm text-gray-500 uppercase tracking-wider">Bathrooms</p>
         </div>
         <div class="text-center">
@@ -78,316 +78,378 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Bedroom Details -->
+  <!-- Master Bedroom -->
   <section class="section-padding bg-white">
     <div class="container-custom">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Sleeping Arrangements</p>
-        <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-6">Four Beautiful<br /><span class="italic">Bedrooms</span>
-        </h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Photo Grid -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="aspect-[4/5] overflow-hidden rounded-lg">
+            <img 
+              src="/images/054-102419308.jpg" 
+              alt="Master bedroom with king bed" 
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div class="space-y-4">
+            <div class="aspect-square overflow-hidden rounded-lg">
+              <img 
+                src="/images/057-102419305.jpg" 
+                alt="Master bedroom detail" 
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="aspect-square overflow-hidden rounded-lg">
+              <img 
+                src="/images/058-102419304.jpg" 
+                alt="Master bedroom view" 
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+        </div>
+        
+        <!-- Content -->
+        <div>
+          <p class="text-[#c9a227] text-sm uppercase tracking-wider mb-2">Primary Suite</p>
+          <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-4">Master Bedroom</h2>
+          <p class="text-gray-600 text-lg mb-6">King Bed • Sleeps 2 • En-suite Bathroom</p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            The luxurious master suite features a premium king bed with high-thread-count linens, 
+            an en-suite bathroom, and breathtaking mountain views. Wake up to stunning 
+            sunrises and enjoy the peace and privacy of this spacious retreat.
+          </p>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Premium king bed with luxury linens
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              En-suite bathroom with premium fixtures
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Panoramic mountain views
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Ample closet space
+            </li>
+          </ul>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <!-- Master Bedroom -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <!-- Downstairs Queen Bedroom -->
+  <section class="section-padding bg-[#faf9f6]">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Content -->
+        <div class="order-2 lg:order-1">
+          <p class="text-[#c9a227] text-sm uppercase tracking-wider mb-2">Guest Room</p>
+          <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-4">Downstairs Queen Bedroom</h2>
+          <p class="text-gray-600 text-lg mb-6">Queen Bed • Sleeps 2</p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            A spacious guest room on the main level featuring a comfortable queen bed 
+            and easy access to the living areas. Perfect for guests who prefer to avoid stairs.
+          </p>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Comfortable queen bed
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Main level convenience
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Premium bedding
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Photo Grid -->
+        <div class="order-1 lg:order-2 grid grid-cols-2 gap-4">
           <div class="aspect-[4/5] overflow-hidden rounded-lg">
             <img 
-              src="/images/025-Aerial Interior.jpg" 
-              alt="Master bedroom" 
-              class="w-full h-full object-cover"
+              src="/images/078-102419273.jpg" 
+              alt="Downstairs queen bedroom" 
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             />
           </div>
-          <div class="flex flex-col justify-center">
-            <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Master Suite</h3>
-            <p class="text-[#c9a227] text-sm uppercase tracking-wider mb-4">King Bed • Sleeps 2</p>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              The luxurious master suite features a premium king bed with high-thread-count linens, 
-              an en-suite bathroom with soaking tub and walk-in shower, and breathtaking mountain 
-              views through floor-to-ceiling windows.
-            </p>
-            <ul class="space-y-2 text-sm text-gray-600">
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                En-suite bathroom
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Private deck access
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Walk-in closet
-              </li>
-            </ul>
+          <div class="space-y-4">
+            <div class="aspect-square overflow-hidden rounded-lg">
+              <img 
+                src="/images/081-0009 14317 W. US Hwy 160.jpg" 
+                alt="Queen bedroom detail" 
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="aspect-square overflow-hidden rounded-lg">
+              <img 
+                src="/images/082-102419269.jpg" 
+                alt="Queen bedroom view" 
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Bedroom 2 -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="aspect-[4/5] overflow-hidden rounded-lg">
-            <img 
-              src="/images/031-Aerial Interior_3.jpg" 
-              alt="Bedroom 2 with queen bed" 
-              class="w-full h-full object-cover"
-            />
+  <!-- Upstairs Bunk Room -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Photo -->
+        <div class="aspect-[4/3] overflow-hidden rounded-lg">
+          <img 
+            src="/images/092-102419253.jpg" 
+            alt="Upstairs bunk room" 
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+        
+        <!-- Content -->
+        <div>
+          <p class="text-[#c9a227] text-sm uppercase tracking-wider mb-2">Kids' Favorite</p>
+          <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-4">Upstairs Bunk Room</h2>
+          <p class="text-gray-600 text-lg mb-6">2 Twin Beds • Sleeps 2</p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Located upstairs, this charming bunk room features two twin beds perfect 
+            for kids or friends. The room offers a cozy, private space away from the main living areas.
+          </p>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Two twin beds
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Upstairs privacy
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Perfect for kids
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Game Room with Bunk Beds -->
+  <section class="section-padding bg-[#0f1f0a] text-white">
+    <div class="container-custom">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Entertainment Space</p>
+        <h2 class="font-serif text-4xl md:text-5xl mb-6">Game Room & Bunk Area</h2>
+        <p class="text-white/70 text-lg">Bunk Bed + Twin • Sleeps 4</p>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        <div class="aspect-square overflow-hidden rounded-lg">
+          <img 
+            src="/images/067-102419291.jpg" 
+            alt="Game room view 1" 
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-lg">
+          <img 
+            src="/images/069-102419289.jpg" 
+            alt="Game room view 2" 
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-lg">
+          <img 
+            src="/images/096-0007 14317 W. US Hwy 160.jpg" 
+            alt="Game room view 3" 
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-lg">
+          <img 
+            src="/images/basement-beds.jpg" 
+            alt="Bunk beds in game room" 
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+      </div>
+      
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-white/80 leading-relaxed mb-8">
+          The ultimate kids' retreat and entertainment hub! This spacious lower-level room 
+          features a twin-over-full bunk bed plus an additional twin bed, sleeping up to 4. 
+          The perfect hangout spot with plenty of space for games and activities.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div>
+            <p class="text-3xl font-serif text-[#c9a227] mb-2">4</p>
+            <p class="text-sm text-white/60">Sleeps</p>
           </div>
-          <div class="flex flex-col justify-center">
-            <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Guest Room 1</h3>
-            <p class="text-[#c9a227] text-sm uppercase tracking-wider mb-4">Queen Bed • Sleeps 2</p>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              A spacious guest room featuring a comfortable queen bed, shared bathroom access, 
-              and serene forest views. Perfect for couples or single travelers.
-            </p>
-            <ul class="space-y-2 text-sm text-gray-600">
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Premium bedding
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Forest views
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Ample storage
-              </li>
-            </ul>
+          <div>
+            <p class="text-3xl font-serif text-[#c9a227] mb-2">Bunk</p>
+            <p class="text-sm text-white/60">+ Twin</p>
+          </div>
+          <div>
+            <p class="text-3xl font-serif text-[#c9a227] mb-2">Game</p>
+            <p class="text-sm text-white/60">Area</p>
+          </div>
+          <div>
+            <p class="text-3xl font-serif text-[#c9a227] mb-2">Lower</p>
+            <p class="text-sm text-white/60">Level</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Bedroom 3 -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="aspect-[4/5] overflow-hidden rounded-lg">
-            <img 
-              src="/images/033-Aerial Interior_5.jpg" 
-              alt="Bedroom 3 with two beds" 
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <div class="flex flex-col justify-center">
-            <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Guest Room 2</h3>
-            <p class="text-[#c9a227] text-sm uppercase tracking-wider mb-4">2 Twin Beds • Sleeps 2</p>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              Ideal for kids or friends, this room features two comfortable twin beds 
-              and a playful yet sophisticated mountain design aesthetic.
-            </p>
-            <ul class="space-y-2 text-sm text-gray-600">
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Twin beds (can be joined)
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Mountain decor
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Reading nook
-              </li>
-            </ul>
-          </div>
+  <!-- 4th Bedroom -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Photo -->
+        <div class="aspect-[4/3] overflow-hidden rounded-lg">
+          <img 
+            src="/images/047-102419313.jpg" 
+            alt="4th bedroom" 
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          />
         </div>
-
-        <!-- Bedroom 4 / Bunk Room -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="aspect-[4/5] overflow-hidden rounded-lg">
-            <img 
-              src="/images/basement-beds.jpg" 
-              alt="Bunk room" 
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <div class="flex flex-col justify-center">
-            <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3">Bunk Room</h3>
-            <p class="text-[#c9a227] text-sm uppercase tracking-wider mb-4">Bunk Bed + Twin • Sleeps 4</p>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              The ultimate kids' retreat! Features a twin-over-full bunk bed plus an 
-              additional twin bed, sleeping up to 4. A favorite for families with children.
-            </p>
-            <ul class="space-y-2 text-sm text-gray-600">
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Twin-over-full bunk
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Additional twin bed
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-[#c9a227] mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Board games & toys
-              </li>
-            </ul>
-          </div>
+        
+        <!-- Content -->
+        <div>
+          <p class="text-[#c9a227] text-sm uppercase tracking-wider mb-2">Additional Space</p>
+          <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-4">4th Full Bedroom</h2>
+          <p class="text-gray-600 text-lg mb-6">Flexible Sleeping • Sleeps 2</p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            An additional full bedroom providing flexible sleeping arrangements. 
+            Perfect for larger groups or families needing extra space.
+          </p>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Flexible bed configuration
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Full bedroom amenities
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-[#c9a227] mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Quiet and private
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Common Areas -->
-  <section class="section-padding bg-[#0f1f0a] text-white">
+  <section class="section-padding bg-[#faf9f6]">
     <div class="container-custom">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Gathering Spaces</p>
-        <h2 class="font-serif text-4xl md:text-5xl mb-6">Designed For<br /><span class="italic">Togetherness</span>
-        </h2>
+        <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-6">Designed For<br /><span class="italic">Togetherness</span></h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Great Room -->
-        <div>
-          <div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
-            <img 
-              src="/images/026-Aerial Interior_1.jpg" 
-              alt="Great room with fireplace" 
-              class="w-full h-full object-cover"
-            />
+      <!-- Living Room -->
+      <div class="mb-20">
+        <h3 class="font-serif text-3xl text-[#0f1f0a] mb-8 text-center">Great Room & Living Area</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="aspect-[4/5] overflow-hidden rounded-lg">
+            <img src="/images/025-Aerial Interior.jpg" alt="Living room" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
-          <h3 class="font-serif text-2xl mb-3">Great Room</h3>
-          <p class="text-white/70 text-sm leading-relaxed">
-            The heart of the cabin features soaring ceilings, a magnificent stone 
-            fireplace, comfortable seating for 10, and panoramic windows framing 
-            mountain views.
-          </p>
+          <div class="aspect-[4/5] overflow-hidden rounded-lg">
+            <img src="/images/026-Aerial Interior_1.jpg" alt="Great room" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="aspect-[4/5] overflow-hidden rounded-lg">
+            <img src="/images/029-Aerial Interior_2.jpg" alt="Living area" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="aspect-[4/5] overflow-hidden rounded-lg">
+            <img src="/images/031-Aerial Interior_3.jpg" alt="Seating area" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
         </div>
+        <p class="text-gray-600 text-center mt-6 max-w-2xl mx-auto">
+          The heart of the cabin features soaring ceilings, a cozy pellet stove for 
+          comfortable seating, and panoramic windows framing mountain views.
+        </p>
+      </div>
 
-        <!-- Kitchen -->
-        <div>
-          <div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
-            <img 
-              src="/images/029-Aerial Interior_2.jpg" 
-              alt="Gourmet kitchen" 
-              class="w-full h-full object-cover"
-            />
+      <!-- Kitchen -->
+      <div class="mb-20">
+        <h3 class="font-serif text-3xl text-[#0f1f0a] mb-8 text-center">Gourmet Kitchen</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img src="/images/042-102419263.jpg" alt="Kitchen" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
-          <h3 class="font-serif text-2xl mb-3">Gourmet Kitchen</h3>
-          <p class="text-white/70 text-sm leading-relaxed">
-            Fully equipped chef's kitchen with stainless steel appliances, granite 
-            countertops, breakfast bar seating for 4, and everything you need for 
-            memorable meals.
-          </p>
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img src="/images/043-102419320.jpg" alt="Kitchen detail" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
         </div>
+        <p class="text-gray-600 text-center mt-6 max-w-2xl mx-auto">
+          Fully equipped chef's kitchen with stainless steel appliances, granite countertops, 
+          and everything you need for memorable meals.
+        </p>
+      </div>
 
-        <!-- Dining -->
-        <div>
-          <div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
-            <img 
-              src="/images/036-Aerial Interior_7.jpg" 
-              alt="Dining area" 
-              class="w-full h-full object-cover"
-            />
+      <!-- Laundry -->
+      <div>
+        <h3 class="font-serif text-3xl text-[#0f1f0a] mb-8 text-center">Laundry Room</h3>
+        <div class="max-w-2xl mx-auto">
+          <div class="aspect-[16/9] overflow-hidden rounded-lg">
+            <img src="/images/053-102419309.jpg" alt="Laundry room" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
-          <h3 class="font-serif text-2xl mb-3">Dining Area</h3>
-          <p class="text-white/70 text-sm leading-relaxed">
-            Elegant dining space seating 10 with stunning views. Perfect for 
-            celebratory dinners, game nights, or casual family breakfasts.
-          </p>
         </div>
+        <p class="text-gray-600 text-center mt-6 max-w-2xl mx-auto">
+          Washer and dryer for your convenience during extended stays.
+        </p>
       </div>
     </div>
   </section>
 
   <!-- Outdoor Spaces -->
-  <section class="section-padding bg-[#faf9f6]">
+  <section class="section-padding bg-[#0f1f0a] text-white">
     <div class="container-custom">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <!-- Images -->
-        <div class="grid grid-cols-2 gap-4">
-          <div class="space-y-4">
-            <div class="aspect-[3/4] overflow-hidden rounded-lg">
-              <img 
-                src="/images/007-0279 14317 W US Hwy 160.jpg" 
-                alt="Hot tub with mountain view" 
-                class="w-full h-full object-cover"
-              />
-            </div>
-            <div class="aspect-square overflow-hidden rounded-lg">
-              <img 
-                src="/images/008-0280 14317 W US Hwy 160.jpg" 
-                alt="BBQ grill" 
-                class="w-full h-full object-cover"
-              />
-            </div>
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Outdoor Living</p>
+        <h2 class="font-serif text-4xl md:text-5xl mb-6">Embrace The<br /><span class="italic">Great Outdoors</span></h2>
+      </div>
+
+      <!-- Front Deck -->
+      <div class="mb-16">
+        <h3 class="font-serif text-2xl mb-6 text-center">Front Deck</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img src="/images/128-0377 14317 W. US Hwy 160.jpg" alt="Front deck" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
-          <div class="space-y-4 pt-8">
-            <div class="aspect-square overflow-hidden rounded-lg">
-              <img 
-                src="/images/014-0287 14317 W US Hwy 160.jpg" 
-                alt="Deck seating area" 
-                class="w-full h-full object-cover"
-              />
-            </div>
-            <div class="aspect-[3/4] overflow-hidden rounded-lg">
-              <img 
-                src="/images/018-0291 14317 W US Hwy 160.jpg" 
-                alt="Fire pit" 
-                class="w-full h-full object-cover"
-              />
-            </div>
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img src="/images/14317 W Hwy 160 Pagosa Springs-large-015-007-14317 W Hwy 160-1500x1000-72dpi.jpg" alt="Deck view" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
+      </div>
 
-        <!-- Content -->
-        <div>
-          <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Outdoor Living</p>
-          <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-6">
-            Embrace The<br /><span class="italic">Great Outdoors</span>
-          </h2>
-          <p class="text-gray-600 leading-relaxed mb-8">
-            The outdoor spaces at Pagosa Forest Lodge are designed to help you fully 
-            immerse yourself in Colorado's natural beauty. From your morning coffee 
-            to evening stargazing, every moment outside is pure magic.
-          </p>
-          
-          <div class="space-y-4">
-            <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center flex-shrink-0">
-                <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
-                </svg>
-              </div>
-              <div>
-                <h4 class="font-serif text-lg text-[#0f1f0a] mb-1">Private Hot Tub</h4>
-                <p class="text-gray-600 text-sm">Relax under the stars in our premium hot tub with mountain views</p>
-              </div>
-            </div>
-            
-            <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center flex-shrink-0">
-                <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                </svg>
-              </div>
-              <div>
-                <h4 class="font-serif text-lg text-[#0f1f0a] mb-1">Expansive Deck</h4>
-                <p class="text-gray-600 text-sm">Covered and open-air seating areas with panoramic mountain views</p>
-              </div>
-            </div>
-            
-            <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center flex-shrink-0">
-                <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
-                </svg>
-              </div>
-              <div>
-                <h4 class="font-serif text-lg text-[#0f1f0a] mb-1">Fire Pit Area</h4>
-                <p class="text-gray-600 text-sm">Gather around the fire pit for s'mores and stargazing</p>
-              </div>
-            </div>
-            
-            <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center flex-shrink-0">
-                <svg class="w-6 h-6 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                </svg>
-              </div>
-              <div>
-                <h4 class="font-serif text-lg text-[#0f1f0a] mb-1">BBQ Grill</h4>
-                <p class="text-gray-600 text-sm">Gas grill ready for your mountain cookouts</p>
-              </div>
-            </div>
+      <!-- Drone Shots -->
+      <div>
+        <h3 class="font-serif text-2xl mb-6 text-center">Aerial Views</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="aspect-square overflow-hidden rounded-lg">
+            <img src="/images/006-0278 14317 W US Hwy 160.jpg" alt="Aerial view 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="aspect-square overflow-hidden rounded-lg">
+            <img src="/images/007-0279 14317 W US Hwy 160.jpg" alt="Aerial view 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="aspect-square overflow-hidden rounded-lg">
+            <img src="/images/008-0280 14317 W US Hwy 160.jpg" alt="Aerial view 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="aspect-square overflow-hidden rounded-lg">
+            <img src="/images/018-0291 14317 W US Hwy 160.jpg" alt="Aerial view 4" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
       </div>
