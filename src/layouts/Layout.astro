@@ -299,7 +299,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://pagosafo
           <p class="text-white/70 text-sm mb-4">Subscribe for special offers and seasonal updates.</p>
           <form class="flex flex-col space-y-3" action="https://formsubmit.co/info@pagosaforestlodge.com" method="POST">
             <input type="hidden" name="_subject" value="Newsletter Subscription from Website">
-            <input type="hidden" name="_next" value="https://pagosaforestlodge.com/?subscribed=true">
+            <input type="hidden" name="_next" value="https://dev.pagosaforestlodge.com/?subscribed=true">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_autoresponse" value="Thank you for subscribing to Pagosa Forest Lodge updates! You'll receive our latest news and special offers.">
             <input 
               type="email" 
               name="email"
