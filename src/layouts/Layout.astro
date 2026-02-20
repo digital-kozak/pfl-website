@@ -63,7 +63,12 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
   <link rel="dns-prefetch" href="https://app.lodgify.com" />
   
   <!-- Preload hero image for LCP improvement -->
-  {preloadImage && <link rel="preload" as="image" href={preloadImage} type="image/jpeg" fetchpriority="high" />}
+  {preloadImage && (
+    <>
+      <link rel="preload" as="image" href="/images/pfl-stargazing-mobile.jpg" type="image/jpeg" fetchpriority="high" media="(max-width: 639px)" />
+      <link rel="preload" as="image" href={preloadImage} type="image/jpeg" fetchpriority="high" media="(min-width: 640px)" />
+    </>
+  )}
   
   <!-- Fonts loaded via CSS @font-face with font-display: swap -->
   <!-- This prevents render-blocking and layout shift -->
