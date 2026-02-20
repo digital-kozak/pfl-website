@@ -1,5 +1,30 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import FAQ from '../components/FAQ.astro';
+
+const activitiesFaqs = [
+  {
+    question: "How far is Wolf Creek Ski Resort from the cabin?",
+    answer: "Wolf Creek Ski Resort is approximately 40 minutes (23 miles) from Pagosa Forest Lodge. The scenic drive takes you over Wolf Creek Pass with stunning mountain views. We recommend leaving early on powder days to get first tracks!"
+  },
+  {
+    question: "What hot springs are near the cabin?",
+    answer: "The famous Springs Resort & Spa is just 15 minutes away, featuring 24 geothermal pools ranging from 83°F to 114°F. For a more budget-friendly option, Pagosa Hot Springs downtown offers private mineral baths. Plus, our cabin has its own private hot tub with mountain views!"
+  },
+  {
+    question: "Are there hiking trails nearby?",
+    answer: "Yes! Our 5-acre property backs directly onto the San Juan National Forest with miles of trails right out your back door. Additionally, Treasure Falls is just 25 minutes away, and the Continental Divide Trail offers world-class hiking within 30-45 minutes."
+  },
+  {
+    question: "What summer activities are available in Pagosa Springs?",
+    answer: "Summer offers endless adventures: white water rafting on the San Juan River, hiking and mountain biking on hundreds of miles of trails, fishing in Gold Medal waters, boating at Echo Canyon Reservoir, horseback riding, rock climbing, and scenic drives through golden aspen groves."
+  },
+  {
+    question: "Is there anything to do in winter besides skiing?",
+    answer: "Absolutely! Beyond skiing at Wolf Creek, you can enjoy snowshoeing and cross-country skiing on 50km of groomed trails, snowmobiling tours, sledding at Reservoir Hill, ice fishing, ice skating on local ponds, horseback-drawn sleigh rides, and soaking in the natural hot springs."
+  }
+];
 ---
 
 <Layout 
@@ -25,6 +50,9 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Breadcrumb Navigation -->
+  <Breadcrumb items={[{ name: "Things To Do", url: "/things-to-do" }]} />
+
   <!-- Intro -->
   <section class="section-padding bg-[#faf9f6]">
     <div class="container-custom">
@@ -39,6 +67,186 @@ import Layout from '../layouts/Layout.astro';
           natural hot springs, world-class fishing to breathtaking hiking trails—your 
           mountain escape is just the beginning.
         </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Hub - Complete Guides -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Complete Guides</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-6">
+          Explore by <span class="italic">Category</span>
+        </h2>
+        <p class="text-gray-600 leading-relaxed">
+          Dive deeper into specific activities with our comprehensive blog guides. 
+          Each guide includes insider tips, local recommendations, and everything you need to plan your adventure.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Outdoor Adventure -->
+        <a href="/blog/hiking-pagosa-springs/" class="card-luxury overflow-hidden group block">
+          <div class="aspect-[16/10] overflow-hidden bg-[#0f1f0a]">
+            <div class="w-full h-full flex items-center justify-center text-[#c9a227]">
+              <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">Outdoor</span>
+            <h3 class="font-serif text-xl text-[#0f1f0a] mb-2 mt-2">Hiking Guide</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Discover the best trails from easy nature walks to challenging alpine treks in the San Juan Mountains.
+            </p>
+          </div>
+        </a>
+
+        <!-- Hot Springs -->
+        <a href="/blog/hot-springs-pagosa-guide/" class="card-luxury overflow-hidden group block">
+          <div class="aspect-[16/10] overflow-hidden bg-[#0f1f0a]">
+            <div class="w-full h-full flex items-center justify-center text-[#c9a227]">
+              <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">Wellness</span>
+            <h3 class="font-serif text-xl text-[#0f1f0a] mb-2 mt-2">Hot Springs Guide</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Compare all 6 hot springs options — from luxury resorts to natural pools and your private cabin hot tub.
+            </p>
+          </div>
+        </a>
+
+        <!-- Unique Experiences -->
+        <a href="/blog/unique-experiences-pagosa-springs/" class="card-luxury overflow-hidden group block">
+          <div class="aspect-[16/10] overflow-hidden bg-[#0f1f0a]">
+            <div class="w-full h-full flex items-center justify-center text-[#c9a227]">
+              <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">Unique</span>
+            <h3 class="font-serif text-xl text-[#0f1f0a] mb-2 mt-2">10 Unique Experiences</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Hot air ballooning, dog sledding, sleigh rides, wildlife parks, and other once-in-a-lifetime adventures.
+            </p>
+          </div>
+        </a>
+
+        <!-- Scenic Drives -->
+        <a href="/blog/scenic-drives-pagosa-springs/" class="card-luxury overflow-hidden group block">
+          <div class="aspect-[16/10] overflow-hidden bg-[#0f1f0a]">
+            <div class="w-full h-full flex items-center justify-center text-[#c9a227]">
+              <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0121 18.382V7.618a1 1 0 01-.553-.894L15 7m0 13V7"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">Road Trips</span>
+            <h3 class="font-serif text-xl text-[#0f1f0a] mb-2 mt-2">Scenic Drives</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              San Juan Skyway, Million Dollar Highway, Owl Creek Pass, and other breathtaking mountain roads.
+            </p>
+          </div>
+        </a>
+
+        <!-- Restaurants -->
+        <a href="/blog/restaurants-pagosa-springs/" class="card-luxury overflow-hidden group block">
+          <div class="aspect-[16/10] overflow-hidden bg-[#0f1f0a]">
+            <div class="w-full h-full flex items-center justify-center text-[#c9a227]">
+              <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">Dining</span>
+            <h3 class="font-serif text-xl text-[#0f1f0a] mb-2 mt-2">Restaurant Guide</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              40+ restaurants covering craft breweries, fine dining, Mexican cuisine, BBQ, and where the locals eat.
+            </p>
+          </div>
+        </a>
+
+        <!-- Annual Events -->
+        <a href="/blog/annual-events-pagosa-springs/" class="card-luxury overflow-hidden group block">
+          <div class="aspect-[16/10] overflow-hidden bg-[#0f1f0a]">
+            <div class="w-full h-full flex items-center justify-center text-[#c9a227]">
+              <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">Events</span>
+            <h3 class="font-serif text-xl text-[#0f1f0a] mb-2 mt-2">Annual Events</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Hot air balloon rallies, folk festivals, winter celebrations, and year-round community happenings.
+            </p>
+          </div>
+        </a>
+
+        <!-- Arts & Culture -->
+        <a href="/blog/arts-culture-pagosa-springs/" class="card-luxury overflow-hidden group block">
+          <div class="aspect-[16/10] overflow-hidden bg-[#0f1f0a]">
+            <div class="w-full h-full flex items-center justify-center text-[#c9a227]">
+              <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">Culture</span>
+            <h3 class="font-serif text-xl text-[#0f1f0a] mb-2 mt-2">Arts & Culture</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Chimney Rock, downtown galleries, live theatre, and the ancient astronomical observatory.
+            </p>
+          </div>
+        </a>
+
+        <!-- Shopping -->
+        <a href="/blog/shopping-pagosa-springs/" class="card-luxury overflow-hidden group block">
+          <div class="aspect-[16/10] overflow-hidden bg-[#0f1f0a]">
+            <div class="w-full h-full flex items-center justify-center text-[#c9a227]">
+              <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">Shopping</span>
+            <h3 class="font-serif text-xl text-[#0f1f0a] mb-2 mt-2">Shopping Guide</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Downtown boutiques, local artisans, outdoor gear, Western wear, and unique souvenirs.
+            </p>
+          </div>
+        </a>
+
+        <!-- Wellness -->
+        <a href="/blog/wellness-pagosa-springs/" class="card-luxury overflow-hidden group block">
+          <div class="aspect-[16/10] overflow-hidden bg-[#0f1f0a]">
+            <div class="w-full h-full flex items-center justify-center text-[#c9a227]">
+              <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[#c9a227] text-xs uppercase tracking-wider font-medium">Wellness</span>
+            <h3 class="font-serif text-xl text-[#0f1f0a] mb-2 mt-2">Wellness Guide</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Beyond the hot springs — massage therapy, yoga studios, meditation spots, and holistic healing.
+            </p>
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -821,6 +1029,9 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </section>
+
+  <!-- FAQ Section -->
+  <FAQ faqs={activitiesFaqs} title="Frequently Asked Questions About Local Activities" />
 
   <!-- CTA -->
   <section class="py-20 bg-[#c9a227]">
