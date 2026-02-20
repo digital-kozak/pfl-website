@@ -3,7 +3,7 @@ title: "Arts & Culture in Pagosa Springs: Galleries, Theatre & Ancient History"
 description: "Discover Pagosa's vibrant arts scene — from downtown galleries and live theatre to the ancient astronomical observatory at Chimney Rock National Monument."
 publishDate: 2026-02-20
 author: "Pagosa Forest Lodge"
-image: "/images/attractions/hot-springs.jpg"
+image: "/images/attractions/pagosa-center-arts.jpg"
 tags: ["arts", "culture", "galleries", "theatre", "Chimney Rock", "history", "things to do"]
 ---
 
