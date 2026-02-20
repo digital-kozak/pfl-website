@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
 import reviewsData from '../data/reviews.json';
 
 const { totalReviews, reviewsPerPage, totalPages, reviews } = reviewsData;
@@ -130,6 +131,9 @@ const stats = [
       </h1>
     </div>
   </section>
+
+  <!-- Breadcrumb Navigation -->
+  <Breadcrumb items={[{ name: "Reviews", url: "/reviews" }]} />
 
   <!-- Stats -->
   <section class="py-16 bg-white">

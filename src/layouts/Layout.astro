@@ -6,13 +6,15 @@ export interface Props {
   description?: string;
   ogImage?: string;
   breadcrumbs?: { name: string; url: string }[];
+  preloadImage?: string;
 }
 
 const { 
   title = "Pagosa Forest Lodge | Luxury Mountain Cabin in Colorado",
   description = "Experience luxury mountain living at Pagosa Forest Lodge. 4 bedrooms, hot tub, stunning views, 40 min to Wolf Creek Ski. Book your Colorado getaway today!",
   ogImage = "/images/og-image.jpg",
-  breadcrumbs = []
+  breadcrumbs = [],
+  preloadImage
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://pagosaforestlodge.com');
@@ -59,6 +61,9 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="dns-prefetch" href="https://app.lodgify.com" />
+  
+  <!-- Preload hero image for LCP improvement -->
+  {preloadImage && <link rel="preload" as="image" href={preloadImage} type="image/jpeg" fetchpriority="high" />}
   
   <!-- Fonts loaded via CSS @font-face with font-display: swap -->
   <!-- This prevents render-blocking and layout shift -->
@@ -194,8 +199,6 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
     .hero-slide-first{opacity:1!important;z-index:2!important}
     .hero-slide{position:absolute;inset:0;opacity:0}
     .hero-slideshow{position:absolute;inset:0;z-index:0}
-    /* Critical: Nav hidden initially */
-    #main-nav{opacity:0;transform:translateY(-100%);transition:all .5s}
     /* Critical: Layout container */
     .container-custom{width:100%;max-width:1280px;margin:0 auto;padding:0 1.5rem}
     @media(min-width:768px){.container-custom{padding:0 2rem}}
@@ -221,7 +224,7 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
       });
     })();
   </script>
-  <noscript><link rel="stylesheet" href="/_astro/amenities.BouWIwFz.css"></noscript>
+  <noscript><link rel="stylesheet" href="/_astro/amenities.C4Dk1h8G.css"></noscript>
   
   <style is:global>
     :root {
@@ -246,7 +249,7 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
 </head>
 <body class="bg-[#faf9f6]">
   <!-- Navigation -->
-  <header id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 opacity-0 -translate-y-full">
+  <header id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white/90 backdrop-blur-md shadow-sm">
     <nav class="glass">
       <div class="container-custom">
         <div class="flex items-center justify-between h-20">
@@ -257,38 +260,40 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
             </span>
           </a>
           
-          <!-- Desktop Navigation -->
-          <div class="hidden lg:flex items-center space-x-8">
-            <a href="/the-cabin/" class="nav-link text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider">The Cabin</a>
-            <a href="/amenities/" class="nav-link text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider">Amenities</a>
-            <a href="/things-to-do/" class="nav-link text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider">Things to Do</a>
-            <a href="/location/" class="nav-link text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider">Location</a>
-            <a href="/gallery/" class="nav-link text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider">Gallery</a>
-            <a href="/reviews/" class="nav-link text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider">Reviews</a>
-            <a href="/contact/" class="nav-link text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider">Contact</a>
+          <!-- Desktop Navigation - Only on 2xl screens (1536px+) -->
+          <div class="hidden 2xl:flex items-center space-x-4">
+            <a href="/the-cabin/" class="nav-link text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider whitespace-nowrap">The Cabin</a>
+            <a href="/amenities/" class="nav-link text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider whitespace-nowrap">Amenities</a>
+            <a href="/things-to-do/" class="nav-link text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider whitespace-nowrap">Things to Do</a>
+            <a href="/location/" class="nav-link text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider whitespace-nowrap">Location</a>
+            <a href="/blog/" class="nav-link text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider whitespace-nowrap">Blog</a>
+            <a href="/gallery/" class="nav-link text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider whitespace-nowrap">Gallery</a>
+            <a href="/reviews/" class="nav-link text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider whitespace-nowrap">Reviews</a>
+            <a href="/contact/" class="nav-link text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider whitespace-nowrap">Contact</a>
           </div>
 
-          <!-- CTA Button -->
-          <div class="hidden lg:block">
-            <a href="/book/" class="btn-primary text-sm">Book Now</a>
+          <!-- CTA Button - Only on 2xl screens -->
+          <div class="hidden 2xl:block">
+            <a href="/book/" class="btn-primary text-sm px-4 py-2 whitespace-nowrap">Book Now</a>
           </div>
           
-          <!-- Mobile Menu Button -->
-          <button id="mobile-menu-btn" class="lg:hidden p-2 text-[#0f1f0a]">
+          <!-- Mobile/Tablet Menu Button (shows on xl and below) -->
+          <button id="mobile-menu-btn" class="2xl:hidden p-2 text-[#0f1f0a]" aria-label="Toggle navigation menu" aria-expanded="false">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
         </div>
       </div>
       
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="lg:hidden hidden border-t border-gray-100 bg-white/95 backdrop-blur-md">
+      <!-- Mobile/Tablet Menu (shows on xl and below) -->
+      <div id="mobile-menu" class="2xl:hidden hidden border-t border-gray-100 bg-white/95 backdrop-blur-md">
         <div class="container-custom py-6 space-y-4">
           <a href="/the-cabin/" class="block text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider py-2">The Cabin</a>
           <a href="/amenities/" class="block text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider py-2">Amenities</a>
           <a href="/things-to-do/" class="block text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider py-2">Things to Do</a>
           <a href="/location/" class="block text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider py-2">Location</a>
+          <a href="/blog/" class="block text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider py-2">Blog</a>
           <a href="/gallery/" class="block text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider py-2">Gallery</a>
           <a href="/reviews/" class="block text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider py-2">Reviews</a>
           <a href="/contact/" class="block text-sm font-medium text-[#0f1f0a] hover:text-[#c9a227] transition-colors uppercase tracking-wider py-2">Contact</a>
@@ -321,11 +326,11 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
             Your luxury mountain escape awaits in the heart of Colorado. Experience nature's finest with modern comforts.
           </p>
           <div class="flex space-x-4">
-            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#c9a227] transition-colors">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#c9a227] transition-colors" aria-label="Facebook">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
-            <a href="https://www.instagram.com/pagosaforestlodge/" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#c9a227] transition-colors">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.468 2.373c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg>
+            <a href="https://www.instagram.com/pagosaforestlodge/" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#c9a227] transition-colors" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.468 2.373c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg>
             </a>
           </div>
         </div>
@@ -338,6 +343,7 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
             <li><a href="/amenities/" class="text-white/70 hover:text-[#c9a227] transition-colors text-sm">Amenities</a></li>
             <li><a href="/things-to-do/" class="text-white/70 hover:text-[#c9a227] transition-colors text-sm">Things to Do</a></li>
             <li><a href="/location/" class="text-white/70 hover:text-[#c9a227] transition-colors text-sm">Location</a></li>
+            <li><a href="/blog/" class="text-white/70 hover:text-[#c9a227] transition-colors text-sm">Blog</a></li>
             <li><a href="/gallery/" class="text-white/70 hover:text-[#c9a227] transition-colors text-sm">Gallery</a></li>
             <li><a href="/reviews/" class="text-white/70 hover:text-[#c9a227] transition-colors text-sm">Reviews</a></li>
           </ul>
@@ -375,7 +381,7 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
           <p class="text-white/70 text-sm mb-4">Subscribe for special offers and seasonal updates.</p>
           <form class="flex flex-col space-y-3" action="https://formsubmit.co/info@pagosaforestlodge.com" method="POST">
             <input type="hidden" name="_subject" value="Newsletter Subscription from Website">
-            <input type="hidden" name="_next" value="https://dev.pagosaforestlodge.com/?subscribed=true">
+            <input type="hidden" name="_next" value="https://pagosaforestlodge.com/?subscribed=true">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_autoresponse" value="Thank you for subscribing to Pagosa Forest Lodge updates! You'll receive our latest news and special offers.">
             <input 
@@ -391,10 +397,10 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
       </div>
       
       <div class="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-white/50 text-sm">© 2025 Pagosa Forest Lodge. All rights reserved.</p>
+        <p class="text-white/50 text-sm">© 2026 Pagosa Forest Lodge. All rights reserved.</p>
         <div class="flex space-x-6 mt-4 md:mt-0">
-          <a href="#" class="text-white/50 hover:text-[#c9a227] text-sm transition-colors">Privacy Policy</a>
-          <a href="#" class="text-white/50 hover:text-[#c9a227] text-sm transition-colors">Terms of Service</a>
+          <a href="/privacy-policy/" class="text-white/50 hover:text-[#c9a227] text-sm transition-colors">Privacy Policy</a>
+          <a href="/terms-of-service/" class="text-white/50 hover:text-[#c9a227] text-sm transition-colors">Terms of Service</a>
         </div>
       </div>
     </div>
@@ -407,24 +413,6 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
     
     mobileMenuBtn?.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
-    });
-    
-    // Sticky nav visibility on scroll
-    const nav = document.getElementById('main-nav');
-    let lastScroll = 0;
-    
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.pageYOffset;
-      
-      if (currentScroll > 100) {
-        nav.classList.remove('opacity-0', '-translate-y-full');
-        nav.classList.add('opacity-100', 'translate-y-0');
-      } else {
-        nav.classList.add('opacity-0', '-translate-y-full');
-        nav.classList.remove('opacity-100', 'translate-y-0');
-      }
-      
-      lastScroll = currentScroll;
     });
   </script>
 </body>

@@ -1,0 +1,274 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+export async function getStaticPaths() {
+  const posts = await Astro.glob('../../content/blog/*.md');
+  
+  return posts.map((post) => {
+    const slug = post.file.split('/').pop().replace('.md', '');
+    return {
+      params: { slug },
+      props: { post, allPosts: posts },
+    };
+  });
+}
+
+const { post, allPosts } = Astro.props;
+const { Content } = post;
+
+const slug = post.file.split('/').pop().replace('.md', '');
+
+// Generate Article schema
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": post.frontmatter.title,
+  "description": post.frontmatter.description,
+  "image": post.frontmatter.image ? `https://pagosaforestlodge.com${post.frontmatter.image}` : "https://pagosaforestlodge.com/images/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Pagosa Forest Lodge"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pagosa Forest Lodge",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://pagosaforestlodge.com/images/og-image.jpg"
+    }
+  },
+  "datePublished": post.frontmatter.publishDate,
+  "dateModified": post.frontmatter.publishDate,
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://pagosaforestlodge.com/blog/${slug}`
+  }
+};
+---
+
+<Layout 
+  title={`${post.frontmatter.title} | Pagosa Forest Lodge Blog`}
+  description={post.frontmatter.description}
+  ogImage={post.frontmatter.image}
+>
+  <!-- Breadcrumb Navigation -->
+  <Breadcrumb items={[
+    { name: "Blog", url: "/blog" },
+    { name: post.frontmatter.title }
+  ]} />
+  
+  <!-- Hero -->
+  <section class="relative py-24 hero-overlay">
+    <div class="absolute inset-0 z-0">
+      <img 
+        src={post.frontmatter.image || '/images/og-image.jpg'} 
+        alt={post.frontmatter.title}
+        class="w-full h-full object-cover"
+        fetchpriority="high"
+        decoding="async"
+      />
+    </div>
+    
+    <div class="relative z-10 container-custom text-center text-white">
+      <p class="text-sm uppercase tracking-[0.3em] mb-4">
+        {post.frontmatter.tags?.[0] || 'Travel Guide'}
+      </p>
+      <h1 class="font-serif text-4xl md:text-6xl max-w-4xl mx-auto">
+        {post.frontmatter.title}
+      </h1>
+      
+      <div class="flex items-center justify-center gap-4 mt-6 text-sm text-white/80">
+        <span>{new Date(post.frontmatter.publishDate).toLocaleDateString('en-US', { 
+          month: 'long', 
+          day: 'numeric', 
+          year: 'numeric' 
+        })}</span>
+        <span>•</span>
+        <span>By {post.frontmatter.author}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Content -->
+  <article class="section-padding bg-[#faf9f6]" itemscope itemtype="https://schema.org/Article">
+    <meta itemprop="headline" content={post.frontmatter.title} />
+    <meta itemprop="datePublished" content={post.frontmatter.publishDate} />
+    <meta itemprop="dateModified" content={post.frontmatter.publishDate} />
+    {post.frontmatter.image && <meta itemprop="image" content={`https://pagosaforestlodge.com${post.frontmatter.image}`} />}
+    <div itemprop="author" itemscope itemtype="https://schema.org/Organization">
+      <meta itemprop="name" content="Pagosa Forest Lodge" />
+    </div>
+    
+    <div class="container-custom max-w-4xl">
+      <div class="prose prose-lg max-w-none" itemprop="articleBody">
+        <Content />
+      </div>
+
+      <!-- Tags -->
+      {post.frontmatter.tags && (
+        <div class="mt-12 pt-8 border-t border-gray-200">
+          <p class="text-sm text-gray-500 mb-3">Topics:</p>
+          <div class="flex flex-wrap gap-2">
+            {post.frontmatter.tags.map((tag) => (
+              <span class="px-3 py-1 bg-[#c9a227]/10 text-[#c9a227] text-sm rounded-full">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- CTA -->
+      <div class="mt-12 p-8 bg-white rounded-lg shadow-sm">
+        <h3 class="font-serif text-2xl text-[#0f1f0a] mb-4">
+          Plan Your Pagosa Springs Getaway
+        </h3>
+        <p class="text-gray-600 mb-6">
+          Ready to experience everything Pagosa has to offer? Our luxury 4-bedroom cabin 
+          is the perfect basecamp for your mountain adventure.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="/book" class="btn-primary">
+            Check Availability
+          </a>
+          <a href="/the-cabin" class="btn-secondary border-[#0f1f0a] text-[#0f1f0a]">
+            Explore The Cabin
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Related Posts -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <h2 class="font-serif text-3xl text-[#0f1f0a] mb-8 text-center">
+        More From Our <span class="italic">Blog</span>
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {allPosts
+          .filter((p) => p.file !== post.file)
+          .slice(0, 3)
+          .map((relatedPost) => (
+            <a 
+              href={`/blog/${relatedPost.file.split('/').pop().replace('.md', '')}`}
+              class="group block"
+            >
+              <article class="bg-[#faf9f6] rounded-lg overflow-hidden transition-shadow hover:shadow-lg">
+                <div class="aspect-[16/9] overflow-hidden">
+                  <img 
+                    src={relatedPost.frontmatter.image || '/images/og-image.jpg'}
+                    alt={relatedPost.frontmatter.title}
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="p-6">
+                  <h3 class="font-serif text-xl text-[#0f1f0a] group-hover:text-[#c9a227] transition-colors">
+                    {relatedPost.frontmatter.title}
+                  </h3>
+                </div>
+              </article>
+            </a>
+          ))}
+      </div>
+    </div>
+  </section>
+  
+  <!-- Article Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+</Layout>
+
+<style is:global>
+  .prose h1 {
+    font-family: var(--font-serif);
+    font-size: 2.25rem;
+    color: #0f1f0a;
+    margin-bottom: 1.5rem;
+  }
+  
+  .prose h2 {
+    font-family: var(--font-serif);
+    font-size: 1.875rem;
+    color: #0f1f0a;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .prose h3 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: #0f1f0a;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .prose p {
+    color: #4b5563;
+    line-height: 1.625;
+    margin-bottom: 1rem;
+  }
+  
+  .prose ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #4b5563;
+  }
+  
+  .prose ol {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #4b5563;
+  }
+  
+  .prose li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .prose strong {
+    color: #0f1f0a;
+    font-weight: 600;
+  }
+  
+  .prose a {
+    color: #c9a227;
+  }
+  
+  .prose a:hover {
+    text-decoration: underline;
+  }
+  
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+  
+  .prose th {
+    background-color: #0f1f0a;
+    color: #ffffff;
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 500;
+  }
+  
+  .prose td {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0.75rem;
+    color: #4b5563;
+  }
+  
+  .prose blockquote {
+    border-left: 4px solid #c9a227;
+    padding-left: 1rem;
+    font-style: italic;
+    color: #4b5563;
+    margin: 1.5rem 0;
+  }
+</style>

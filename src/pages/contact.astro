@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
 ---
 
 <Layout 
@@ -24,7 +25,7 @@ import Layout from '../layouts/Layout.astro';
   <section class="relative py-24 hero-overlay">
     <div class="absolute inset-0 z-0">
       <img 
-        src="/images/14317 W Hwy 160 Pagosa Springs-large-007-005-14317 W Hwy 160-1500x1000-72dpi.jpg" 
+        src="/images/snowy-cabin.jpg" 
         alt="Contact Pagosa Forest Lodge" 
         class="w-full h-full object-cover"
       />
@@ -40,6 +41,9 @@ import Layout from '../layouts/Layout.astro';
       </p>
     </div>
   </section>
+
+  <!-- Breadcrumb Navigation -->
+  <Breadcrumb items={[{ name: "Contact", url: "/contact" }]} />
 
   <!-- Contact Section -->
   <section class="section-padding bg-[#faf9f6]">
@@ -71,7 +75,7 @@ import Layout from '../layouts/Layout.astro';
             <input type="hidden" name="_captcha" value="true">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_autoresponse" value="Thank you for contacting Pagosa Forest Lodge. We have received your message and will respond within 24 hours.">
-            <input type="hidden" name="_next" value="https://dev.pagosaforestlodge.com/contact?submitted=true">
+            <input type="hidden" name="_next" value="https://pagosaforestlodge.com/contact?submitted=true">
             
             <!-- Honeypot field to prevent spam -->
             <input type="text" name="_honey" style="display:none">

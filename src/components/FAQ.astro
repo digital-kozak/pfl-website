@@ -1,0 +1,183 @@
+---
+export interface FAQ {
+  question: string;
+  answer: string;
+}
+
+export interface Props {
+  faqs: FAQ[];
+  title?: string;
+}
+
+const { faqs, title = "Frequently Asked Questions" } = Astro.props;
+
+// Generate FAQ schema
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map((faq) => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer.replace(/<[^\u003e]*>/g, '') // Strip HTML tags for schema
+    }
+  }))
+};
+---
+
+<section class="faq-section" aria-labelledby="faq-heading">
+  <div class="container-custom max-w-4xl">
+    <h2 id="faq-heading" class="faq-title">{title}</h2>
+    
+    <div class="faq-list">
+      {faqs.map((faq, index) => (
+        <details class="faq-item" open={index === 0}>
+          <summary class="faq-question">
+            <span class="faq-icon" aria-hidden="true">+</span>
+            {faq.question}
+          </summary>
+          <div class="faq-answer" set:html={faq.answer} />
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+<script>
+  // Toggle icon between + and -
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('toggle', function() {
+      const icon = this.querySelector('.faq-icon');
+      if (icon) {
+        icon.textContent = this.open ? '−' : '+';
+      }
+    });
+  });
+</script>
+
+<style>
+  .faq-section {
+    padding: 4rem 0;
+    background: linear-gradient(180deg, #ffffff 0%, #faf9f6 100%);
+    border-top: 1px solid rgba(15, 31, 10, 0.06);
+  }
+  
+  .faq-title {
+    font-family: var(--font-serif, Georgia, serif);
+    font-size: 2.25rem;
+    color: #0f1f0a;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .faq-item {
+    background: white;
+    border: 1px solid rgba(15, 31, 10, 0.1);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .faq-item:hover {
+    box-shadow: 0 4px 12px rgba(15, 31, 10, 0.06);
+  }
+  
+  .faq-question {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    font-weight: 600;
+    color: #0f1f0a;
+    cursor: pointer;
+    list-style: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .faq-question::-webkit-details-marker {
+    display: none;
+  }
+  
+  .faq-question:hover {
+    background-color: rgba(201, 162, 39, 0.04);
+  }
+  
+  .faq-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: linear-gradient(135deg, #c9a227, #d4b43a);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+  }
+  
+  .faq-answer {
+    padding: 0 1.5rem 1.25rem 3.5rem;
+    color: #4b5563;
+    line-height: 1.7;
+  }
+  
+  .faq-answer :global(p) {
+    margin-bottom: 1rem;
+  }
+  
+  .faq-answer :global(p:last-child) {
+    margin-bottom: 0;
+  }
+  
+  .faq-answer :global(ul) {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .faq-answer :global(li) {
+    margin-bottom: 0.5rem;
+  }
+  
+  .faq-answer :global(a) {
+    color: #c9a227;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .faq-answer :global(a:hover) {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 640px) {
+    .faq-section {
+      padding: 3rem 0;
+    }
+    
+    .faq-title {
+      font-size: 1.875rem;
+      margin-bottom: 2rem;
+    }
+    
+    .faq-question {
+      padding: 1rem 1.25rem;
+      font-size: 0.9375rem;
+    }
+    
+    .faq-answer {
+      padding: 0 1.25rem 1rem 3rem;
+      font-size: 0.9375rem;
+    }
+  }
+</style>

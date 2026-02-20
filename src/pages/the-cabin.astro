@@ -1,5 +1,30 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import FAQ from '../components/FAQ.astro';
+
+const cabinFaqs = [
+  {
+    question: "How many people can the cabin accommodate?",
+    answer: "Our 4-bedroom cabin comfortably sleeps up to 8 guests. The sleeping arrangement includes a king bed in the master suite, a queen bed in the downstairs bedroom, two twin beds in the upstairs bunk room, and a bunk bed plus additional twin in the game room."
+  },
+  {
+    question: "Is the cabin pet-friendly?",
+    answer: "Yes! We welcome well-behaved dogs on a case-by-case basis with prior approval and a pet fee. Our 5-acre property gives pets plenty of space to explore, and we're surrounded by San Juan National Forest for endless walks. Please contact us before booking if you'd like to bring your furry friend."
+  },
+  {
+    question: "What kitchen amenities are included?",
+    answer: "Our gourmet kitchen features stainless steel appliances, granite countertops, a Keurig and drip coffee maker, and all the cookware, dishes, and utensils you need. Whether you're making a quick breakfast before hitting the slopes or a family dinner, you'll find everything you need."
+  },
+  {
+    question: "Does the cabin have WiFi and cell service?",
+    answer: "Yes! We have high-speed Starlink satellite internet throughout the cabin. Cell service varies by carrier—Verizon and AT&T generally work well. We recommend downloading offline maps before arrival as mountain coverage can be spotty in some areas."
+  },
+  {
+    question: "Is there a hot tub and fireplace?",
+    answer: "Absolutely! Our private outdoor hot tub offers stunning mountain views and is perfect for soaking after a day of skiing or hiking. Inside, you'll find a cozy pellet stove in the great room for warming up on chilly mountain evenings."
+  }
+];
 ---
 
 <Layout 
@@ -24,6 +49,9 @@ import Layout from '../layouts/Layout.astro';
       </h1>
     </div>
   </section>
+
+  <!-- Breadcrumb Navigation -->
+  <Breadcrumb items={[{ name: "The Cabin", url: "/the-cabin" }]} />
 
   <!-- Overview -->
   <section class="section-padding bg-[#faf9f6]">
@@ -459,6 +487,9 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </section>
+
+  <!-- FAQ Section -->
+  <FAQ faqs={cabinFaqs} title="Frequently Asked Questions About The Cabin" />
 
   <!-- CTA -->
   <section class="py-20 bg-[#c9a227]">

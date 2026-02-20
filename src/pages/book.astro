@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
 ---
 
 <Layout 
@@ -27,6 +28,9 @@ import Layout from '../layouts/Layout.astro';
       </p>
     </div>
   </section>
+
+  <!-- Breadcrumb Navigation -->
+  <Breadcrumb items={[{ name: "Book Now", url: "/book" }]} />
 
   <!-- Booking Widget -->
   <section class="section-padding bg-[#faf9f6]">

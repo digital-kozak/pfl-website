@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
 
 const galleryImages = [
   // Hero Images
@@ -88,6 +89,9 @@ const categories = ["All", "Exterior", "Interior", "Bedrooms", "Kitchen", "Ameni
       </h1>
     </div>
   </section>
+
+  <!-- Breadcrumb Navigation -->
+  <Breadcrumb items={[{ name: "Gallery", url: "/gallery" }]} />
 
   <!-- Gallery -->
   <section class="section-padding bg-[#faf9f6]">

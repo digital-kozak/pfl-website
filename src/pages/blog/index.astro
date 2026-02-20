@@ -1,0 +1,114 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+// Get all blog posts
+const posts = Object.values(await import.meta.glob('../../content/blog/*.md', { eager: true }));
+
+// Sort by publish date (newest first)
+const sortedPosts = posts.sort((a, b) => {
+  return new Date(b.frontmatter.publishDate) - new Date(a.frontmatter.publishDate);
+});
+---
+
+<Layout 
+  title="Blog | Pagosa Forest Lodge" 
+  description="Travel tips, local guides, and insider knowledge about Pagosa Springs, Wolf Creek Ski Resort, and the San Juan Mountains."
+>
+  <!-- Breadcrumb Navigation -->
+  <Breadcrumb items={[{ name: "Blog" }]} />
+
+  <!-- Hero -->
+  <section class="relative py-32 hero-overlay">
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="/images/snowy-cabin.jpg" 
+        alt="Pagosa Forest Lodge winter scene" 
+        class="w-full h-full object-cover"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    
+    <div class="relative z-10 container-custom text-center text-white">
+      <p class="text-sm uppercase tracking-[0.3em] mb-4">Travel Tips & Guides</p>
+      <h1 class="font-serif text-5xl md:text-7xl">
+        Our <span class="italic">Blog</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- Blog Posts Grid -->
+  <section class="section-padding bg-[#faf9f6]">
+    <div class="container-custom">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Local Knowledge</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a] mb-6">
+          Discover Pagosa <span class="italic">Springs</span>
+        </h2>
+        <p class="text-gray-600 text-lg">
+          Insider tips, seasonal guides, and everything you need to know about visiting 
+          our corner of the San Juan Mountains.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {sortedPosts.map((post) => (
+          <article class="card-luxury group overflow-hidden">
+            <a href={`/blog/${post.file.split('/').pop().replace('.md', '')}`} class="block">
+              <div class="aspect-[16/10] overflow-hidden">
+                <img 
+                  src={post.frontmatter.image || '/images/og-image.jpg'} 
+                  alt={post.frontmatter.title}
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="p-8">
+                <div class="flex items-center gap-4 mb-4 text-sm text-gray-500">
+                  <span>{new Date(post.frontmatter.publishDate).toLocaleDateString('en-US', { 
+                    month: 'long', 
+                    day: 'numeric', 
+                    year: 'numeric' 
+                  })}</span>
+                  {post.frontmatter.tags && (
+                    <span class="text-[#c9a227]">• {post.frontmatter.tags[0]}</span>
+                  )}
+                </div>
+                <h3 class="font-serif text-2xl text-[#0f1f0a] mb-3 group-hover:text-[#c9a227] transition-colors">
+                  {post.frontmatter.title}
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                  {post.frontmatter.description}
+                </p>
+                <span class="text-[#c9a227] text-sm font-medium inline-flex items-center">
+                  Read More
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                  </svg>
+                </span>
+              </div>
+            </a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding bg-[#0f1f0a] text-white">
+    <div class="container-custom text-center">
+      <h2 class="font-serif text-4xl md:text-5xl mb-6">
+        Ready to Experience <span class="italic">Pagosa?</span>
+      </h2>
+      <p class="text-lg text-white/80 max-w-2xl mx-auto mb-8">
+        Book your stay at our luxury mountain cabin and discover why Pagosa Springs 
+        is Colorado's best-kept secret.
+      </p>
+      <a href="/book" class="btn-primary text-lg px-10">
+        Book Direct & Save
+      </a>
+    </div>
+  </section>
+</Layout>

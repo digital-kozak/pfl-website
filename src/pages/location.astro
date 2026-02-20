@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
 
 const attractions = [
   {
@@ -62,7 +63,7 @@ const activities = [
 
 <Layout 
   title="Location | Pagosa Forest Lodge" 
-  description="Pagosa Forest Lodge: 40 minutes from Wolf Creek Ski, 15 min to hot springs. Perfect basecamp for your Colorado mountain vacation."
+  description="Premier lodging near Wolf Creek Ski Resort — just 40 minutes to the slopes. 15 minutes to Pagosa Hot Springs. Your Colorado mountain basecamp awaits."
   breadcrumbs={[{ name: "Location", url: "/location" }]}
 >
   <!-- Hero -->
@@ -82,6 +83,9 @@ const activities = [
       </h1>
     </div>
   </section>
+
+  <!-- Breadcrumb Navigation -->
+  <Breadcrumb items={[{ name: "Location", url: "/location" }]} />
 
   <!-- Address & Map -->
   <section class="section-padding bg-[#faf9f6]">
@@ -122,9 +126,9 @@ const activities = [
           </div>
           
           <p class="text-gray-600 leading-relaxed">
-            Our secluded mountain cabin sits on 5 private acres surrounded by pristine 
-            forest. Despite the peaceful seclusion, you're just minutes from world-class 
-            skiing, natural hot springs, and the charming town of Pagosa Springs.
+            Our secluded mountain cabin offers premium lodging near Wolf Creek Ski Resort — 
+            just 40 minutes to world-class skiing. Nestled on 5 private acres surrounded by pristine 
+            forest, you're also minutes from natural hot springs and the charming town of Pagosa Springs.
           </p>
         </div>
 
