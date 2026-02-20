@@ -3,7 +3,7 @@ title: "Best Scenic Drives from Pagosa Springs: Mountain Roads & Breathtaking Vi
 description: "Discover the most beautiful scenic drives near Pagosa Springs — San Juan Skyway, Million Dollar Highway, Owl Creek Pass, and hidden backroads with stunning mountain views."
 publishDate: 2026-02-20
 author: "Pagosa Forest Lodge"
-image: "/images/attractions/colorado-hot-springs.jpg"
+image: "/images/attractions/hot-springs.jpg"
 tags: ["scenic drives", "road trips", "San Juan Skyway", "Million Dollar Highway", "Owl Creek Pass", "sightseeing"]
 ---
 

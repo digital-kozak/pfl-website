@@ -3,7 +3,7 @@ title: "Family Vacation Planner: Pagosa Springs with Kids"
 description: "The ultimate family guide to Pagosa Springs — kid-friendly activities, family dining, and tips for a stress-free mountain vacation with children."
 publishDate: 2026-02-20
 author: "Pagosa Forest Lodge"
-image: "/images/attractions/family-activities.jpg"
+image: "/images/attractions/activity-sledding.jpg"
 tags: ["family vacation", "kids", "children", "family guide", "kid-friendly", "downloadable"]
 ---
 
