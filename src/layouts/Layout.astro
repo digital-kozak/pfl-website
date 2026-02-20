@@ -41,6 +41,15 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXF62TB4JN"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WXF62TB4JN');
+  </script>
+  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content={description} />
@@ -50,6 +59,9 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="dns-prefetch" href="https://app.lodgify.com" />
+  
+  <!-- Fonts loaded via CSS @font-face with font-display: swap -->
+  <!-- This prevents render-blocking and layout shift -->
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -172,6 +184,44 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
   )}
   
   <title>{title}</title>
+  
+  <!-- Critical CSS inlined for above-the-fold content -->
+  <style is:inline>
+    /* Critical: Prevent FOUC */
+    html{background-color:#faf9f6}
+    body{font-family:system-ui,-apple-system,sans-serif;margin:0;background:#faf9f6;color:#1a1a1a}
+    /* Critical: Hero visible immediately */
+    .hero-slide-first{opacity:1!important;z-index:2!important}
+    .hero-slide{position:absolute;inset:0;opacity:0}
+    .hero-slideshow{position:absolute;inset:0;z-index:0}
+    /* Critical: Nav hidden initially */
+    #main-nav{opacity:0;transform:translateY(-100%);transition:all .5s}
+    /* Critical: Layout container */
+    .container-custom{width:100%;max-width:1280px;margin:0 auto;padding:0 1.5rem}
+    @media(min-width:768px){.container-custom{padding:0 2rem}}
+    /* Critical: Basic button styles */
+    .btn-primary{background:linear-gradient(135deg,#c9a227,#d4b43a);color:#1a1a1a;border-radius:3.58em;padding:.875rem 2rem;font-weight:600;display:inline-flex}
+    /* Critical: Hero overlay */
+    .hero-overlay{position:relative}
+    .hero-overlay:before{content:"";position:absolute;inset:0;background:linear-gradient(#0f1f0a66,#0f1f0a33 40%,#0f1f0a80);z-index:1}
+  </style>
+  
+  <!-- Async load main CSS to prevent render-blocking -->
+  <script is:inline>
+    // Make stylesheets non-blocking using media="print" trick
+    (function() {
+      document.addEventListener('DOMContentLoaded', function() {
+        var links = document.querySelectorAll('link[rel="stylesheet"]');
+        links.forEach(function(link) {
+          if (!link.media || link.media === 'all') {
+            link.media = 'print';
+            link.onload = function() { this.media = 'all'; };
+          }
+        });
+      });
+    })();
+  </script>
+  <noscript><link rel="stylesheet" href="/_astro/amenities.BouWIwFz.css"></noscript>
   
   <style is:global>
     :root {

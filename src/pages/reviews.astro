@@ -1,165 +1,119 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import reviewsData from '../data/reviews.json';
 
-const reviews = [
-  {
-    name: "Christopher",
-    location: "Waxahachie, Texas",
-    rating: 5,
-    date: "May 2025",
-    text: "The place, the cabin, the surroundings, the forest right behind was perfect for our experience. Our dogs had a blast around the property. And my wife loved Pagosa! Will be back. If you're thinking about booking this cabin don't hesitate just do it five out of five stars perfect.",
-    avatar: "C"
-  },
-  {
-    name: "Nathaniel",
-    location: "11 months on Airbnb",
-    rating: 5,
-    date: "April 2025",
-    text: "5 adults, 2 dogs. We all had a blast! The cabin has a great cabin feel to it. Very secluded with so much wildlife everywhere you look. The views were amazing, and so was the hot tub and fire pit. We are very pleased with the experience, so are our dogs!",
-    avatar: "N"
-  },
-  {
-    name: "Samantha",
-    location: "Albuquerque, New Mexico",
-    rating: 5,
-    date: "June 2025",
-    text: "Our two families with a bunch of kiddos had an amazing time here! There was tons of things for the kids to do and a nice little hot tub for the adults and a fire pit to make s'mores in. Would definitely stay again.",
-    avatar: "S"
-  },
-  {
-    name: "Ian",
-    location: "Martinez Family",
-    rating: 5,
-    date: "June 2025",
-    text: "Wow! What an amazing stay with my kids. We had the most memorable moments enjoying the fresh air from the deck. Great get away or stay in all week! Can't wait to visit again. Thanks Michael.",
-    avatar: "I"
-  },
-  {
-    name: "Allie",
-    location: "6 years on Airbnb",
-    rating: 5,
-    date: "June 2025",
-    text: "We enjoyed our stay at the Pagosa cabin so much! It was wonderful and had everything we needed! We loved that it was not in town. The hot tub and fire pit were great to have on the property for something to do in the evening! We plan to be back! It was great!",
-    avatar: "A"
-  },
-  {
-    name: "Jessica",
-    location: "Norwood, Colorado",
-    rating: 5,
-    date: "April 2025",
-    text: "The place was perfect for connecting with friends. Comfortable beds with super soft linens. Private, quiet location, with beautiful views from the porch. Great place to unplug, but has all the modern conveniences.",
-    avatar: "J"
-  },
-  {
-    name: "Adrionna",
-    location: "Flora Vista, New Mexico",
-    rating: 5,
-    date: "October 2025",
-    text: "This was the perfect stay for myself and my husband to unwind and get away after our wedding. It was a peaceful getaway, still within driving distance to town. Would recommend and stay at again!",
-    avatar: "A"
-  },
-  {
-    name: "Martin",
-    location: "Santa Fe, New Mexico",
-    rating: 5,
-    date: "December 2024",
-    text: "The cabin was the perfect spot for all of my family from out of town to relax after a day of skiing and hot springs, plenty of space for everyone. Thanks for having us!",
-    avatar: "M"
-  },
-  {
-    name: "Prateek",
-    location: "McKinney, Texas",
-    rating: 5,
-    date: "October 2025",
-    text: "House is amazing and kids enjoyed a lot. Location is so scenic and amazing. Everything was well maintained making stay comfortable. Stargazing can be done from the property. Highly recommend this place to anyone looking for a beautiful, well equipped stay surrounded by nature. We could see deer family too.",
-    avatar: "P"
-  },
-  {
-    name: "Leslie",
-    location: "Wolfforth, Texas",
-    rating: 5,
-    date: "September 2025",
-    text: "This was an absolutely gorgeous cabin! It was nice and private but still close to town. It was very easy to find. Michael was very kind and answered all questions I had prior to booking. Instructions for checking in and out as well as during our stay were very clear! The bed was very comfortable and there were plenty of amenities available to us. Would definitely stay here again!",
-    avatar: "L"
-  },
-  {
-    name: "Sarah Mitchell",
-    location: "Denver, CO",
-    rating: 5,
-    date: "January 2025",
-    text: "Absolutely magical stay! The cabin exceeded all our expectations. The hot tub under the stars was unforgettable, and the mountain views from the deck took our breath away every morning. The kitchen was fully equipped for our holiday feast, and the bedrooms were so comfortable. Can't wait to return!",
-    avatar: "S"
-  },
-  {
-    name: "James & Karen Peterson",
-    location: "Austin, TX",
-    rating: 5,
-    date: "December 2024",
-    text: "Perfect for our family reunion! With 4 bedrooms, everyone had their own space. The kids absolutely loved the bunk room, and the fire pit became our nightly gathering spot for s'mores and stories. The cabin is beautifully decorated and immaculate. We'll definitely be back!",
-    avatar: "J"
-  },
-  {
-    name: "Michael Rodriguez",
-    location: "Phoenix, AZ",
-    rating: 5,
-    date: "March 2024",
-    text: "A skier's paradise! Only 40 minutes to Wolf Creek and the cabin was the perfect place to warm up after a day on the slopes. The fireplace and hot tub were exactly what we needed. The location is secluded yet convenient. Highly recommend for anyone looking for a true Colorado mountain experience.",
-    avatar: "M"
-  },
-  {
-    name: "Emily Thompson",
-    location: "Chicago, IL",
-    rating: 5,
-    date: "February 2024",
-    text: "We came for a girls' weekend and it was everything we hoped for! The cabin is even more beautiful in person. We spent hours in the hot tub watching the sunset over the mountains. The kitchen had everything we needed for cooking big family-style meals. Already planning our next trip!",
-    avatar: "E"
-  },
-  {
-    name: "David & Lisa Chen",
-    location: "San Francisco, CA",
-    rating: 5,
-    date: "August 2023",
-    text: "Our summer escape was absolutely perfect. The hiking trails nearby are incredible, and coming back to the cabin's comfort each evening was pure bliss. The air conditioning kept us cool during the day, and we loved dining on the deck with mountain views. This place is truly special.",
-    avatar: "D"
-  },
-  {
-    name: "Robert Williams",
-    location: "Dallas, TX",
-    rating: 5,
-    date: "July 2023",
-    text: "Best family vacation we've had in years! The kids didn't want to leave the bunk room, and my wife and I loved the master suite. The location is perfect - close enough to town but feels completely secluded. We saw deer from the deck every morning!",
-    avatar: "R"
-  },
-  {
-    name: "Jennifer Adams",
-    location: "Miami, FL",
-    rating: 5,
-    date: "June 2023",
-    text: "What a gem! We were looking for a peaceful mountain retreat and found exactly that. The attention to detail in the cabin is remarkable - from the plush towels to the gourmet kitchen. The hot springs nearby are a must-visit. We'll cherish these memories forever.",
-    avatar: "J"
-  },
-  {
-    name: "Mark & Susan Taylor",
-    location: "Seattle, WA",
-    rating: 5,
-    date: "September 2022",
-    text: "Our anniversary trip couldn't have been better. The cabin is romantic yet family-friendly. We loved the reading nook by the fireplace and the incredible stargazing from the hot tub. The hosts thought of everything. Already looking at dates for next year!",
-    avatar: "M"
-  }
-];
+const { totalReviews, reviewsPerPage, totalPages, reviews } = reviewsData;
+
+// Calculate stats from actual data
+const avgRating = (reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length).toFixed(2);
 
 const stats = [
-  { value: "4.91", label: "Average Rating" },
-  { value: "109", label: "Reviews" },
+  { value: avgRating, label: "Average Rating" },
+  { value: totalReviews.toString(), label: "Reviews" },
   { value: "100%", label: "Would Recommend" }
 ];
 ---
 
 <Layout 
   title="Reviews | Pagosa Forest Lodge" 
-  description="Read guest reviews of Pagosa Forest Lodge. 5-star ratings for our luxury mountain cabin near Wolf Creek Ski Resort in Colorado."
+  description={`Read ${totalReviews}+ guest reviews of Pagosa Forest Lodge. ${avgRating}-star average rating for our luxury mountain cabin near Wolf Creek Ski Resort in Colorado.`}
   breadcrumbs={[{ name: "Reviews", url: "/reviews" }]}
->  <!-- Hero -->
+>
+  <script>
+    // Client-side pagination
+    document.addEventListener('DOMContentLoaded', function() {
+      const reviewsPerPage = 12;
+      const reviewCards = document.querySelectorAll('.review-card');
+      const totalPages = Math.ceil(reviewCards.length / reviewsPerPage);
+      const paginationContainer = document.getElementById('pagination');
+      const prevBtn = document.getElementById('prev-page');
+      const nextBtn = document.getElementById('next-page');
+      let currentPage = 1;
+
+      function showPage(page) {
+        // Hide all reviews
+        reviewCards.forEach((card, index) => {
+          const start = (page - 1) * reviewsPerPage;
+          const end = start + reviewsPerPage;
+          if (index >= start && index < end) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        // Update pagination buttons
+        if (prevBtn) prevBtn.disabled = page === 1;
+        if (nextBtn) nextBtn.disabled = page === totalPages;
+
+        // Update page numbers
+        const pageButtons = document.querySelectorAll('.page-btn');
+        pageButtons.forEach(btn => {
+          const btnPage = parseInt(btn.dataset.page);
+          if (btnPage === page) {
+            btn.classList.add('bg-[#0f1f0a]', 'text-white');
+            btn.classList.remove('bg-white', 'text-[#0f1f0a]');
+          } else {
+            btn.classList.remove('bg-[#0f1f0a]', 'text-white');
+            btn.classList.add('bg-white', 'text-[#0f1f0a]');
+          }
+        });
+
+        // Update showing text
+        const showingText = document.getElementById('showing-text');
+        if (showingText) {
+          const start = (page - 1) * reviewsPerPage + 1;
+          const end = Math.min(page * reviewsPerPage, reviewCards.length);
+          showingText.textContent = `Showing ${start}-${end} of ${reviewCards.length} reviews`;
+        }
+
+        currentPage = page;
+      }
+
+      // Create pagination buttons
+      if (paginationContainer && totalPages > 1) {
+        let paginationHTML = '';
+        
+        for (let i = 1; i <= totalPages; i++) {
+          paginationHTML += `
+            <button 
+              class="page-btn px-4 py-2 rounded-lg text-sm font-medium transition-colors ${i === 1 ? 'bg-[#0f1f0a] text-white' : 'bg-white text-[#0f1f0a] hover:bg-[#0f1f0a]/10'} border border-gray-200"
+              data-page="${i}"
+            >
+              ${i}
+            </button>
+          `;
+        }
+        
+        paginationContainer.innerHTML = paginationHTML;
+
+        // Add click handlers
+        document.querySelectorAll('.page-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            showPage(parseInt(btn.dataset.page));
+          });
+        });
+      }
+
+      // Previous/Next buttons
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          if (currentPage > 1) showPage(currentPage - 1);
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          if (currentPage < totalPages) showPage(currentPage + 1);
+        });
+      }
+
+      // Show first page
+      showPage(1);
+    });
+  </script>
+
+  <!-- Hero -->
   <section class="relative py-32 hero-overlay">
     <div class="absolute inset-0 z-0">
       <img 
@@ -216,18 +170,19 @@ const stats = [
   <!-- Reviews Grid -->
   <section class="section-padding bg-[#faf9f6]">
     <div class="container-custom">
-      <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="text-center max-w-3xl mx-auto mb-12">
         <p class="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-4">Testimonials</p>
         <h2 class="font-serif text-4xl md:text-5xl text-[#0f1f0a]">What Guests <span class="italic">Are Saying</span></h2>
+        <p id="showing-text" class="text-gray-500 mt-4">Showing 1-{Math.min(reviewsPerPage, totalReviews)} of {totalReviews} reviews</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         {reviews.map((review) => (
-          <div class="bg-white p-8 rounded-lg shadow-sm">
+          <div class="review-card bg-white p-8 rounded-lg shadow-sm">
             <!-- Stars -->
             <div class="flex text-[#c9a227] mb-4">
-              {[...Array(5)].map(() => (
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              {[...Array(5)].map((_, i) => (
+                <svg class={`w-5 h-5 ${i < review.rating ? '' : 'text-gray-300'}`} fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                 </svg>
               ))}
@@ -237,52 +192,54 @@ const stats = [
             <p class="text-gray-700 mb-6 leading-relaxed italic">"{review.text}"</p>
             
             <!-- Author -->
-            <div class="flex items-center justify-between">
-              <div class="flex items-center">
-                <div class="w-12 h-12 rounded-full bg-[#0f1f0a] flex items-center justify-center text-white font-serif text-lg">
-                  {review.avatar}
-                </div>
-                <div class="ml-4">
-                  <p class="font-medium text-[#0f1f0a]">{review.name}</p>
-                  <p class="text-sm text-gray-500">{review.location}</p>
-                </div>
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center mr-4">
+                <span class="text-[#c9a227] font-serif text-lg">{review.avatar}</span>
               </div>
-              <p class="text-sm text-gray-400">{review.date}</p>
+              <div>
+                <p class="font-medium text-[#0f1f0a]">{review.name}</p>
+                <p class="text-sm text-gray-500">{review.location} • {review.date}</p>
+              </div>
             </div>
           </div>
         ))}
       </div>
+
+      <!-- Pagination -->
+      {totalPages > 1 && (
+        <div class="flex justify-center items-center space-x-2">
+          <button 
+            id="prev-page"
+            class="px-4 py-2 rounded-lg text-sm font-medium bg-white text-[#0f1f0a] border border-gray-200 hover:bg-[#0f1f0a]/10 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            disabled
+          >
+            ← Previous
+          </button>
+          
+          <div id="pagination" class="flex space-x-2">
+            <!-- Page numbers will be inserted here by JavaScript -->
+          </div>
+          
+          <button 
+            id="next-page"
+            class="px-4 py-2 rounded-lg text-sm font-medium bg-white text-[#0f1f0a] border border-gray-200 hover:bg-[#0f1f0a]/10 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          >
+            Next →
+          </button>
+        </div>
+      )}
     </div>
   </section>
 
-  <!-- Review CTA -->
-  <section class="section-padding bg-white">
-    <div class="container-custom">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="font-serif text-3xl md:text-4xl text-[#0f1f0a] mb-6">Share Your Experience</h2>
-        <p class="text-gray-600 mb-8">
-          Have you stayed at Pagosa Forest Lodge? We'd love to hear about your experience! 
-          Your feedback helps us improve and helps future guests discover their perfect mountain getaway.
-        </p>
-        
-        <a 
-          href="/contact" 
-          class="inline-flex items-center justify-center px-8 py-4 bg-[#0f1f0a] text-white font-medium rounded-full hover:bg-[#1a3d14] transition-colors"
-        >
-          Leave a Review
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="py-20 bg-[#c9a227]">
+  <!-- CTA Section -->
+  <section class="section-padding bg-[#0f1f0a] text-white">
     <div class="container-custom text-center">
-      <h2 class="font-serif text-3xl md:text-4xl text-[#0f1f0a] mb-4">Ready to create your own memories?</h2>
-      <p class="text-[#0f1f0a]/80 mb-8">Join our happy guests and book your stay today.</p>
-      <a href="/book" class="inline-flex items-center justify-center px-8 py-4 bg-[#0f1f0a] text-white font-medium rounded-full hover:bg-[#1a3d14] transition-colors">
-        Check Availability
-      </a>
+      <p class="text-[#c9a227] text-sm uppercase tracking-[0.3em] mb-4">Ready to Experience It?</p>
+      <h2 class="font-serif text-4xl md:text-5xl mb-6">Join Our <span class="italic">Happy Guests</span></h2>
+      <p class="text-white/70 max-w-2xl mx-auto mb-8 text-lg">
+        Book your stay today and see why {totalReviews}+ guests have given us a {avgRating}-star rating.
+      </p>
+      <a href="/book" class="btn-primary text-lg">Book Your Stay</a>
     </div>
   </section>
 </Layout>

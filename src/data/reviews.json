@@ -1,0 +1,831 @@
+{
+  "totalReviews": 103,
+  "reviewsPerPage": 12,
+  "totalPages": 9,
+  "reviews": [
+    {
+      "name": "Katy",
+      "location": "Airbnb Guest",
+      "rating": 5,
+      "date": "1 day ago",
+      "text": "We enjoyed the hot tub and our kids loved the air hockey table! Keep in mind if you are a large group there is not a dish washer and the washing machine is very small. They also ask that water usage be kept to a minimum as it is not connected to city water. We were very grateful they allowed pets with an extra fee. Michael was very quick to respond and super kind!",
+      "avatar": "K"
+    },
+    {
+      "name": "Jasmine",
+      "location": "5 years on Airbnb",
+      "rating": 5,
+      "date": "1 week ago",
+      "text": "Michael was a great host. We had some unexpected travel changes and he was accommodating to that. He was friendly and helpful with anything we needed! Cabin is in a great spot right off the hwy but far enough tucked away with great views. Great place overall 😊",
+      "avatar": "J"
+    },
+    {
+      "name": "Mike",
+      "location": "Boyd, Texas",
+      "rating": 5,
+      "date": "3 weeks ago",
+      "text": "beautiful place, just far enough away from town to feel lost in the woods . peaceful.",
+      "avatar": "M"
+    },
+    {
+      "name": "Brianna",
+      "location": "Montgomery, Texas",
+      "rating": 5,
+      "date": "January 2026",
+      "text": "Beautiful location our family loved it",
+      "avatar": "B"
+    },
+    {
+      "name": "Daniel",
+      "location": "Midland, Texas",
+      "rating": 5,
+      "date": "December 2025",
+      "text": "Perfect place to get out of the snow and enjoy the views! We loved everything about this home. Even with the snow, 4x4 let us easily access the home and we couldn't have had a better experience. A must stay for Pagosa Springs!",
+      "avatar": "D"
+    },
+    {
+      "name": "Martin",
+      "location": "Santa Fe, New Mexico",
+      "rating": 5,
+      "date": "December 2025",
+      "text": "The cabin was the perfect spot for all of my family from out of town to relax after a day of skiing and hot springs, plenty of space for everyone. Thanks for having us!",
+      "avatar": "M"
+    },
+    {
+      "name": "Clayton",
+      "location": "Albuquerque, New Mexico",
+      "rating": 5,
+      "date": "December 2025",
+      "text": "Great cabin! Recommend for your pagosa stay!",
+      "avatar": "C"
+    },
+    {
+      "name": "Georgiana",
+      "location": "2 months on Airbnb",
+      "rating": 5,
+      "date": "December 2025",
+      "text": "I loved spending Christmas at this peaceful cabin. I loved the hot tub and fire pit.",
+      "avatar": "G"
+    },
+    {
+      "name": "Michelle",
+      "location": "Albuquerque, New Mexico",
+      "rating": 5,
+      "date": "November 2025",
+      "text": "The cabin was big and beautiful. We had a lovely Thanksgiving there. Everything we needed was available and the house was clean and ideal for a family getaway in the mountains.",
+      "avatar": "M"
+    },
+    {
+      "name": "Miguel",
+      "location": "2 years on Airbnb",
+      "rating": 5,
+      "date": "November 2025",
+      "text": "Beautiful & homey! 10/10 recommend",
+      "avatar": "M"
+    },
+    {
+      "name": "Prateek",
+      "location": "McKinney, Texas",
+      "rating": 5,
+      "date": "October 2025",
+      "text": "House is amazing and kids enjoyed a lot. Location is so scenic and amazing. Everything was well maintained making stay comfortable. Stargazing can be done from the property. Highly recommend this place to anyone looking for a beautiful, well equipped stay surrounded by nature. We could see deer family too.",
+      "avatar": "P"
+    },
+    {
+      "name": "Adrionna",
+      "location": "Flora Vista, New Mexico",
+      "rating": 5,
+      "date": "October 2025",
+      "text": "This was the perfect stay for myself and my husband to unwind and get away after our wedding. It was a peaceful getaway, still within driving distance to town. Would recommend and stay at again!",
+      "avatar": "A"
+    },
+    {
+      "name": "Joseph",
+      "location": "6 years on Airbnb",
+      "rating": 5,
+      "date": "October 2025",
+      "text": "Probably one of the most beautiful places I've ever stayed from ABNB. Huge house. It was just me and my wife, but would great for a family get together.",
+      "avatar": "J"
+    },
+    {
+      "name": "Jakob",
+      "location": "Fort Worth, Texas",
+      "rating": 5,
+      "date": "September 2025",
+      "text": "Had a great time very pretty!",
+      "avatar": "J"
+    },
+    {
+      "name": "Farrah",
+      "location": "Denver, Colorado",
+      "rating": 5,
+      "date": "September 2025",
+      "text": "Beautiful views and private.",
+      "avatar": "F"
+    },
+    {
+      "name": "Leslie",
+      "location": "Wolfforth, Texas",
+      "rating": 5,
+      "date": "September 2025",
+      "text": "This was an absolutely gorgeous cabin! It was nice and private but still close to town. It was very easy to find. Michael was very kind and answered all questions I had prior to booking. Instructions for checking in and out as well as during our stay were very clear! The bed was very comfortable and there were plenty of amenities available to us. Would definitely stay here again!",
+      "avatar": "L"
+    },
+    {
+      "name": "Jeremy",
+      "location": "6 months on Airbnb",
+      "rating": 5,
+      "date": "August 2025",
+      "text": "Everything was great!",
+      "avatar": "J"
+    },
+    {
+      "name": "Jodi",
+      "location": "Chokio, Minnesota",
+      "rating": 5,
+      "date": "August 2025",
+      "text": "Beautiful location and accommodated our group of 7 easily. The host, Michael, was always quick to respond and very helpful with any questions we had about the area. I would highly recommend for anyone looking for a place near Pagosa Springs!",
+      "avatar": "J"
+    },
+    {
+      "name": "Daniel",
+      "location": "Fredericksburg, Ohio",
+      "rating": 5,
+      "date": "August 2025",
+      "text": "Nice setting with views. Hot tub felt good after a long day.",
+      "avatar": "D"
+    },
+    {
+      "name": "Sindhujasai",
+      "location": "India",
+      "rating": 5,
+      "date": "July 2025",
+      "text": "Amazing views.",
+      "avatar": "S"
+    },
+    {
+      "name": "Tammy",
+      "location": "Dallas, Texas",
+      "rating": 5,
+      "date": "July 2025",
+      "text": "We had a great time at the Pagosa Forest Lodge. Michael was helpful and very responsive. There was plenty of space and the surroundings were beautiful. Our only complaint would be that the furniture and kitchen supplies could use some upgrading.",
+      "avatar": "T"
+    },
+    {
+      "name": "Allie",
+      "location": "6 years on Airbnb",
+      "rating": 5,
+      "date": "June 2025",
+      "text": "We enjoyed our stay at the Pagosa cabin so much! It was wonderful and had everything we needed! We loved that it was not in town. The hot tub and fire pit were great to have on the property for something to do in the evening! We plan to be back! It was great! ♥️",
+      "avatar": "A"
+    },
+    {
+      "name": "Samantha",
+      "location": "Albuquerque, New Mexico",
+      "rating": 5,
+      "date": "June 2025",
+      "text": "Our two families with a bunch of kiddos had an amazing time here! There was tons of things for the kids to do and a nice little hot tub for the adults and a fire pit to make s'mores in. Would definitely stay again.",
+      "avatar": "S"
+    },
+    {
+      "name": "Ian",
+      "location": "1 year on Airbnb",
+      "rating": 5,
+      "date": "June 2025",
+      "text": "Wow! What an amazing stay with my kids. We had the most memorable moments enjoying the fresh air from the deck. Great get away or stay in all week! Can't wait to visit again. Thanks Michael. The Martinez family",
+      "avatar": "I"
+    },
+    {
+      "name": "Reuben",
+      "location": "Salineville, Ohio",
+      "rating": 5,
+      "date": "June 2025",
+      "text": "This place has amazing views from the front porch!!",
+      "avatar": "R"
+    },
+    {
+      "name": "Christopher",
+      "location": "Waxahachie, Texas",
+      "rating": 5,
+      "date": "May 2025",
+      "text": "The place the cabin, the surroundings the forest right behind was perfect for our experience. Our dogs had a blast around the property. And my wife love Pagosa will be back if you're thinking about booking this cabin don't hesitate just do it five out of five stars perfect.",
+      "avatar": "C"
+    },
+    {
+      "name": "James",
+      "location": "9 months on Airbnb",
+      "rating": 4,
+      "date": "May 2025",
+      "text": "Amazing home isolated in the mountains. Easy access to town.",
+      "avatar": "J"
+    },
+    {
+      "name": "Jonathan",
+      "location": "Albuquerque, New Mexico",
+      "rating": 5,
+      "date": "April 2025",
+      "text": "Thank you for the great stay Michael.",
+      "avatar": "J"
+    },
+    {
+      "name": "Bobbi",
+      "location": "Phoenix, Arizona",
+      "rating": 5,
+      "date": "April 2025",
+      "text": "Great location. Stayed for a quick ski trip and it did not disappoint. The views were amazing with wildlife everywhere. Enjoyed the fire pit and the hot tub.",
+      "avatar": "B"
+    },
+    {
+      "name": "Nathaniel",
+      "location": "11 months on Airbnb",
+      "rating": 5,
+      "date": "April 2025",
+      "text": "5 adults, 2 dogs. We all had a blast! The cabin has a great cabin feel to it. Very secluded with so much wildlife everywhere you look. The views were amazing, and so was the hot tub and fire pit. We are very pleased with the experience, so are our dogs!",
+      "avatar": "N"
+    },
+    {
+      "name": "Jessica",
+      "location": "Norwood, Colorado",
+      "rating": 5,
+      "date": "April 2025",
+      "text": "The place was perfect for connecting with friends. Comfortable beds with super soft linens. Private, quiet location, with beautiful views from the porch. You will need to drive to stores and/or restaurants, nothing is within walking distance. Great place to unplug, but has all the modern conveniences.",
+      "avatar": "J"
+    },
+    {
+      "name": "Derek",
+      "location": "Madison, Wisconsin",
+      "rating": 5,
+      "date": "March 2025",
+      "text": "We selected this listing among many others in the nearby area, and it did not let us down. Beautiful location, spacious house, and necessary amenities. Only downside was that the hot tub struggled to get to its high temps during the second half of our stay. Other than that, this is a perfect option if you're considering a stay near Pagosa Springs.",
+      "avatar": "D"
+    },
+    {
+      "name": "Derek",
+      "location": "Albuquerque, New Mexico",
+      "rating": 5,
+      "date": "March 2025",
+      "text": "This was a very short anniversary getaway for my wife and I. We were a bit worried about the snow forecast for the area, but we got in easily before the snow. Michael messaged me a couple times before we arrived and later during the next day, very proactive. The cabin was very spacious for us, king bed was a plus, and the hot tub was much needed with all the cold and snow! Away from town but off the main road for ease of travel. Out back we hit the trails and was able to do some nice sledding. Overall, a very good stay and would consider Michael's place again in another season!",
+      "avatar": "D"
+    },
+    {
+      "name": "Haley",
+      "location": "Denver, Colorado",
+      "rating": 5,
+      "date": "March 2025",
+      "text": "Booked Michael's place last minute and it ended up being a wonderful stay! It was comfy and secluded but still very close to pagosa springs downtown. If I'm ever back in town I'd choose to stay at Michael's place again!",
+      "avatar": "H"
+    },
+    {
+      "name": "Kristen",
+      "location": "Castle Rock, Colorado",
+      "rating": 5,
+      "date": "March 2025",
+      "text": "The Forest Lodge was a quiet, peaceful spot to enjoy a quick weekend getaway! The covered hot tub was a lovely amenity! Wish we had more time to explore.",
+      "avatar": "K"
+    },
+    {
+      "name": "Luke",
+      "location": "Shallowater, Texas",
+      "rating": 5,
+      "date": "March 2025",
+      "text": "Great place and good price. The cabin is huge and fit 6 adults comfortably.",
+      "avatar": "L"
+    },
+    {
+      "name": "Lauren",
+      "location": "West, Texas",
+      "rating": 5,
+      "date": "March 2025",
+      "text": "This was the perfect place for our little family spring break get away!",
+      "avatar": "L"
+    },
+    {
+      "name": "Andrew",
+      "location": "Ireland",
+      "rating": 4,
+      "date": "March 2025",
+      "text": "Very nice home, could be a bit more descriptive of its exact location",
+      "avatar": "A"
+    },
+    {
+      "name": "Heather",
+      "location": "11 months on Airbnb",
+      "rating": 5,
+      "date": "March 2025",
+      "text": "It was a great place to stay with 5 children",
+      "avatar": "H"
+    },
+    {
+      "name": "Lara",
+      "location": "Santa Fe, New Mexico",
+      "rating": 5,
+      "date": "February 2025",
+      "text": "Clean, absolutely everything is exactly as described...we were 2 families on a ski trip and this spot was perfect for us. Very responsive host, beautiful location. We'll probably come back next year!",
+      "avatar": "L"
+    },
+    {
+      "name": "Katie",
+      "location": "5 years on Airbnb",
+      "rating": 5,
+      "date": "January 2025",
+      "text": "We stayed for 5 days and 4 night. It was a gorgeous view and Pagosa was pretty close. It was private and peaceful. Would love to stay again!",
+      "avatar": "K"
+    },
+    {
+      "name": "Fonda",
+      "location": "Zavalla, Texas",
+      "rating": 5,
+      "date": "December 2024",
+      "text": "Awesome place to stay and the views were amazing! We will be back… I hope soon!",
+      "avatar": "F"
+    },
+    {
+      "name": "Noemi",
+      "location": "1 year on Airbnb",
+      "rating": 5,
+      "date": "December 2024",
+      "text": "The cabin was beautifully decorated, it was clean, the children loved the game room, and we're so happy to have chosen this cabin for our stay at Pagosa Springs!",
+      "avatar": "N"
+    },
+    {
+      "name": "Christine",
+      "location": "Belfair, Washington",
+      "rating": 5,
+      "date": "December 2024",
+      "text": "Such a beautiful space and the views are wonderful! We truly loved our time here!!!",
+      "avatar": "C"
+    },
+    {
+      "name": "Chris",
+      "location": "Red Feather Lakes, Colorado",
+      "rating": 5,
+      "date": "November 2024",
+      "text": "My wife and I and a couple friends came down for an extended weekend to relax and celebrate a birthday. We loved the place, not far from town, very private and beautiful surrounding. We went for a hike out the back door, enjoy the hot tub and played some horseshoes. Nice relaxing time.",
+      "avatar": "C"
+    },
+    {
+      "name": "Elijah",
+      "location": "1 year on Airbnb",
+      "rating": 5,
+      "date": "November 2024",
+      "text": "Nice place had a great time",
+      "avatar": "E"
+    },
+    {
+      "name": "Amanda",
+      "location": "White Rock, New Mexico",
+      "rating": 5,
+      "date": "October 2024",
+      "text": "A wonderful place to stay. Beautiful surroundings, comfortable cabin, and abundant wildlife.",
+      "avatar": "A"
+    },
+    {
+      "name": "Michelle",
+      "location": "United States",
+      "rating": 5,
+      "date": "September 2024",
+      "text": "Nice cabin in a beautiful area! We did some hiking, mountain biking, and driving around/ sight-seeing. We went to Chimney Rock and we also drove into Durango to do the train to Silverton. We felt like there were enjoyable things to do in all directions! Cabin was comfortable for our group of 8 (5 adults, 3 kids). We had a great time!",
+      "avatar": "M"
+    },
+    {
+      "name": "David",
+      "location": "2 years on Airbnb",
+      "rating": 5,
+      "date": "September 2024",
+      "text": "The place was amazing with beautiful views during the day and amazing star gazing at night. It was close to so many things to do that we could not get them all in from fishing, mountain biking, to spending time in the mountain towns of Pagosa Springs and Durango. The only thing that would have made it better was if we stayed longer!",
+      "avatar": "D"
+    },
+    {
+      "name": "Cela",
+      "location": "11 years on Airbnb",
+      "rating": 5,
+      "date": "September 2024",
+      "text": "Great place with lots of room - really enjoyed sitting on the porch and watching the balloons launch down in Pagosa Springs over the weekend. Hosts were really easy to communicate with too. Would stay here again!",
+      "avatar": "C"
+    },
+    {
+      "name": "Maggie",
+      "location": "Bayfield, Colorado",
+      "rating": 5,
+      "date": "September 2024",
+      "text": "Excellent space with great views. Ample space. We will be back!",
+      "avatar": "M"
+    },
+    {
+      "name": "Tiffaney",
+      "location": "Fort Worth, Texas",
+      "rating": 5,
+      "date": "September 2024",
+      "text": "We had a great time with friends at the cabin while passing through Pagosa Springs. The cabin is located a short distance from downtown Pagosa where there are many hot springs, restaurants and other activities to explore. The home is situated up on a hill so it receives a nice breeze when sitting outside or even inside with the windows open. Sitting outside on the deck in the evenings was a great way to relax and watch the deer passing through the property. The weather was perfect during our stay allowing us to create a nice bonfire and cook some steaks outside on the grill and then enjoy the jacuzzi afterwards. The home had plenty of space and was stocked with all of the basic essentials.",
+      "avatar": "T"
+    },
+    {
+      "name": "Whitney",
+      "location": "2 years on Airbnb",
+      "rating": 5,
+      "date": "August 2024",
+      "text": "Great place to stay with lots of privacy and space. Great entertainment for the kids and while family.",
+      "avatar": "W"
+    },
+    {
+      "name": "Tiffany",
+      "location": "Abilene, Texas",
+      "rating": 5,
+      "date": "August 2024",
+      "text": "After our hiking trip got cut short by unexpected inclement weather and a grueling hike down the mountain, we were in need of last-minute lodging, and this host came through in a pinch. The house was not only as advertised, but the hot tub was a great place to unwind after our adventure. Would definitely recommend this place or stay here again in the future",
+      "avatar": "T"
+    },
+    {
+      "name": "Kai",
+      "location": "Charlottesville, Virginia",
+      "rating": 5,
+      "date": "August 2024",
+      "text": "We spent three nights here and it was better than advertised. Wonderful accommodations and the night sky was something else. Highly recommend.",
+      "avatar": "K"
+    },
+    {
+      "name": "Jeffrey",
+      "location": "3 years on Airbnb",
+      "rating": 5,
+      "date": "August 2024",
+      "text": "Great view, Great location, and Great accommodations! Just what our group was looking for to get away, unwind, and escape the Texas heat. The added bonus of being a few miles outside of town provided us with the peace and quiet to recharge!",
+      "avatar": "J"
+    },
+    {
+      "name": "Joshua",
+      "location": "McKinney, Texas",
+      "rating": 5,
+      "date": "August 2024",
+      "text": "Easy check in, cool location and clean.",
+      "avatar": "J"
+    },
+    {
+      "name": "Angela",
+      "location": "Colorado Springs, Colorado",
+      "rating": 5,
+      "date": "July 2024",
+      "text": "Loved sitting on the porch during the rain storm. Great stop for our summer trip.",
+      "avatar": "A"
+    },
+    {
+      "name": "Emily",
+      "location": "Lafayette, Colorado",
+      "rating": 5,
+      "date": "July 2024",
+      "text": "LOVED out stay here. Beautiful location, private, loved the on site trail and fire pit. was slightly hot without AC but house was wonderful and perfectly positioned between Pagosa Springs and Durango!",
+      "avatar": "E"
+    },
+    {
+      "name": "Tasha",
+      "location": "Albuquerque, New Mexico",
+      "rating": 5,
+      "date": "June 2024",
+      "text": "Thank you",
+      "avatar": "T"
+    },
+    {
+      "name": "Jon",
+      "location": "Albuquerque, New Mexico",
+      "rating": 5,
+      "date": "June 2024",
+      "text": "We had a wonderful time at the mountain lodge. The views from the ample deck were picturesque, the home was warmly appointed and inviting and the hottub was particularly awesome. Great hiking in the area along the piedra river. Lovely time all around.",
+      "avatar": "J"
+    },
+    {
+      "name": "Mike",
+      "location": "College Station, Texas",
+      "rating": 5,
+      "date": "June 2024",
+      "text": "This was our kids first trip to Colorado! The lodge was perfect and the views are beautiful. The house was very clean and comfortable. My kids loved the toys! If we're ever in Pagosa again, we will definitely stay here.",
+      "avatar": "M"
+    },
+    {
+      "name": "Karly",
+      "location": "Velva, North Dakota",
+      "rating": 5,
+      "date": "June 2024",
+      "text": "Our children and I had a great time staying at the Pagosa Lodge! It was a great place to unwind and enough room for everyone to have their own space.",
+      "avatar": "K"
+    },
+    {
+      "name": "Kim",
+      "location": "Broomfield, Colorado",
+      "rating": 5,
+      "date": "May 2024",
+      "text": "This place is definitely worth a stay. It's a great mountain getaway close to hiking, town, Navajo Lake State Park, and Chimney Rock. Really beautiful area and a comfortable, private home.",
+      "avatar": "K"
+    },
+    {
+      "name": "Allisha",
+      "location": "2 years on Airbnb",
+      "rating": 5,
+      "date": "May 2024",
+      "text": "This cabin is something really special. It was so cozy and clean. It had amazing hiking close by, beautiful views of the mountains, and so many animals all around. We really enjoyed everything about this cabin and will be coming back very soon.",
+      "avatar": "A"
+    },
+    {
+      "name": "Kathleen",
+      "location": "2 years on Airbnb",
+      "rating": 5,
+      "date": "May 2024",
+      "text": "It was beautiful, private yet close to town. Close to so many activities!",
+      "avatar": "K"
+    },
+    {
+      "name": "Vincent",
+      "location": "Colorado Springs, Colorado",
+      "rating": 5,
+      "date": "April 2024",
+      "text": "Great",
+      "avatar": "V"
+    },
+    {
+      "name": "Christine",
+      "location": "Denver, Colorado",
+      "rating": 5,
+      "date": "April 2024",
+      "text": "Michael was very kind and responsive! His place was clean, felt right at home, comfy bed, beautiful views. Great location just outside of town but close enough to pop in for groceries, dinner, shopping,etc! Lovely weekend away and just what we needed. Thank you, Michael!",
+      "avatar": "C"
+    },
+    {
+      "name": "Matt",
+      "location": "Colorado Springs, Colorado",
+      "rating": 5,
+      "date": "April 2024",
+      "text": "Thanks for the great weekend Michael!",
+      "avatar": "M"
+    },
+    {
+      "name": "Robin",
+      "location": "5 years on Airbnb",
+      "rating": 4,
+      "date": "April 2024",
+      "text": "We'd definitely go again especially for celstial events. During a new moon the milky way was visible as well as many satellites and meteors. lots of hiking off from the property and many nearby options.",
+      "avatar": "R"
+    },
+    {
+      "name": "Erika",
+      "location": "Lakewood, Colorado",
+      "rating": 5,
+      "date": "January 2024",
+      "text": "We had a great stay at the cabin. The views are spectacular and the place was amazing and well equipped. Would 100% come back and recommend to friends and family!",
+      "avatar": "E"
+    },
+    {
+      "name": "Caleb",
+      "location": "Leadville, Colorado",
+      "rating": 5,
+      "date": "January 2024",
+      "text": "could not recommend more!!",
+      "avatar": "C"
+    },
+    {
+      "name": "Karl",
+      "location": "Tyler, Texas",
+      "rating": 4,
+      "date": "January 2024",
+      "text": "Super thankful for the stay!! Place was cozy and conveniently located about 15 minutes away from Pagosa Springs! We had a beautiful view from living room windows and front porch!",
+      "avatar": "K"
+    },
+    {
+      "name": "Todd",
+      "location": "Grand Junction, Colorado",
+      "rating": 5,
+      "date": "March 2024",
+      "text": "This house was the perfect spot for a quiet weekend getaway. Location is great with beautiful views and just a short distance to Pagosa Springs. Michael was very responsive and attentive. Would definitely stay there again!",
+      "avatar": "T"
+    },
+    {
+      "name": "Jason",
+      "location": "Longmont, Colorado",
+      "rating": 5,
+      "date": "February 2024",
+      "text": "The stay at Michael's place was perfect for our annual getaway! The views were beautiful and the cabin was spacious and clean. The outside fire pit and grill were a nice touch. I would recommend a stay here 👍",
+      "avatar": "J"
+    },
+    {
+      "name": "Joshua",
+      "location": "5 years on Airbnb",
+      "rating": 5,
+      "date": "February 2024",
+      "text": "Michael's place was amazing! great price, very clean, just overall a 5 star experience!",
+      "avatar": "J"
+    },
+    {
+      "name": "Christine",
+      "location": "Montrose, Colorado",
+      "rating": 5,
+      "date": "February 2024",
+      "text": "Michael's cabin was perfect for a two-night stay close to Pagosa Springs. It is easy to get to town in 15 minutes. There is lots of room but also very cozy. The decor is beautiful! The kitchen is very well stocked with all the utensils, pans, dishes etc. that you would need. The cabin was very clean. There was plenty of room for our two golden retrievers to run around outside and explore. Michael was very responsive with questions that I had. I would highly recommend this cabin for a comfortable getaway!",
+      "avatar": "C"
+    },
+    {
+      "name": "Meghan",
+      "location": "Ithaca, New York",
+      "rating": 5,
+      "date": "February 2024",
+      "text": "Michaels place was exactly as described. He was flexible with us on a last minute change and was quick to respond to questions. Would highly recommend for a weekend away, very peaceful location and easy access into town.",
+      "avatar": "M"
+    },
+    {
+      "name": "Melissa",
+      "location": "Dallas, Texas",
+      "rating": 4,
+      "date": "March 2024",
+      "text": "Overall the cabin was nice, but I recommend a deep clean of the kitchen and purchase some new pans. The beds were comfortable and kids enjoyed the outside.",
+      "avatar": "M"
+    },
+    {
+      "name": "Robert",
+      "location": "Bokchito, Oklahoma",
+      "rating": 5,
+      "date": "June 2024",
+      "text": "Beautiful cabin!! Close enough to town but far enough out to feel at peace. Michael was very responsive to questions. Would totally recommend it to anyone.",
+      "avatar": "R"
+    },
+    {
+      "name": "Jessica",
+      "location": "Albuquerque, New Mexico",
+      "rating": 5,
+      "date": "December 2023",
+      "text": "We had a great stay here. The only thing is that there are a few basic kitchen items missing. Things like a cheese grater. The knives are also pretty dull so if you plan on doing your own cooking I would just keep that in mind. There is a sharpener there but it didn't seem to do much. Probably would need some extensive time with the sharpener (more time than we had ha). Also, just something to note- the upstairs room gets cold if you don't leave the door open. Overall great stay and would recommend.",
+      "avatar": "J"
+    },
+    {
+      "name": "Cody",
+      "location": "4 years on Airbnb",
+      "rating": 5,
+      "date": "December 2023",
+      "text": "Beautiful cabin on a hill overlooking everything. Amazing night skies and far enough off the main road where traffic noise was minimal. The house is cozy and beds are warm. Would love to stay here again",
+      "avatar": "C"
+    },
+    {
+      "name": "Lance",
+      "location": "San Angelo, Texas",
+      "rating": 5,
+      "date": "December 2023",
+      "text": "Great stay, Michael was very responsive!",
+      "avatar": "L"
+    },
+    {
+      "name": "Marlin",
+      "location": "4 years on Airbnb",
+      "rating": 5,
+      "date": "December 2023",
+      "text": "Enjoyed our beautiful view for a few days that we were there! Would definitely recommend!",
+      "avatar": "M"
+    },
+    {
+      "name": "Claudia",
+      "location": "Albuquerque, New Mexico",
+      "rating": 5,
+      "date": "December 2023",
+      "text": "Amazing Christmas Very beautiful views and the Cabin was very lovely and cozy",
+      "avatar": "C"
+    },
+    {
+      "name": "Nydian",
+      "location": "Jackson, Mississippi",
+      "rating": 5,
+      "date": "December 2023",
+      "text": "Spectacular place host too attentive. I'd go back to this place again.",
+      "avatar": "N"
+    },
+    {
+      "name": "David",
+      "location": "Colorado Springs, Colorado",
+      "rating": 5,
+      "date": "November 2023",
+      "text": "Great cabin for a family week away in Pagosa Springs. Lots of trails within a short drive to explore. Town is close by with a nice grocery store and a number of eating options. Michael was a great host. Enjoyed our stay…thx again Michael.",
+      "avatar": "D"
+    },
+    {
+      "name": "Rigoberto",
+      "location": "Paramount, California",
+      "rating": 5,
+      "date": "November 2023",
+      "text": "Great place for a family getaway.",
+      "avatar": "R"
+    },
+    {
+      "name": "Josh",
+      "location": "Uniontown, Ohio",
+      "rating": 5,
+      "date": "November 2023",
+      "text": "If you're looking for privacy, this is the place!",
+      "avatar": "J"
+    },
+    {
+      "name": "Bethania And Brian",
+      "location": "3 years on Airbnb",
+      "rating": 5,
+      "date": "November 2023",
+      "text": "We had a great time at Pagosa forest lodge! Michael was a great host! He really helped us make the trip exactly what we wanted and was very responsive and communicative. We were so grateful and had a wonderful experience! The cabin was beautiful and the land was very peaceful! We loved watching the sun come up from the windows in the morning. Our stay was closer to the full moon, which lit up the snow covered mountains beautifully at night! I could only imagine the stars are incredible during the new moon! Our son (2 years old) was entertained by the play closet for hours and loved playing in the snow outside! It was a quick and easy drive into town while also being far enough away to have peace and quiet. We would gladly return and highly recommend the home!",
+      "avatar": "B"
+    },
+    {
+      "name": "Amanda",
+      "location": "Chimayo, New Mexico",
+      "rating": 5,
+      "date": "November 2023",
+      "text": "Was extremely pleased with the privacy! The views were amazing with my morning coffee. Clean cabin, easy check-in and most importantly, a flexible host!",
+      "avatar": "A"
+    },
+    {
+      "name": "Daniel",
+      "location": "San Antonio, Texas",
+      "rating": 5,
+      "date": "November 2023",
+      "text": "Very beautiful and secluded place of stay. Michael was very responsive and proactive with any questions. Will stay again!",
+      "avatar": "D"
+    },
+    {
+      "name": "Paige",
+      "location": "4 years on Airbnb",
+      "rating": 5,
+      "date": "October 2023",
+      "text": "I cannot speak highly enough about this property! It's was PERFECT! So beautiful, so clean. The town was great, everyone was so nice. The bed was super comfortable. The views were amazing. I would live here if I could, it was amazing!",
+      "avatar": "P"
+    },
+    {
+      "name": "Marianela",
+      "location": "6 years on Airbnb",
+      "rating": 5,
+      "date": "October 2023",
+      "text": "We absolutely loved our stay. It had beautiful sunrises and sunsets. The property was beautiful and secluded. We had everything we needed to cook and have a comfortable stay. My Aunt especially liked the treat basket. We left some treats as well. We all had plenty of room and I especially enjoyed the peace and quiet. We have family in the area and didn't have enough time to see everything we wanted so we will most likely stay again. Thank you for sharing your home!",
+      "avatar": "M"
+    },
+    {
+      "name": "Kerstie",
+      "location": "Nederland, Texas",
+      "rating": 4,
+      "date": "October 2023",
+      "text": "Overall, had a wonderful stay in this beautiful home!",
+      "avatar": "K"
+    },
+    {
+      "name": "Sheila",
+      "location": "Albuquerque, New Mexico",
+      "rating": 5,
+      "date": "October 2023",
+      "text": "Beautiful, clean, and cozy! We detached from electronics for awhile and loved it. Thank you 🙏",
+      "avatar": "S"
+    },
+    {
+      "name": "Max",
+      "location": "6 years on Airbnb",
+      "rating": 5,
+      "date": "October 2023",
+      "text": "My wife and I had a wonderful stay at the Pagosa Forest Lodge. Michael was very helpful and responsive, and the property is beautiful.",
+      "avatar": "M"
+    },
+    {
+      "name": "Matt",
+      "location": "Newnan, Georgia",
+      "rating": 5,
+      "date": "October 2023",
+      "text": "Our stay was short (only 2 days) but loved the cabin. Perfect for dogs and plenty of space for a big party. Wish we could have stayed longer!",
+      "avatar": "M"
+    },
+    {
+      "name": "Diane",
+      "location": "5 years on Airbnb",
+      "rating": 5,
+      "date": "September 2023",
+      "text": "This place was absolutely amazing!!!! Pictures don't do it justice! It was so peaceful and serine! I can't express how nice it was to sit out on the patio and take in the views, day or night! The lodge was beautiful inside and fully stocked! I loved all the snacks! I will definitely stay again!",
+      "avatar": "D"
+    },
+    {
+      "name": "Klaudia",
+      "location": "6 years on Airbnb",
+      "rating": 5,
+      "date": "September 2023",
+      "text": "place was very clean as described, really nice location. Michael, really nice and welcoming",
+      "avatar": "K"
+    },
+    {
+      "name": "Bianka",
+      "location": "4 years on Airbnb",
+      "rating": 5,
+      "date": "September 2023",
+      "text": "Pretty views, great weather, and very clean! What more can you ask for. First time in Pagosa and it was a lovely experience, would stay again.",
+      "avatar": "B"
+    },
+    {
+      "name": "Maggie",
+      "location": "Bayfield, Colorado",
+      "rating": 5,
+      "date": "September 2023",
+      "text": "Beautiful home, with fantastic views. Would love to stay there again!",
+      "avatar": "M"
+    },
+    {
+      "name": "Joshua",
+      "location": "5 years on Airbnb",
+      "rating": 5,
+      "date": "February 2024",
+      "text": "Michael's place was amazing! great price, very clean, just overall a 5 star experience!",
+      "avatar": "J"
+    }
+  ]
+}

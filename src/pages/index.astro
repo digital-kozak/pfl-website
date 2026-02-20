@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Pagosa Forest Lodge | Luxury Mountain Cabin in Colorado" description="Luxury 4-bedroom mountain cabin in Pagosa Springs, CO. Hot tub, fireplace, 40 min to Wolf Creek Ski. Sleeps 8. Book your Colorado getaway!">
+<Layout title="Pagosa Forest Lodge | 4-Bedroom Cabin Rental in Pagosa Springs, CO" description="Escape to our 4-bedroom cabin in Pagosa Springs. Enjoy a hot tub with mountain views, a game room, and direct access to San Juan National Forest. Book your stay today!">
   <!-- Hero Section -->
   <section class="relative h-screen min-h-[700px] flex items-center justify-center hero-overlay">
     <!-- Background Images - Rotating -->
@@ -10,20 +10,32 @@ import Layout from '../layouts/Layout.astro';
       <img 
         src="/images/pfl-stargazing.jpg" 
         alt="Pagosa Forest Lodge under starry night sky" 
-        class="w-full h-full object-cover hero-slide active"
+        class="w-full h-full object-cover hero-slide hero-slide-first active"
         data-slide="0"
+        fetchpriority="high"
+        decoding="async"
+        width="1920"
+        height="1080"
       />
       <img 
         src="/images/snowy-cabin.jpg" 
         alt="Pagosa Forest Lodge snowy cabin" 
         class="w-full h-full object-cover hero-slide"
         data-slide="1"
+        loading="lazy"
+        decoding="async"
+        width="1920"
+        height="1080"
       />
       <img 
         src="/images/hottub-snow.jpg" 
         alt="Hot tub with snow covered mountains" 
         class="w-full h-full object-cover hero-slide"
         data-slide="2"
+        loading="lazy"
+        decoding="async"
+        width="1920"
+        height="1080"
       />
     </div>
     
@@ -32,24 +44,32 @@ import Layout from '../layouts/Layout.astro';
     
     <!-- Content -->
     <div class="relative z-10 container-custom text-center text-white">
-      <p class="text-sm md:text-base uppercase tracking-[0.3em] mb-4 animate-fade-in opacity-0" style="animation-fill-mode: forwards;">
+      <p class="text-sm md:text-base uppercase tracking-[0.3em] mb-4">
         Hot Tub Under the Stars • Fire Pit for S'mores • Pet-Friendly Paradise
       </p>
 
-      <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-light leading-tight mb-6 animate-fade-in opacity-0 delay-200" style="animation-fill-mode: forwards;">
+      <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-light leading-tight mb-6">
         Your Mountain<br />
         <span class="italic">Escape</span> Awaits
       </h1>
 
-      <p class="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 font-light animate-fade-in opacity-0 delay-400" style="animation-fill-mode: forwards;">
+      <p class="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 font-light">
         Nestled on 5 private acres with direct San Juan National Forest access. 
         Unwind in the hot tub, gather around the fire pit, and let your dogs explore 
         the wildlife-rich surroundings.
       </p>
       
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in opacity-0 delay-500" style="animation-fill-mode: forwards;">
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="/book" class="btn-primary">Book Your Stay</a>
         <a href="/the-cabin" class="btn-secondary">Explore The Cabin</a>
+      </div>
+      
+      <!-- Superhost Badge -->
+      <div class="mt-8 flex items-center justify-center gap-2 text-white/80 text-sm">
+        <svg class="w-5 h-5 text-[#c9a227]" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
+        </svg>
+        <span>9x Consecutive Airbnb Superhost</span>
       </div>
     </div>
     
@@ -131,6 +151,11 @@ import Layout from '../layouts/Layout.astro';
       z-index: 1;
     }
     .hero-slide.active {
+      opacity: 1;
+      z-index: 2;
+    }
+    /* First slide visible immediately for LCP */
+    .hero-slide-first {
       opacity: 1;
       z-index: 2;
     }
@@ -706,7 +731,7 @@ import Layout from '../layouts/Layout.astro';
         Book your stay today and experience the perfect blend of luxury and nature 
         at Pagosa Forest Lodge.
       </p>
-      <a href="/book" class="btn-primary text-lg px-10">Book Now</a>
+      <a href="/book" class="btn-primary text-lg px-10">Book Direct & Save</a>
     </div>
   </section>
 </Layout>
