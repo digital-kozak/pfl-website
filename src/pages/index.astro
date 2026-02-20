@@ -35,15 +35,23 @@ const homeFaqs = [
   <section class="relative h-[65vh] min-h-[500px] sm:h-screen sm:min-h-[700px] flex items-center justify-center hero-overlay">
     <!-- Background Image -->
     <div class="absolute inset-0 z-0">
-      <img 
-        src="/images/pfl-stargazing.jpg" 
-        alt="Pagosa Forest Lodge under starry night sky" 
-        class="w-full h-full object-cover object-[center_20%] sm:object-center"
-        fetchpriority="high"
-        decoding="async"
-        width="1920"
-        height="1080"
-      />
+      <picture class="w-full h-full">
+        <!-- Mobile image -->
+        <source 
+          media="(max-width: 639px)" 
+          srcset="/images/pfl-stargazing-mobile.jpg"
+        />
+        <!-- Desktop image -->
+        <img 
+          src="/images/pfl-stargazing.jpg" 
+          alt="Pagosa Forest Lodge under starry night sky" 
+          class="w-full h-full object-cover object-center"
+          fetchpriority="high"
+          decoding="async"
+          width="1920"
+          height="1080"
+        />
+      </picture>
     </div>
     
     <!-- Overlay -->
