@@ -3,7 +3,7 @@ title: "3-Day Pagosa Springs Itinerary: The Perfect Mountain Getaway"
 description: "Download and print this complete 3-day itinerary for Pagosa Springs — hot springs, hiking, dining, and unique experiences all planned out for you."
 publishDate: 2026-02-20
 author: "Pagosa Forest Lodge"
-image: "/images/attractions/hot-springs.jpg"
+image: "/images/attractions/activity-fall-drives.jpg"
 tags: ["itinerary", "3-day guide", "trip planner", "vacation planning", "downloadable guide"]
 ---
 
