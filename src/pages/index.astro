@@ -36,12 +36,26 @@ const homeFaqs = [
     <!-- Background Image -->
     <div class="absolute inset-0 z-0">
       <picture class="w-full h-full">
-        <!-- Mobile image -->
+        <!-- Mobile WebP -->
+        <source 
+          media="(max-width: 639px)" 
+          srcset="/images/pfl-stargazing-mobile.webp"
+          type="image/webp"
+        />
+        <!-- Mobile JPEG fallback -->
         <source 
           media="(max-width: 639px)" 
           srcset="/images/pfl-stargazing-mobile.jpg"
+          type="image/jpeg"
         />
-        <!-- Desktop image -->
+        
+        <!-- Desktop WebP -->
+        <source 
+          srcset="/images/pfl-stargazing.webp"
+          type="image/webp"
+        />
+        
+        <!-- Desktop JPEG fallback -->
         <img 
           src="/images/pfl-stargazing.jpg" 
           alt="Pagosa Forest Lodge under starry night sky" 
@@ -123,14 +137,17 @@ const homeFaqs = [
         <!-- Card 1 -->
         <div class="card-luxury group">
           <div class="aspect-[4/3] overflow-hidden">
-            <img 
-              src="/images/snowy-cabin2.jpg" 
-              alt="Cabin exterior with snow-covered mountains" 
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              width="1264"
-              height="848"
-              loading="lazy"
-            />
+            <picture>
+              <source srcset="/images/snowy-cabin2.webp" type="image/webp" />
+              <img 
+                src="/images/snowy-cabin2.jpg" 
+                alt="Cabin exterior with snow-covered mountains" 
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                width="1264"
+                height="848"
+                loading="lazy"
+              />
+            </picture>
           </div>
           <div class="p-8">
             <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center mb-6">
@@ -149,14 +166,17 @@ const homeFaqs = [
         <!-- Card 2 -->
         <div class="card-luxury group">
           <div class="aspect-[4/3] overflow-hidden">
-            <img 
-              src="/images/hottub-snow.jpg" 
-              alt="Hot tub with mountain views" 
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              width="1268"
-              height="848"
-              loading="lazy"
-            />
+            <picture>
+              <source srcset="/images/hottub-snow.webp" type="image/webp" />
+              <img 
+                src="/images/hottub-snow.jpg" 
+                alt="Hot tub with mountain views" 
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                width="1268"
+                height="848"
+                loading="lazy"
+              />
+            </picture>
           </div>
           <div class="p-8">
             <div class="w-12 h-12 rounded-full bg-[#c9a227]/10 flex items-center justify-center mb-6">

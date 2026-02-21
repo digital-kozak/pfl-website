@@ -58,15 +58,19 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
   <meta name="generator" content={Astro.generator} />
   
   <!-- Performance: Preconnect to external domains -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="dns-prefetch" href="https://app.lodgify.com" />
+  
+  <!-- Preload critical fonts to reduce render-blocking -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/cormorantgaramond/v16/co3YmX5slCNuHLi8bLeY9MK7whWMhyjQAllvuQWJ5heb_w.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2" as="font" type="font/woff2" crossorigin />
   
   <!-- Preload hero image for LCP improvement -->
   {preloadImage && (
     <>
-      <link rel="preload" as="image" href="/images/pfl-stargazing-mobile.jpg" type="image/jpeg" fetchpriority="high" media="(max-width: 639px)" />
-      <link rel="preload" as="image" href={preloadImage} type="image/jpeg" fetchpriority="high" media="(min-width: 640px)" />
+      <link rel="preload" as="image" href="/images/pfl-stargazing-mobile.webp" type="image/webp" fetchpriority="high" media="(max-width: 639px)" />
+      <link rel="preload" as="image" href="/images/pfl-stargazing.webp" type="image/webp" fetchpriority="high" media="(min-width: 640px)" />
     </>
   )}
   
