@@ -55,7 +55,7 @@ const sortedPosts = posts.sort((a, b) => {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {sortedPosts.map((post) => (
           <article class="card-luxury group overflow-hidden">
-            <a href={`/blog/${post.file.split('/').pop().replace('.md', '')}`} class="block">
+            <a href={`/blog/${post.file.split('/').pop().replace('.md', '')}/`} class="block">
               <div class="aspect-[16/10] overflow-hidden">
                 <img 
                   src={post.frontmatter.image || '/images/og-image.jpg'} 
@@ -106,7 +106,7 @@ const sortedPosts = posts.sort((a, b) => {
         Book your stay at our luxury mountain cabin and discover why Pagosa Springs 
         is Colorado's best-kept secret.
       </p>
-      <a href="/book" class="btn-primary text-lg px-10">
+      <a href="/book/" class="btn-primary text-lg px-10">
         Book Direct & Save
       </a>
     </div>
