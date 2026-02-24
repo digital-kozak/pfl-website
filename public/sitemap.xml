@@ -14,7 +14,7 @@
   <!-- Main Pages -->
   <url>
     <loc>https://pagosaforestlodge.com/the-cabin/</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-02-24</lastmod>
     <priority>0.90</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -28,8 +28,8 @@
   
   <url>
     <loc>https://pagosaforestlodge.com/things-to-do/</loc>
-    <lastmod>2026-02-19</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2026-02-24</lastmod>
+    <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
   
@@ -201,6 +201,14 @@
     <loc>https://pagosaforestlodge.com/blog/scenic-drives-pagosa-springs/</loc>
     <lastmod>2026-02-20</lastmod>
     <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <!-- SEO Content - Feb 2026 -->
+  <url>
+    <loc>https://pagosaforestlodge.com/blog/things-to-do-pagosa-springs-kids/</loc>
+    <lastmod>2026-02-24</lastmod>
+    <priority>0.80</priority>
     <changefreq>monthly</changefreq>
   </url>
   
