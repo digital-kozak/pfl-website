@@ -31,3 +31,7 @@ logs/
 
 # Netlify (if using Netlify CLI)
 .netlify/
+aroundpagos.pem
+aroundpagos.pem
+*.pem
+*.key
