@@ -1,15 +1,17 @@
 ---
-title: "10 Best Things to Do in Pagosa Springs with Kids [2026 Guide]"
-description: "Discover the 10 best family-friendly activities in Pagosa Springs. From Wolf Creek Ski School to hot springs, hiking trails, and sledding hills — perfect for kids of all ages."
+title: "13 Best Things to Do in Pagosa Springs with Kids [2026 Guide + Itinerary]"
+description: "The complete guide to family fun in Pagosa Springs! Discover 13 kid-friendly activities from Wolf Creek skiing to hot springs, hiking, fishing, and more. Includes seasonal calendar and 3-day itinerary."
 publishDate: 2026-02-27
 author: "Pagosa Forest Lodge"
 image: "/images/attractions/activity-sledding.jpg"
-tags: ["family travel", "kids activities", "wolf creek ski", "hot springs", "winter activities"]
+tags: ["family travel", "kids activities", "wolf creek ski", "hot springs", "things to do pagosa springs", "family itinerary"]
 ---
 
-# 10 Best Things to Do in Pagosa Springs with Kids [2026 Guide]
+# 13 Best Things to Do in Pagosa Springs with Kids [2026 Guide + Itinerary]
 
-Looking for the perfect family getaway? Pagosa Springs combines small-town charm with world-class outdoor adventures — and it's incredibly kid-friendly. From the legendary powder at Wolf Creek to natural hot springs that the whole family can enjoy, here's your complete guide to the **10 best things to do in Pagosa Springs with kids**.
+Looking for the perfect family getaway? Pagosa Springs combines small-town charm with world-class outdoor adventures — and it's incredibly kid-friendly. From the legendary powder at Wolf Creek to natural hot springs that the whole family can enjoy, here's your **complete guide to the best things to do in Pagosa Springs with kids**.
+
+This guide covers **13 activities** plus a seasonal calendar and sample 3-day itinerary to help you plan the perfect trip.
 
 Our [spacious 4-bedroom cabin](/the-cabin) sits on 5 private acres with direct access to San Juan National Forest — the perfect home base for your family adventure.
 
@@ -227,6 +229,104 @@ Snowshoeing is the perfect winter activity for families:
 | Wolf Creek Base Area | Easy | 1-2 miles | 40 min |
 
 **Rental info**: Snowshoes available for rent at Pagosa Ski & Sports and Wolf Creek.
+
+---
+
+## 11. Gold Medal Fishing on the San Juan River
+
+**Why kids love it:** Catching their first trout is a memory that lasts a lifetime.
+
+The San Juan River running through town is designated **Gold Medal Waters** — meaning exceptional fishing opportunities with trophy-sized trout.
+
+**Kid-friendly options:**
+- **Hire a guide** who specializes in teaching children the basics
+- **Try the catch-and-keep pond** at Echo Canyon Reservoir (easier for beginners)
+- **Simply watch the fish** from the Riverwalk in town (great for toddlers)
+- **Junior Fishing Clinics**: Check with local outfitters for kid-focused events
+
+**What to bring:**
+- Colorado fishing license (required for ages 16+)
+- Sunscreen and hats
+- Snacks and water
+- Camera for the "first catch" photo!
+
+**Cost:** FREE from shore | Guided trips ~$300-400/half-day
+
+---
+
+## 12. Pagosa Springs Center for the Arts
+
+**Why kids love it:** Live performances and hands-on creative activities.
+
+This community arts center offers **family-friendly programming** year-round:
+
+- **Live theater performances**: Some shows specifically designed for children
+- **Art classes and workshops**: Hands-on creative activities
+- **Summer concert series**: Outdoor music perfect for families
+- **Gallery exhibits**: Rotating displays that spark curiosity
+
+**Family tip:** Check their calendar before your visit — kid-specific events vary by season.
+
+**Cost:** Varies by event | Many activities FREE
+
+---
+
+## 13. Explore Downtown Pagosa Springs
+
+**Why kids love it:** Small-town charm with sweet treats and unique discoveries.
+
+**Main Street** offers family-friendly stops that kids will remember:
+
+- **Ice cream shops** — Try locally-made honey ice cream (a Pagosa specialty!)
+- **Toy stores** — Unique gifts and souvenirs you won't find at big chains
+- **Family-friendly restaurants** — Many with outdoor seating for antsy kids
+- **Bookstores** — Local history and nature guides to take home
+
+**Don't miss:** The **free splash park** at the Riverwalk on hot summer days — perfect for cooling off!
+
+**Cost:** FREE to explore | Food/ice cream $5-15/person
+
+---
+
+## Seasonal Activities Calendar: When to Visit
+
+Not sure when to plan your trip? Here's what each season offers:
+
+| Season | Top Activities | Weather | Crowds |
+|--------|----------------|---------|--------|
+| **Winter** (Dec-Mar) | Skiing, sledding, hot springs, snowshoeing | Cold, snowy | Moderate (holidays busy) |
+| **Spring** (Apr-May) | Hiking, wildlife viewing, fishing | Mild, occasional snow | Low |
+| **Summer** (Jun-Aug) | River tubing, hiking, lake activities | Warm, sunny | Moderate |
+| **Fall** (Sep-Nov) | Leaf peeping, hiking, hot springs | Cool, crisp | Low |
+
+**Best time for families:**
+- **Skiing**: January-February (best snow)
+- **Water activities**: July-August (warmest)
+- **Fewer crowds**: Late April-May or September-October
+- **Value**: Shoulder seasons offer lower rates
+
+---
+
+## Sample 3-Day Family Itinerary
+
+Here's how to pack the best experiences into a long weekend:
+
+### Day 1: Arrival & Relaxation
+- **Afternoon:** Check in, explore the cabin and 5-acre property
+- **Late afternoon:** Visit The Springs Resort hot springs (perfect after travel)
+- **Evening:** Dinner in downtown Pagosa, early bedtime to adjust to altitude
+
+### Day 2: Adventure Day
+- **Morning:** Ski school at Wolf Creek (winter) or hike to Treasure Falls (summer)
+- **Afternoon:** Lunch in town, explore downtown shops and ice cream
+- **Evening:** Fire pit, s'mores, and family game night in the cabin
+
+### Day 3: Water Fun & Culture
+- **Morning:** San Juan River tubing (summer) or sledding at Reservoir Hill (winter)
+- **Afternoon:** Visit Chimney Rock National Monument or Center for the Arts
+- **Evening:** Pack up, stop for dinner, head home with great memories
+
+**Flexible options:** Add an extra day for horseback riding, fishing, or just relaxing at the cabin!
 
 ---
 
