@@ -1,6 +1,6 @@
 ---
 title: "VRBO vs Airbnb in Pagosa Springs: Where to Book Your Mountain Getaway"
-description: "Comparing VRBO and Airbnb for Pagosa Springs vacation rentals. Fees, filters, customer service, and which platform gets you the best deal."
+description: "Comparing VRBO and Airbnb for Pagosa Springs vacation rentals. Fees, filters, customer service, and which platform gets you the best deal for your stay."
 publishDate: 2026-02-26
 author: "Pagosa Forest Lodge"
 image: "/images/amenities-hero-interior.jpg"

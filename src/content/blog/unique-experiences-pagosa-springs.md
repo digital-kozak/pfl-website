@@ -1,6 +1,6 @@
 ---
-title: "10 Unique Experiences in Pagosa Springs You Can't Find Anywhere Else"
-description: "Discover Pagosa's most unique experiences — hot air ballooning over the San Juans, dog sledding through snow, sleigh rides, and wildlife encounters you won't forget."
+title: "10 Unique Experiences in Pagosa Springs [2026 Guide]"
+description: "Discover Pagosa's most unique experiences — hot air ballooning over the San Juans, dog sledding, sleigh rides, and wildlife encounters you won't forget."
 publishDate: 2026-02-20
 author: "Pagosa Forest Lodge"
 image: "/images/attractions/balloon-ride.jpg"

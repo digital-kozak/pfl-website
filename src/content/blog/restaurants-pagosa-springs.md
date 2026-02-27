@@ -1,6 +1,6 @@
 ---
-title: "Best Restaurants in Pagosa Springs: Complete Local Dining Guide 2025"
-description: "Discover 40+ restaurants in Pagosa Springs — from craft breweries to fine dining, authentic Mexican to Asian cuisine. Your complete guide to where the locals eat."
+title: "Best Restaurants in Pagosa Springs: Local Dining Guide [2026]"
+description: "Discover 40+ restaurants in Pagosa Springs — from craft breweries to fine dining, authentic Mexican to Asian cuisine. Your guide to where the locals eat."
 publishDate: 2026-02-20
 author: "Pagosa Forest Lodge"
 image: "/images/restaurant-dining.jpg"

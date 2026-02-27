@@ -1,6 +1,6 @@
 ---
 title: "Ice Skating in Pagosa Springs: Best Spots & Season Guide 2026"
-description: "Discover the best ice skating spots in Pagosa Springs for 2026. From downtown ponds to mountain lakes, find locations, conditions, safety tips & family-friendly winter fun."
+description: "Discover the best ice skating spots in Pagosa Springs for 2026. Downtown ponds, mountain lakes, conditions, safety tips & family-friendly winter fun."
 publishDate: 2026-02-25
 author: "Pagosa Forest Lodge"
 image: "/images/attractions/activity-ice-skating.jpg"

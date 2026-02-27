@@ -1,5 +1,5 @@
 ---
-title: "Altitude Sickness in Pagosa Springs: Prevention, Symptoms & Remedies"
+title: "Altitude Sickness in Pagosa Springs: Complete Guide [2026]"
 description: "Complete guide to altitude sickness in Pagosa Springs. Learn how to prevent, recognize, and treat symptoms so you can enjoy your mountain vacation safely."
 publishDate: 2026-02-26
 author: "Pagosa Forest Lodge"

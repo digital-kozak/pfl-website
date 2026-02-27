@@ -1,6 +1,6 @@
 ---
 title: "Spring Skiing at Wolf Creek: The Secret Season (March-April Guide)"
-description: "Why March and April are the best months to ski Wolf Creek. Warmer temps, sunny days, discounted tickets, and still plenty of snow. The local's guide to spring skiing."
+description: "Why March and April are the best months to ski Wolf Creek. Warmer temps, sunny days, discounted tickets, and still plenty of snow."
 publishDate: 2026-02-26
 author: "Pagosa Forest Lodge"
 image: "/images/attractions/snowshoe-xc-ski.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "Shopping in Pagosa Springs: Local Boutiques, Artisans & Souvenirs"
-description: "Discover the best shopping in Pagosa Springs — downtown boutiques, local artisans, outdoor gear, Western wear, and unique souvenirs to remember your mountain vacation."
+description: "Discover the best shopping in Pagosa Springs — downtown boutiques, local artisans, outdoor gear, Western wear, and unique souvenirs to remember your vacation."
 publishDate: 2026-02-20
 author: "Pagosa Forest Lodge"
 image: "/images/attractions/goodmans-mural.jpg"

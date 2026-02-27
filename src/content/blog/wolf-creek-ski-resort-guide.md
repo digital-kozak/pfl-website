@@ -1,5 +1,5 @@
 ---
-title: "Wolf Creek Ski Resort Guide: Why Locals Call It 'The Snowiest Place in Colorado'"
+title: "Wolf Creek Ski Resort Guide: Colorado's Snowiest Mountain"
 description: "Your complete guide to Wolf Creek Ski Resort. Discover why skiers drive hours for Wolf Creek's legendary powder, and why our cabin is the perfect basecamp."
 publishDate: 2026-02-19
 author: "Pagosa Forest Lodge"

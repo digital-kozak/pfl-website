@@ -1,6 +1,6 @@
 ---
 title: "Hot Springs in Pagosa Springs: Complete Guide to All Options"
-description: "Discover all 6 hot springs options in Pagosa Springs — from The Springs Resort's 50+ pools to Overlook's rooftop tubs, Healing Waters' pure mineral water, and your private cabin hot tub."
+description: "Discover all 6 hot springs options in Pagosa Springs — from The Springs Resort's 50+ pools to Overlook's rooftop tubs and your private cabin hot tub."
 publishDate: 2026-02-20
 author: "Pagosa Forest Lodge"
 image: "/images/springs-resort-homepage.jpg"

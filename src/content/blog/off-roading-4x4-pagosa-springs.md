@@ -1,5 +1,5 @@
 ---
-title: "Off-Roading & 4x4 Adventures Near Pagosa Springs"
+title: "Off-Roading & 4x4 Trails Near Pagosa Springs [2026 Guide]"
 description: "Explore Colorado's backcountry by 4x4. Discover jeep trails, alpine passes, and hidden ghost towns accessible only by high-clearance vehicles near Pagosa Springs."
 publishDate: 2026-02-20
 author: "Pagosa Forest Lodge"

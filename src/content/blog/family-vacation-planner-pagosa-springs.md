@@ -1,5 +1,5 @@
 ---
-title: "Family Vacation Planner: Pagosa Springs with Kids"
+title: "Family Vacation Planner: Pagosa Springs [2026 Guide]"
 description: "The ultimate family guide to Pagosa Springs — kid-friendly activities, family dining, and tips for a stress-free mountain vacation with children."
 publishDate: 2026-02-20
 author: "Pagosa Forest Lodge"

@@ -1,6 +1,6 @@
 ---
 title: "Complete Guide to Pagosa Springs Tours & Excursions 2026"
-description: "Discover the best Pagosa Springs tours & excursions for 2026. From scenic jeep tours to hot air balloon rides, horseback adventures, train excursions & more. Plan your perfect mountain getaway!"
+description: "Discover the best Pagosa Springs tours & excursions for 2026. Jeep tours, hot air balloon rides, horseback adventures, and train excursions."
 publishDate: 2026-02-25
 author: "Pagosa Forest Lodge"
 image: "/images/attractions/activity-balloon.jpg"

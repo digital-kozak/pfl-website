@@ -1,6 +1,6 @@
 ---
 title: "13 Best Things to Do in Pagosa Springs with Kids [2026 Guide + Itinerary]"
-description: "The complete guide to family fun in Pagosa Springs! Discover 13 kid-friendly activities from Wolf Creek skiing to hot springs, hiking, fishing, and more. Includes seasonal calendar and 3-day itinerary."
+description: "The complete guide to family fun in Pagosa Springs! 13 kid-friendly activities from Wolf Creek skiing to hot springs, hiking, and fishing. Includes 3-day itinerary."
 publishDate: 2026-02-27
 author: "Pagosa Forest Lodge"
 image: "/images/attractions/activity-sledding.jpg"
