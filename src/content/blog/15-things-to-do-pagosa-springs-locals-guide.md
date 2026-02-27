@@ -3,7 +3,7 @@ title: "15 Things to Do in Pagosa Springs: Beyond the Hot Springs (Local's Guide
 description: "Discover hidden gems and local favorites in Pagosa Springs. From secret hiking trails to the best local eateries, this guide goes beyond the tourist hotspots."
 publishDate: 2026-02-26
 author: "Pagosa Forest Lodge"
-image: "/images/attractions/hiking.jpg"
+image: "/images/attractions/biking.jpg"
 tags: ["Pagosa Springs", "things to do", "local guide", "hiking", "dining", "activities"]
 ---
 

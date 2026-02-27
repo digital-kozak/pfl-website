@@ -3,7 +3,7 @@ title: "Best Time to Visit Pagosa Springs: A Seasonal Guide"
 description: "Discover the ideal time to visit Pagosa Springs, Colorado. From powder days at Wolf Creek to summer hot springs relaxation, find your perfect mountain getaway."
 publishDate: 2026-02-19
 author: "Pagosa Forest Lodge"
-image: "/images/attractions/activity-fall-drives.jpg"
+image: "/images/attractions/fall-drives.jpg"
 tags: ["travel tips", "seasonal guide", "Colorado"]
 ---
 

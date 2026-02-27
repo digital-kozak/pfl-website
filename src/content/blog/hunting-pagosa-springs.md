@@ -3,7 +3,7 @@ title: "Hunting in Pagosa Springs: A Sportsman's Paradise"
 description: "Explore premier hunting opportunities near Pagosa Springs. Elk, deer, bear, and turkey hunting in the San Juan Mountains. Your guide to Colorado's best hunting."
 publishDate: 2026-02-20
 author: "Pagosa Forest Lodge"
-image: "/images/attractions/mountains.jpg"
+image: "/images/attractions/activity-fall-hiking.jpg"
 tags: ["hunting", "outdoor activities", "wildlife"]
 ---
 

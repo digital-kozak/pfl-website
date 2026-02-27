@@ -3,7 +3,7 @@ title: "Pagosa Springs Annual Events Guide: Festivals, Rallies & Year-Round Cele
 description: "Plan your visit around Pagosa's best annual events — hot air balloon rallies, folk festivals, winter celebrations, and unique mountain traditions throughout the year."
 publishDate: 2026-02-20
 author: "Pagosa Forest Lodge"
-image: "/images/attractions/balloon-ride.jpg"
+image: "/images/attractions/activity-theatre.jpg"
 tags: ["events", "festivals", "annual celebrations", "hot air balloon", "folk festival", "things to do"]
 ---
 

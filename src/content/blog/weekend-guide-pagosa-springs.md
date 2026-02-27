@@ -3,7 +3,7 @@ title: "Weekend in Pagosa Springs: 2-Day Escape Plan"
 description: "Your perfect weekend getaway guide to Pagosa Springs — hot springs, dining, and must-see sights packed into 48 hours."
 publishDate: 2026-02-20
 author: "Pagosa Forest Lodge"
-image: "/images/attractions/activity-hiking-summer.jpg"
+image: "/images/attractions/fall-hiking.jpg"
 tags: ["weekend getaway", "2-day itinerary", "short trip", "weekend guide", "downloadable"]
 ---
 

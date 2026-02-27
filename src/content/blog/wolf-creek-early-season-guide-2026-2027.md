@@ -3,7 +3,7 @@ title: "Early Season at Wolf Creek: When the Snow Starts & What to Expect (2026-
 description: "Plan your early season Wolf Creek ski trip. Opening day predictions, snow conditions, terrain availability, and tips for skiing November through Christmas."
 publishDate: 2026-02-26
 author: "Pagosa Forest Lodge"
-image: "/images/attractions/skiing.jpg"
+image: "/images/attractions/wolf-creek-skiing.jpg"
 tags: ["skiing", "Wolf Creek", "early season", "opening day", "winter activities"]
 ---
 

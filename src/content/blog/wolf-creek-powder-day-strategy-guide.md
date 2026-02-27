@@ -3,7 +3,7 @@ title: "Powder Day Strategy: Best Runs at Wolf Creek for Beginners, Intermediate
 description: "Maximize your powder day at Wolf Creek with our run-by-run guide. Find the best terrain for your skill level and learn local strategies for fresh tracks."
 publishDate: 2026-02-26
 author: "Pagosa Forest Lodge"
-image: "/images/attractions/skiing.jpg"
+image: "/images/attractions/cross-country-ski.jpg"
 tags: ["skiing", "Wolf Creek", "powder day", "ski terrain", "winter activities"]
 ---
 

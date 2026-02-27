@@ -3,7 +3,7 @@ title: "Wolf Creek Parking Guide: Where to Park for Free vs Paid & Pro Tips"
 description: "Complete guide to parking at Wolf Creek Ski Resort. Free options, early arrival tips, and insider secrets to make your ski day hassle-free."
 publishDate: 2026-02-26
 author: "Pagosa Forest Lodge"
-image: "/images/attractions/skiing.jpg"
+image: "/images/attractions/activity-wolf-creek.jpg"
 tags: ["skiing", "Wolf Creek", "parking", "ski tips", "winter activities"]
 ---
 

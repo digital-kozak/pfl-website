@@ -3,7 +3,7 @@ title: "Wolf Creek vs Other Colorado Ski Resorts: Why Locals Choose the 'Most Sn
 description: "Compare Wolf Creek to Vail, Aspen, Telluride and other Colorado resorts. Discover why Wolf Creek's powder, prices, and lack of crowds make it the smart choice."
 publishDate: 2026-02-26
 author: "Pagosa Forest Lodge"
-image: "/images/attractions/skiing.jpg"
+image: "/images/attractions/wolf-creek.jpg"
 tags: ["skiing", "Wolf Creek", "Colorado ski resorts", "ski comparison", "winter activities"]
 ---
 

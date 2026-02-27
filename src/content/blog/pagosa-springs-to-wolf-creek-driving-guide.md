@@ -3,7 +3,7 @@ title: "How Far is Pagosa Springs from Wolf Creek Ski Resort? Driving Guide & Ti
 description: "Exact driving times and route details from Pagosa Springs to Wolf Creek. Plus tips for winter driving, early morning departures, and making the commute easier."
 publishDate: 2026-02-26
 author: "Pagosa Forest Lodge"
-image: "/images/attractions/skiing.jpg"
+image: "/images/attractions/activity-continental-divide.jpg"
 tags: ["Pagosa Springs", "Wolf Creek", "driving", "directions", "ski trip", "travel tips"]
 ---
 
