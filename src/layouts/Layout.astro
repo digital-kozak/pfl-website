@@ -414,6 +414,17 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
     </div>
   </footer>
   
+  <!-- Back to Top Button -->
+  <button 
+    id="back-to-top" 
+    class="fixed bottom-8 right-8 w-12 h-12 bg-[#c9a227] text-[#0f1f0a] rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-[#d4b43a] hover:scale-110 z-50 flex items-center justify-center"
+    aria-label="Back to top"
+  >
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+  </button>
+  
   <script>
     // Mobile menu toggle
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -421,6 +432,25 @@ const breadcrumbSchema = breadcrumbs.length > 0 ? {
     
     mobileMenuBtn?.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Back to Top functionality
+    const backToTopBtn = document.getElementById('back-to-top');
+    
+    function toggleBackToTop() {
+      if (window.scrollY > 500) {
+        backToTopBtn.classList.remove('opacity-0', 'invisible');
+        backToTopBtn.classList.add('opacity-100', 'visible');
+      } else {
+        backToTopBtn.classList.add('opacity-0', 'invisible');
+        backToTopBtn.classList.remove('opacity-100', 'visible');
+      }
+    }
+    
+    window.addEventListener('scroll', toggleBackToTop);
+    
+    backToTopBtn?.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 </body>
