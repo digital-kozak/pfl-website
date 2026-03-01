@@ -43,18 +43,47 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 
         <!-- Lodgify Booking Widget -->
         <div class="bg-white p-6 md:p-8 rounded-lg shadow-sm">
-          <div id="lodgify-booking-widget">
-            <div id="lodgify-search-bar" 
-              data-website-id="449086" 
-              data-language-code="en" 
-              data-checkout-page-url='https://checkout.lodgify.com/pagosaforestlodge/en/#/493409' 
-              data-dates-check-in-label='Check-in' 
-              data-dates-check-out-label='Check-out' 
-              data-guests-counter-label='Guests' 
-              data-search-button-label='Search'>
-            </div>
-            <script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js"></script>
-          </div>
+          <!-- Widget Container - Isolated from site CSS -->
+          <div id="lodgify-widget-container"></div>
+          
+          <script>
+            // Create isolated shadow DOM for Lodgify widget
+            (function() {
+              const container = document.getElementById('lodgify-widget-container');
+              if (!container) return;
+              
+              // Create shadow root
+              const shadow = container.attachShadow({ mode: 'open' });
+              
+              // Create widget div inside shadow DOM
+              const widgetDiv = document.createElement('div');
+              widgetDiv.id = 'lodgify-search-bar';
+              widgetDiv.setAttribute('data-website-id', '449086');
+              widgetDiv.setAttribute('data-language-code', 'en');
+              widgetDiv.setAttribute('data-checkout-page-url', 'https://checkout.lodgify.com/pagosaforestlodge/en/#/493409');
+              widgetDiv.setAttribute('data-dates-check-in-label', 'Check-in');
+              widgetDiv.setAttribute('data-dates-check-out-label', 'Check-out');
+              widgetDiv.setAttribute('data-guests-counter-label', 'Guests');
+              widgetDiv.setAttribute('data-search-button-label', 'Search');
+              
+              shadow.appendChild(widgetDiv);
+              
+              // Load Lodgify script
+              const script = document.createElement('script');
+              script.src = 'https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js';
+              script.onload = function() {
+                // Script loaded successfully
+              };
+              script.onerror = function() {
+                // Show fallback on error
+                const fallback = document.getElementById('booking-fallback');
+                if (fallback) fallback.classList.remove('hidden');
+              };
+              
+              // Append script to shadow DOM
+              shadow.appendChild(script);
+            })();
+          </script>
           
           <!-- View Full Calendar Link -->
           <div class="mt-6 pt-6 border-t border-gray-100 text-center">
@@ -69,7 +98,7 @@ import Breadcrumb from '../components/Breadcrumb.astro';
           
           <!-- Fallback: Direct booking link if widget doesn't load -->
           <div id="booking-fallback" class="hidden text-center py-8">
-            <p class="text-gray-600 mb-4">Having trouble with the booking widget?</p>
+            <p class="text-gray-600 mb-4">The booking widget is currently unavailable.</p>
             <a href="https://checkout.lodgify.com/pagosaforestlodge/en/#/493409" target="_blank" rel="noopener" class="inline-flex items-center justify-center px-8 py-4 bg-[#c9a227] text-[#0f1f0a] font-medium rounded-full hover:bg-[#b8921f] transition-colors">
               <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -77,17 +106,6 @@ import Breadcrumb from '../components/Breadcrumb.astro';
               Book Direct on Lodgify
             </a>
           </div>
-          
-          <script>
-            // Show fallback if widget doesn't load within 5 seconds
-            setTimeout(function() {
-              const widget = document.getElementById('lodgify-search-bar');
-              const fallback = document.getElementById('booking-fallback');
-              if (widget && widget.children.length === 0 && fallback) {
-                fallback.classList.remove('hidden');
-              }
-            }, 5000);
-          </script>
         </div>
 
         <!-- Booking Info -->
