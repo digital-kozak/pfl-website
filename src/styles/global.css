@@ -251,13 +251,22 @@ h3 {
 }
 
 /* Lodgify Calendar Fix - Ensure strikethrough shows on booked dates */
-.ldg-day--disabled,
-.ldg-day[data-disabled="true"],
-.ldg-day[aria-disabled="true"],
-[class*="ldg-"] [class*="day"][class*="disabled"],
-[class*="ldg-"] [class*="day"][data-disabled],
-#lodgify-search-bar [class*="disabled"],
-#lodgify-booking-widget [class*="disabled"] {
+/* Using maximum specificity to override Lodgify's default styles */
+#lodgify-search-bar .ldg-day--disabled,
+#lodgify-search-bar .ldg-day[data-disabled="true"],
+#lodgify-search-bar .ldg-day[aria-disabled="true"],
+#lodgify-search-bar [class*="ldg-"] [class*="day"][class*="disabled"],
+#lodgify-search-bar [class*="CalendarDay"][class*="disabled"],
+#lodgify-search-bar [class*="CalendarDay"][aria-disabled="true"],
+#lodgify-search-bar button[class*="day"][disabled],
+#lodgify-search-bar [role="gridcell"][aria-disabled="true"],
+#lodgify-booking-widget .ldg-day--disabled,
+#lodgify-booking-widget .ldg-day[data-disabled="true"],
+#lodgify-booking-widget .ldg-day[aria-disabled="true"],
+html body #lodgify-search-bar .ldg-day--disabled,
+html body #lodgify-search-bar .ldg-day[data-disabled="true"] {
   text-decoration: line-through !important;
-  opacity: 0.6 !important;
+  opacity: 0.5 !important;
+  text-decoration-line: line-through !important;
+  -webkit-text-decoration-line: line-through !important;
 }
