@@ -8,6 +8,28 @@ import Breadcrumb from '../components/Breadcrumb.astro';
   description="Check availability & book your stay at Pagosa Forest Lodge. Luxury 4BR cabin in Pagosa Springs, CO. Instant confirmation."
   breadcrumbs={[{ name: "Book Now", url: "/book" }]}
 >
+  <!-- Fix for Lodgify calendar strikethrough -->
+  <style is:inline>
+    /* Ensure Lodgify widget calendar shows strikethrough for booked dates */
+    #lodgify-search-bar [data-testid*="day"],
+    #lodgify-search-bar .ldg-day,
+    #lodgify-search-bar [class*="day"],
+    #lodgify-booking-widget [data-testid*="day"],
+    #lodgify-booking-widget .ldg-day,
+    #lodgify-booking-widget [class*="day"] {
+      text-decoration: inherit !important;
+    }
+    #lodgify-search-bar [data-testid*="day"][data-disabled="true"],
+    #lodgify-search-bar [data-testid*="day"][aria-disabled="true"],
+    #lodgify-search-bar .ldg-day--disabled,
+    #lodgify-search-bar [class*="disabled"],
+    #lodgify-booking-widget [data-testid*="day"][data-disabled="true"],
+    #lodgify-booking-widget [data-testid*="day"][aria-disabled="true"],
+    #lodgify-booking-widget .ldg-day--disabled,
+    #lodgify-booking-widget [class*="disabled"] {
+      text-decoration: line-through !important;
+    }
+  </style>
   <!-- Hero -->
   <section class="relative py-24 pt-32 sm:pt-24 hero-overlay">
     <div class="absolute inset-0 z-0">
