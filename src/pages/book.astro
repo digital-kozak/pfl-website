@@ -43,8 +43,8 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 
         <!-- Lodgify Booking Widget -->
         <div class="bg-white p-6 md:p-8 rounded-lg shadow-sm">
-          <!-- Widget wrapper - reset CSS conflicts -->
-          <div id="lodgify-booking-widget" style="all: initial; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+          <!-- Widget container -->
+          <div id="lodgify-booking-widget">
             <div id="lodgify-search-bar" 
               data-website-id="449086" 
               data-language-code="en" 
@@ -56,8 +56,8 @@ import Breadcrumb from '../components/Breadcrumb.astro';
             </div>
           </div>
           
-          <!-- Lodgify script MUST be outside the all:initial container -->
-          <script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js" defer></script>
+          <!-- Lodgify script - no defer to load immediately -->
+          <script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js"></script>
           
           <!-- View Full Calendar Link -->
           <div class="mt-6 pt-6 border-t border-gray-100 text-center">
@@ -82,14 +82,17 @@ import Breadcrumb from '../components/Breadcrumb.astro';
           </div>
           
           <script>
-            // Show fallback if widget doesn't load within 5 seconds
-            setTimeout(function() {
-              const widget = document.getElementById('lodgify-search-bar');
-              const fallback = document.getElementById('booking-fallback');
-              if (widget && widget.children.length === 0 && fallback) {
-                fallback.classList.remove('hidden');
-              }
-            }, 5000);
+            // Show fallback if widget doesn't load after page is fully loaded
+            window.addEventListener('load', function() {
+              setTimeout(function() {
+                const widget = document.getElementById('lodgify-search-bar');
+                const fallback = document.getElementById('booking-fallback');
+                // Check if widget has any content (it should have rendered elements)
+                if (widget && widget.children.length === 0 && fallback) {
+                  fallback.classList.remove('hidden');
+                }
+              }, 3000); // Wait 3 seconds after page load
+            });
           </script>
         </div>
 
