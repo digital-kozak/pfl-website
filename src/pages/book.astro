@@ -43,8 +43,58 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 
         <!-- Lodgify Booking Widget -->
         <div class="bg-white p-6 md:p-8 rounded-lg shadow-sm">
+          <style>
+            :root {
+              --ldg-psb-background: #ffffff;
+              --ldg-psb-border-radius: 0.42em;
+              --ldg-psb-box-shadow: 0px 24px 54px 0px rgba(0, 0, 0, 0.1);
+              --ldg-psb-padding: 14px;
+              --ldg-psb-input-background: #ffffff;
+              --ldg-psb-button-border-radius: 3.58em;
+              --ldg-psb-color-primary: #c9a227;
+              --ldg-psb-color-primary-lighter: #d4b43a;
+              --ldg-psb-color-primary-darker: #a0801f;
+              --ldg-psb-color-primary-contrast: #0f1f0a;
+              --ldg-semantic-color-primary: #c9a227;
+              --ldg-semantic-color-primary-lighter: #d4b43a;
+              --ldg-semantic-color-primary-darker: #a0801f;
+              --ldg-semantic-color-primary-contrast: #0f1f0a;
+              --ldg-component-modal-z-index: 999;
+            }
+            #lodgify-search-bar {
+              width: 100%;
+            }
+          </style>
+          
           <div id="lodgify-booking-widget">
-            <div id="lodgify-search-bar" data-website-id="449086" data-language-code="en" data-checkout-page-url='https://checkout.lodgify.com/pagosaforestlodge/en/#/493409' data-dates-check-in-label='Check-in' data-dates-check-out-label='Check-out' data-guests-counter-label='Guests' data-search-button-label='Search' data-version="stable" data-has-guests-breakdown></div>
+            <div id="lodgify-search-bar" 
+              data-website-id="449086" 
+              data-language-code="en" 
+              data-checkout-page-url='https://checkout.lodgify.com/pagosaforestlodge/en/#/493409' 
+              data-dates-check-in-label='Check-in' 
+              data-dates-check-out-label='Check-out' 
+              data-guests-counter-label='Guests' 
+              data-guests-input-singular-label='{{NumberOfGuests}} guest' 
+              data-guests-input-plural-label='{{NumberOfGuests}} guests' 
+              data-location-input-label='Location' 
+              data-search-button-label='Search' 
+              data-dates-input-min-stay-tooltip-text='{"one":"Minimum {minStay} night","other":"Minimum {minStay} nights"}' 
+              data-guests-breakdown-label='Guests' 
+              data-adults-label='{"one":"adult","other":"adults"}' 
+              data-adults-description='Ages {minAge} or above' 
+              data-children-label='{"one":"child","other":"children"}' 
+              data-children-description='Ages {minAge}-{maxAge}' 
+              data-children-not-allowed-label='Not suitable for children' 
+              data-infants-label='{"one":"infant","other":"infants"}' 
+              data-infants-description='Under {maxAge}' 
+              data-infants-not-allowed-label='Not suitable for infants' 
+              data-pets-label='{"one":"pet","other":"pets"}' 
+              data-pets-not-allowed-label='Not allowed' 
+              data-done-label='Done' 
+              data-new-tab="true" 
+              data-version="stable" 
+              data-has-guests-breakdown>
+            </div>
             <script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js" defer></script>
           </div>
           
