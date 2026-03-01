@@ -43,47 +43,20 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 
         <!-- Lodgify Booking Widget -->
         <div class="bg-white p-6 md:p-8 rounded-lg shadow-sm">
-          <!-- Widget Container - Isolated from site CSS -->
-          <div id="lodgify-widget-container"></div>
-          
-          <script>
-            // Create isolated shadow DOM for Lodgify widget
-            (function() {
-              const container = document.getElementById('lodgify-widget-container');
-              if (!container) return;
-              
-              // Create shadow root
-              const shadow = container.attachShadow({ mode: 'open' });
-              
-              // Create widget div inside shadow DOM
-              const widgetDiv = document.createElement('div');
-              widgetDiv.id = 'lodgify-search-bar';
-              widgetDiv.setAttribute('data-website-id', '449086');
-              widgetDiv.setAttribute('data-language-code', 'en');
-              widgetDiv.setAttribute('data-checkout-page-url', 'https://checkout.lodgify.com/pagosaforestlodge/en/#/493409');
-              widgetDiv.setAttribute('data-dates-check-in-label', 'Check-in');
-              widgetDiv.setAttribute('data-dates-check-out-label', 'Check-out');
-              widgetDiv.setAttribute('data-guests-counter-label', 'Guests');
-              widgetDiv.setAttribute('data-search-button-label', 'Search');
-              
-              shadow.appendChild(widgetDiv);
-              
-              // Load Lodgify script
-              const script = document.createElement('script');
-              script.src = 'https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js';
-              script.onload = function() {
-                // Script loaded successfully
-              };
-              script.onerror = function() {
-                // Show fallback on error
-                const fallback = document.getElementById('booking-fallback');
-                if (fallback) fallback.classList.remove('hidden');
-              };
-              
-              // Append script to shadow DOM
-              shadow.appendChild(script);
-            })();
-          </script>
+          <!-- Widget wrapper - reset CSS conflicts -->
+          <div id="lodgify-booking-widget" style="all: initial; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+            <div id="lodgify-search-bar" 
+              data-website-id="449086" 
+              data-language-code="en" 
+              data-checkout-page-url='https://checkout.lodgify.com/pagosaforestlodge/en/#/493409' 
+              data-dates-check-in-label='Check-in' 
+              data-dates-check-out-label='Check-out' 
+              data-guests-counter-label='Guests' 
+              data-search-button-label='Search'>
+            </div>
+            
+            <script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js"></script>
+          </div>
           
           <!-- View Full Calendar Link -->
           <div class="mt-6 pt-6 border-t border-gray-100 text-center">
@@ -106,6 +79,17 @@ import Breadcrumb from '../components/Breadcrumb.astro';
               Book Direct on Lodgify
             </a>
           </div>
+          
+          <script>
+            // Show fallback if widget doesn't load within 5 seconds
+            setTimeout(function() {
+              const widget = document.getElementById('lodgify-search-bar');
+              const fallback = document.getElementById('booking-fallback');
+              if (widget && widget.children.length === 0 && fallback) {
+                fallback.classList.remove('hidden');
+              }
+            }, 5000);
+          </script>
         </div>
 
         <!-- Booking Info -->
