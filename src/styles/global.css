@@ -249,3 +249,15 @@ h3 {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-forest);
 }
+
+/* Lodgify Calendar Fix - Ensure strikethrough shows on booked dates */
+.ldg-day--disabled,
+.ldg-day[data-disabled="true"],
+.ldg-day[aria-disabled="true"],
+[class*="ldg-"] [class*="day"][class*="disabled"],
+[class*="ldg-"] [class*="day"][data-disabled],
+#lodgify-search-bar [class*="disabled"],
+#lodgify-booking-widget [class*="disabled"] {
+  text-decoration: line-through !important;
+  opacity: 0.6 !important;
+}
