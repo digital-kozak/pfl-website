@@ -54,9 +54,10 @@ import Breadcrumb from '../components/Breadcrumb.astro';
               data-guests-counter-label='Guests' 
               data-search-button-label='Search'>
             </div>
-            
-            <script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js"></script>
           </div>
+          
+          <!-- Lodgify script MUST be outside the all:initial container -->
+          <script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js" defer></script>
           
           <!-- View Full Calendar Link -->
           <div class="mt-6 pt-6 border-t border-gray-100 text-center">
