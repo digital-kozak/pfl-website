@@ -270,9 +270,21 @@ html body #lodgify-search-bar .ldg-day[data-disabled="true"],
 #lodgify-book-now-box [class*="day"][aria-disabled="true"],
 #lodgify-book-now-box [class*="CalendarDay"][class*="disabled"],
 #lodgify-book-now-box button[disabled],
-#lodgify-book-now-box [role="gridcell"][aria-disabled="true"] {
+#lodgify-book-now-box [role="gridcell"][aria-disabled="true"],
+#lodgify-book-now-box [class*="unavailable"],
+#lodgify-book-now-box [class*="blocked"],
+#lodgify-book-now-box td[aria-disabled="true"],
+#lodgify-book-now-box td[class*="disabled"] {
   text-decoration: line-through !important;
   opacity: 0.5 !important;
   text-decoration-line: line-through !important;
   -webkit-text-decoration-line: line-through !important;
+}
+
+/* Aggressive catch-all for any disabled elements in the widget */
+#lodgify-book-now-box *[aria-disabled="true"],
+#lodgify-book-now-box *[disabled],
+#lodgify-book-now-box [class*="disabled"] {
+  text-decoration: line-through !important;
+  opacity: 0.5 !important;
 }

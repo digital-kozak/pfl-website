@@ -111,27 +111,69 @@ import Breadcrumb from '../components/Breadcrumb.astro';
           </div>
           
           <script>
-            // Force strikethrough on disabled dates after widget loads
+            // Force strikethrough on disabled dates using MutationObserver
             (function() {
+              const widget = document.getElementById('lodgify-book-now-box');
+              if (!widget) return;
+              
               function applyStrikethrough() {
-                const disabledDates = document.querySelectorAll('#lodgify-book-now-box [class*="day"][class*="disabled"], #lodgify-book-now-box [aria-disabled="true"], #lodgify-book-now-box button[disabled]');
-                disabledDates.forEach(el => {
-                  el.style.textDecoration = 'line-through';
-                  el.style.opacity = '0.5';
+                // Try multiple selector patterns to find disabled dates
+                const selectors = [
+                  '[class*="day"][class*="disabled"]',
+                  '[class*="day"][aria-disabled="true"]',
+                  '[class*="CalendarDay"][class*="disabled"]',
+                  '[class*="CalendarDay"][aria-disabled="true"]',
+                  'button[class*="day"][disabled]',
+                  'td[class*="disabled"]',
+                  'td[aria-disabled="true"]',
+                  '[role="gridcell"][aria-disabled="true"]',
+                  '[class*="unavailable"]',
+                  '[class*="blocked"]'
+                ];
+                
+                let found = 0;
+                selectors.forEach(selector => {
+                  const elements = widget.querySelectorAll(selector);
+                  elements.forEach(el => {
+                    el.style.textDecoration = 'line-through';
+                    el.style.opacity = '0.5';
+                    found++;
+                  });
                 });
+                
+                if (found > 0) {
+                  console.log('Applied strikethrough to', found, 'disabled dates');
+                }
               }
               
-              // Apply after widget loads
-              setTimeout(applyStrikethrough, 3000);
-              setTimeout(applyStrikethrough, 5000);
+              // Create MutationObserver to watch for calendar changes
+              const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                  if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+                    // Calendar content changed, apply strikethrough
+                    setTimeout(applyStrikethrough, 100);
+                    setTimeout(applyStrikethrough, 300);
+                  }
+                });
+              });
               
-              // Also apply when calendar is opened
+              // Start observing once widget loads
+              setTimeout(() => {
+                observer.observe(widget, { childList: true, subtree: true });
+                applyStrikethrough();
+              }, 2000);
+              
+              // Also apply on any click (calendar open)
               document.addEventListener('click', function(e) {
                 if (e.target.closest('#lodgify-book-now-box')) {
+                  setTimeout(applyStrikethrough, 200);
                   setTimeout(applyStrikethrough, 500);
                   setTimeout(applyStrikethrough, 1000);
                 }
               });
+              
+              // Periodic check for dynamic content
+              setInterval(applyStrikethrough, 2000);
             })();
             
             // Show fallback if widget doesn't load within 5 seconds
