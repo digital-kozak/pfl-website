@@ -111,6 +111,29 @@ import Breadcrumb from '../components/Breadcrumb.astro';
           </div>
           
           <script>
+            // Force strikethrough on disabled dates after widget loads
+            (function() {
+              function applyStrikethrough() {
+                const disabledDates = document.querySelectorAll('#lodgify-book-now-box [class*="day"][class*="disabled"], #lodgify-book-now-box [aria-disabled="true"], #lodgify-book-now-box button[disabled]');
+                disabledDates.forEach(el => {
+                  el.style.textDecoration = 'line-through';
+                  el.style.opacity = '0.5';
+                });
+              }
+              
+              // Apply after widget loads
+              setTimeout(applyStrikethrough, 3000);
+              setTimeout(applyStrikethrough, 5000);
+              
+              // Also apply when calendar is opened
+              document.addEventListener('click', function(e) {
+                if (e.target.closest('#lodgify-book-now-box')) {
+                  setTimeout(applyStrikethrough, 500);
+                  setTimeout(applyStrikethrough, 1000);
+                }
+              });
+            })();
+            
             // Show fallback if widget doesn't load within 5 seconds
             setTimeout(function() {
               const widget = document.getElementById('lodgify-book-now-box');
