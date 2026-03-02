@@ -41,12 +41,63 @@ import Breadcrumb from '../components/Breadcrumb.astro';
           <h2 class="font-serif text-3xl md:text-4xl text-[#0f1f0a]">Select Your Dates</h2>
         </div>
 
-        <!-- Lodgify Booking Widget -->
+        <!-- Lodgify Book Now Box Widget -->
         <div class="bg-white p-6 md:p-8 rounded-lg shadow-sm">
-          <div id="lodgify-booking-widget">
-            <div id="lodgify-search-bar" data-website-id="449086" data-language-code="en" data-checkout-page-url='https://checkout.lodgify.com/pagosaforestlodge/en/#/493409' data-dates-check-in-label='Check-in' data-dates-check-out-label='Check-out' data-guests-counter-label='Guests' data-search-button-label='Search' data-version="stable" data-has-guests-breakdown></div>
-            <script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js" defer></script>
+          <style>
+            :root {
+              --ldg-bnb-background: #ffffff;
+              --ldg-bnb-border-radius: 0.42em;
+              --ldg-bnb-box-shadow: 0px 24px 54px 0px rgba(0, 0, 0, 0.1);
+              --ldg-bnb-padding: 14px;
+              --ldg-bnb-input-background: #ffffff;
+              --ldg-bnb-button-border-radius: 3.58em;
+              --ldg-bnb-color-primary: #c9a227;
+              --ldg-bnb-color-primary-lighter: #d4b43a;
+              --ldg-bnb-color-primary-darker: #a0801f;
+              --ldg-bnb-color-primary-contrast: #0f1f0a;
+              --ldg-component-calendar-cell-selection-bg-color: #c9a227;
+              --ldg-component-calendar-cell-selection-color: #0f1f0a;
+              --ldg-component-calendar-cell-selected-bg-color: #d4b43a;
+              --ldg-component-calendar-cell-selected-color: #0f1f0a;
+              --ldg-bnb-font-family: inherit;
+            }
+            #lodgify-book-now-box {
+              width: 100%;
+            }
+          </style>
+          <div id="lodgify-book-now-box" 
+            data-rental-id="493409" 
+            data-website-id="449086" 
+            data-slug="pagosaforestlodge" 
+            data-language-code="en" 
+            data-new-tab="true" 
+            data-version="stable" 
+            data-has-guests-breakdown 
+            data-check-in-label='Check-in' 
+            data-check-out-label='Check-out' 
+            data-guests-label='Guests' 
+            data-guests-singular-label='{{NumberOfGuests}} guest' 
+            data-guests-plural-label='{{NumberOfGuests}} guests' 
+            data-location-input-label='Location' 
+            data-total-price-label='Total price:' 
+            data-select-dates-to-see-price-label='Select dates to see total price' 
+            data-minimum-price-per-night-first-label='From' 
+            data-minimum-price-per-night-second-label='per night' 
+            data-book-button-label='Book Now' 
+            data-guests-breakdown-label='Guests' 
+            data-adults-label='{"one":"adult","other":"adults"}' 
+            data-adults-description='Ages {minAge} or above' 
+            data-children-label='{"one":"child","other":"children"}' 
+            data-children-description='Ages {minAge}-{maxAge}' 
+            data-children-not-allowed-label='Not suitable for children' 
+            data-infants-label='{"one":"infant","other":"infants"}' 
+            data-infants-description='Under {maxAge}' 
+            data-infants-not-allowed-label='Not suitable for infants' 
+            data-pets-label='{"one":"pet","other":"pets"}' 
+            data-pets-not-allowed-label='Not allowed' 
+            data-done-label='Done'>
           </div>
+          <script src="https://app.lodgify.com/book-now-box/stable/renderBookNowBox.js" defer></script>
           
           <!-- Fallback: Direct booking link if widget doesn't load -->
           <div id="booking-fallback" class="hidden text-center py-8">
@@ -60,32 +111,9 @@ import Breadcrumb from '../components/Breadcrumb.astro';
           </div>
           
           <script>
-            // Force strikethrough on disabled dates after widget loads
-            (function() {
-              function applyStrikethrough() {
-                const disabledDates = document.querySelectorAll('#lodgify-search-bar .ldg-day--disabled, #lodgify-search-bar [class*="day"][class*="disabled"], #lodgify-search-bar [aria-disabled="true"], #lodgify-search-bar button[disabled]');
-                disabledDates.forEach(el => {
-                  el.style.textDecoration = 'line-through';
-                  el.style.opacity = '0.5';
-                });
-              }
-              
-              // Apply after widget loads
-              setTimeout(applyStrikethrough, 3000);
-              setTimeout(applyStrikethrough, 5000);
-              
-              // Also apply when calendar is opened
-              document.addEventListener('click', function(e) {
-                if (e.target.closest('#lodgify-search-bar')) {
-                  setTimeout(applyStrikethrough, 500);
-                  setTimeout(applyStrikethrough, 1000);
-                }
-              });
-            })();
-            
             // Show fallback if widget doesn't load within 5 seconds
             setTimeout(function() {
-              const widget = document.getElementById('lodgify-search-bar');
+              const widget = document.getElementById('lodgify-book-now-box');
               const fallback = document.getElementById('booking-fallback');
               if (widget && widget.children.length === 0 && fallback) {
                 fallback.classList.remove('hidden');
